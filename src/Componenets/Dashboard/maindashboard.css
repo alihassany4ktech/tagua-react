@@ -1,0 +1,22 @@
+:root {
+      --green: #067d1f !important;
+      --secondary: #c8eddc;
+      --light: #ebfcf8;
+}
+
+.color-green {
+      color: var(--green);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
