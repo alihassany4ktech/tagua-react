@@ -16,14 +16,14 @@ const Dashboard = () => {
                                     <h1 className="app-page-title mt-5">Overview</h1>
                                     <div className="row g-4 mb-4">
                                           <div className="col-6 col-lg-3">
-                                                <div className="app-card app-card-stat shadow-sm h-100">
+                                                <div className="app-card app-card-stat shadow-sm h-100" style={{ backgroundColor: "#2196f3" }}>
                                                       <div className="app-card-body p-3 p-lg-4">
-                                                            <h4 className="stats-type mb-1">Total Sales</h4>
+                                                            <h4 className="stats-type mb-1 text-white">Total Sales</h4>
                                                             <div className="stats-figure">$12,628</div>
                                                             <div className="stats-meta text-success">
-                                                                  <svg width="1em" style={{ color: "#E8C21E" }} height="1em" viewBox="0 0 16 16" className="bi bi-arrow-up" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                                  <svg width="1em" style={{ color: "white" }} height="1em" viewBox="0 0 16 16" className="bi bi-arrow-up" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                                                         <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z" />
-                                                                  </svg> <span style={{ color: "#E8C21E" }}>20%</span></div>
+                                                                  </svg> <span style={{ color: "white" }}>20%</span></div>
                                                       </div>
 
                                                       <a className="app-card-link-mask" href="#"></a>
@@ -33,14 +33,14 @@ const Dashboard = () => {
 
 
                                           <div className="col-6 col-lg-3">
-                                                <div className="app-card app-card-stat shadow-sm h-100">
+                                                <div className="app-card app-card-stat shadow-sm h-100" style={{ backgroundColor: "#19d895" }}>
                                                       <div className="app-card-body p-3 p-lg-4">
-                                                            <h4 className="stats-type mb-1">Expenses</h4>
+                                                            <h4 className="stats-type mb-1 text-white">Expenses</h4>
                                                             <div className="stats-figure">$2,250</div>
                                                             <div className="stats-meta text-success">
-                                                                  <svg width="1em" style={{ color: "#E8C21E" }} height="1em" viewBox="0 0 16 16" className="bi bi-arrow-down" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                                  <svg width="1em" style={{ color: "white" }} height="1em" viewBox="0 0 16 16" className="bi bi-arrow-down" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                                                         <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z" />
-                                                                  </svg> <span style={{ color: "#E8C21E" }}>5%</span> </div>
+                                                                  </svg> <span style={{ color: "white" }}>5%</span> </div>
                                                       </div>
 
                                                       <a className="app-card-link-mask" href="#"></a>
@@ -49,11 +49,11 @@ const Dashboard = () => {
                                           </div>
 
                                           <div className="col-6 col-lg-3">
-                                                <div className="app-card app-card-stat shadow-sm h-100">
+                                                <div className="app-card app-card-stat shadow-sm h-100" style={{ backgroundColor: "#8862e0" }}>
                                                       <div className="app-card-body p-3 p-lg-4">
-                                                            <h4 className="stats-type mb-1">Projects</h4>
+                                                            <h4 className="stats-type mb-1 text-white">Projects</h4>
                                                             <div className="stats-figure">23</div>
-                                                            <div className="stats-meta">
+                                                            <div className="stats-meta text-white">
                                                                   Open</div>
                                                       </div>
 
@@ -63,11 +63,11 @@ const Dashboard = () => {
                                           </div>
 
                                           <div className="col-6 col-lg-3">
-                                                <div className="app-card app-card-stat shadow-sm h-100">
+                                                <div className="app-card app-card-stat shadow-sm h-100" style={{ backgroundColor: "#f55fbc" }}>
                                                       <div className="app-card-body p-3 p-lg-4">
-                                                            <h4 className="stats-type mb-1">Invoices</h4>
+                                                            <h4 className="stats-type mb-1 text-white">Invoices</h4>
                                                             <div className="stats-figure">6</div>
-                                                            <div className="stats-meta">New</div>
+                                                            <div className="stats-meta text-white">New</div>
                                                       </div>
 
                                                       <a className="app-card-link-mask" href="#"></a>

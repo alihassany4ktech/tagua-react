@@ -169,8 +169,8 @@ button.close:focus {
 }
 
 .app-btn-secondary:hover {
-      color: #15a362;
-      border: 1px solid #15a362;
+      color: #E8C21E;
+      border: 1px solid #E8C21E;
       background: #fff
 }
 
@@ -284,7 +284,7 @@ button.close:focus {
 .app-search-form .search-btn:focus,
 .app-search-form .search-btn:hover {
       outline: none !important;
-      color: #15a362;
+      color: #E8C21E;
       box-shadow: none
 }
 
@@ -436,6 +436,7 @@ button.close:focus {
       .app-notifications-dropdown .dropdown-menu {
             width: 400px
       }
+     
 }
 
 @media(min-width: 1200px) {
@@ -618,7 +619,7 @@ button.close:focus {
 
 .app-nav .nav-link.active {
       color: var(--green);
-      background: #edfdf6;
+      background: rgba(255, 206, 86, 0.1);
       border-right: 3px solid var(--green);
       font-weight: 500
 }
