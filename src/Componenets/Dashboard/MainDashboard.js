@@ -20,7 +20,7 @@ const MainDahsboard = () => {
                                                 <div className="row justify-content-between align-items-center">
 
                                                       <div className="col-auto">
-                                                            <a id="sidepanel-toggler" className="sidepanel-toggler d-inline-block d-xl-none">
+                                                            <a id="sidepanel-toggler" style={{ color: "#E8C21E" }} className="sidepanel-toggler d-inline-block d-xl-none">
                                                                   <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" role="img"><title>Menu</title><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg>
                                                             </a>
                                                       </div>
@@ -30,7 +30,7 @@ const MainDahsboard = () => {
                                                       <div className="app-search-box col">
                                                             <form className="app-search-form">
                                                                   <input type="text" placeholder="Search..." name="search" className="form-control search-input" />
-                                                                  <button type="submit" className="btn search-btn btn-primary" value="Search"><i className="fas fa-search"></i></button>
+                                                                  <button type="submit" className="btn search-btn btn-primary" value="Search"><i className="bt bi-search"></i></button>
                                                             </form>
                                                       </div>
 
@@ -123,7 +123,7 @@ const MainDahsboard = () => {
 
                                                                   </div>
                                                             </div>
-                                                            <div className="app-utility-item">
+                                                            {/* <div className="app-utility-item">
                                                                   <a href="settings.html" title="Settings">
 
                                                                         <svg width="1em" height="1em" viewBox="0 0 16 16" className="bi bi-gear icon" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -131,13 +131,13 @@ const MainDahsboard = () => {
                                                                               <path fill-rule="evenodd" d="M8 5.754a2.246 2.246 0 1 0 0 4.492 2.246 2.246 0 0 0 0-4.492zM4.754 8a3.246 3.246 0 1 1 6.492 0 3.246 3.246 0 0 1-6.492 0z" />
                                                                         </svg>
                                                                   </a>
-                                                            </div>
+                                                            </div> */}
 
                                                             <div className="app-utility-item app-user-dropdown dropdown">
-                                                                  <a className="dropdown-toggle" id="user-dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><img src="assets/images/user.png" alt="user profile" /></a>
+                                                                  <a className="dropdown-toggle" id="user-dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><img className="rounded-pill" src={user} alt="user profile" /></a>
                                                                   <ul className="dropdown-menu" aria-labelledby="user-dropdown-toggle">
                                                                         <li><a className="dropdown-item" href="account.html">Account</a></li>
-                                                                        <li><a className="dropdown-item" href="settings.html">Settings</a></li>
+                                                                        {/* <li><a className="dropdown-item" href="settings.html">Settings</a></li> */}
                                                                         <li><hr className="dropdown-divider" /></li>
                                                                         <li><a className="dropdown-item" href="login.html">Log Out</a></li>
                                                                   </ul>
