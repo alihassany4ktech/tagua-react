@@ -1,0 +1,10 @@
+.category-card {
+    width: 18em; 
+}
+.category-card img { 
+    object-fit: cover;
+    height: 16rem;
+} 
+.category-card .btn:hover{
+    opacity: 0.8;
+} 

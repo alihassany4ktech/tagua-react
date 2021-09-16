@@ -1,0 +1,31 @@
+.product-card {
+    width: 16rem; 
+}
+.product-card img { 
+    object-fit: cover;
+    height: 16rem;
+} 
+.product-card .card-body .btn:hover{
+    opacity: 0.8;
+}
+.rounded-15 {
+    border-radius: 15px;
+    overflow: hidden;
+}
+.bg-yellow {
+    background-color: var(--yellow);
+}  
+.color-yellow {
+    color: var(--yellow);
+}
+.icon-btn {
+    width: 35px;
+    height: 35px; 
+    border-radius: 50%;
+    border: none;
+    background-color: var(--yellow);
+    color: #FFFFFF; 
+} 
+.icon-btn:hover{
+    opacity: 0.8;
+}

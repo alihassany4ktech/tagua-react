@@ -1,0 +1,26 @@
+.special-offer-section {
+    background-image: linear-gradient(
+        rgba(255, 0, 0, 0.45), 
+        rgba(255, 0, 0, 0.45)
+      ),url("http://localhost:3000/images/special-offer.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;   
+} 
+.special-offer-section .offer-content{  
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.offer-content button{
+    background-color: #000000;
+    color: var(--yellow);
+    border: none;
+    width: 40%;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+}
+.offer-content button:hover{
+    background-color: #202020;
+}
