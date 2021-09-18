@@ -54,24 +54,22 @@ export default class PopularProducts extends Component {
             };
             return (
                   <>
-                        <div className="container p-5">
+                        <div className="mb-5">
                               <div className='col-sm-7 col-md-7 col-lg-5 mt-5 mx-auto text-center'>
                                     <h2>Popular Products</h2>
                                     <p className='text-dark mt-3'><small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida porttitor lorem in blandit. Etiam id venenatis nisl.</small></p>
                               </div>
                               {/* card-carousal */}
                               <div className="text-center mb-3">
-                                    <div>
-                                          {/* carousal arrows left and right */}
-                                          <button className="icon-btn mx-2" onClick={this.previous}>
-                                                <i class="bi bi-arrow-left"></i>
-                                          </button>
-                                          <button className="icon-btn" onClick={this.next}>
-                                                <i class="bi bi-arrow-right"></i>
-                                          </button>
-                                    </div>
-                              </div>
-                              <div>
+                                    {/* carousal arrows left and right */}
+                                    <button className="icon-btn mx-2" onClick={this.previous}>
+                                          <i class="bi bi-arrow-left"></i>
+                                    </button>
+                                    <button className="icon-btn" onClick={this.next}>
+                                          <i class="bi bi-arrow-right"></i>
+                                    </button>
+                              </div> 
+                              <div className='col-sm-10 mx-auto'> 
                                     <Slider ref={c => (this.slider = c)} {...settings}>
                                           <ProductCard
                                                 imgSource="http://localhost:3000/images/gun.jpg"
@@ -115,7 +113,7 @@ export default class PopularProducts extends Component {
                                                 prevPrice="$200"
                                                 newPrice="$150"
                                           />
-                                    </Slider>
+                                    </Slider> 
                               </div>
                         </div>
                   </>

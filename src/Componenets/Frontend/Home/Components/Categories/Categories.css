@@ -1,5 +1,6 @@
 .category-card {
-    width: 18em; 
+    /* width: 18em;  */
+    width: 98%;
 }
 .category-card img { 
     object-fit: cover;
