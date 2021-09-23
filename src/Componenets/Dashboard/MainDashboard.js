@@ -25,7 +25,7 @@ const MainDahsboard = () => {
                                                             </a>
                                                       </div>
                                                       <div className="search-mobile-trigger d-sm-none col">
-                                                            <i className="search-mobile-trigger-icon fas fa-search"></i>
+                                                            <i className="search-mobile-trigger-icon fa fa-search"></i>
                                                       </div>
                                                       <div className="app-search-box col">
                                                             <form className="app-search-form">
