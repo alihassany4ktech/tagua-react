@@ -2,7 +2,7 @@
     background-image: url("http://localhost:3000/images/web-image.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat; 
-    height: 30rem;  
+    height: 40vw;  
 }
 .bg-black {
     background-color: #000000;
@@ -26,9 +26,9 @@
     .header-content-wrapper,.top-head-right{
         height: 20rem;
     }  
-    .top-head-right svg{
+    /* .top-head-right svg{
         display: none;
-    }
+    } */
 }
 .upto-off {
     position: absolute;

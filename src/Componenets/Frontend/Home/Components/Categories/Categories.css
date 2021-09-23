@@ -1,9 +1,8 @@
-.category-card {
-    /* width: 18em;  */
-    width: 98%;
+.category-card { 
+    width: 100%;
 }
 .category-card img { 
-    object-fit: cover;
+    object-fit: cover; 
     height: 16rem;
 } 
 .category-card .btn:hover{

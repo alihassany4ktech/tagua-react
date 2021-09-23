@@ -17,7 +17,7 @@ export default class FeaturedProducts extends Component {
       }
       render() {
             var settings = {
-                  dots: true,
+                  // dots: true,
                   infinite: true,
                   speed: 500,
                   slidesToShow: 4,

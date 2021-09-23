@@ -40,9 +40,9 @@
     background-color: #202020;
 }
 @media screen and (max-width:1025px) {
-    .special-offer-section{
+    /* .special-offer-section{
         height: 45vh;
-    }
+    } */
     .special-offer-right{
         height: max-content;
     }

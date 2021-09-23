@@ -19,7 +19,7 @@ export default class PopularProducts extends Component {
       }
       render() {
             var settings = {
-                  dots: true,
+                  // dots: true,
                   infinite: true,
                   speed: 500,
                   slidesToShow: 4,
@@ -69,8 +69,32 @@ export default class PopularProducts extends Component {
                                           <i class="bi bi-arrow-right"></i>
                                     </button>
                               </div> 
-                              <div className='col-sm-10 mx-auto'> 
+                              <div className='col-sm-10 mx-auto'>
                                     <Slider ref={c => (this.slider = c)} {...settings}>
+                                          <ProductCard
+                                                imgSource="http://localhost:3000/images/gun.jpg"
+                                                decription="Lorem ipsum dolor sit consectetur"
+                                                prevPrice="$200"
+                                                newPrice="$150"
+                                          />
+                                          <ProductCard
+                                                imgSource="http://localhost:3000/images/gun2.jpg"
+                                                decription="Lorem ipsum dolor sit consectetur"
+                                                prevPrice="$250"
+                                                newPrice="$155"
+                                          /> 
+                                          <ProductCard
+                                                imgSource="http://localhost:3000/images/gun2.jpg"
+                                                decription="Lorem ipsum dolor sit consectetur"
+                                                prevPrice="$200"
+                                                newPrice="$150"
+                                          />
+                                          <ProductCard
+                                                imgSource="http://localhost:3000/images/gun2.jpg"
+                                                decription="Lorem ipsum dolor sit consectetur"
+                                                prevPrice="$200"
+                                                newPrice="$150"
+                                          />
                                           <ProductCard
                                                 imgSource="http://localhost:3000/images/gun.jpg"
                                                 decription="Lorem ipsum dolor sit consectetur"
@@ -89,31 +113,8 @@ export default class PopularProducts extends Component {
                                                 prevPrice="$205"
                                                 newPrice="$155"
                                           />
-                                          <ProductCard
-                                                imgSource="http://localhost:3000/images/gun.jpg"
-                                                decription="Lorem ipsum dolor sit consectetur"
-                                                prevPrice="$270"
-                                                newPrice="$170"
-                                          />
-                                          <ProductCard
-                                                imgSource="http://localhost:3000/images/gun2.jpg"
-                                                decription="Lorem ipsum dolor sit consectetur"
-                                                prevPrice="$280"
-                                                newPrice="$150"
-                                          />
-                                          <ProductCard
-                                                imgSource="http://localhost:3000/images/gun2.jpg"
-                                                decription="Lorem ipsum dolor sit consectetur"
-                                                prevPrice="$200"
-                                                newPrice="$150"
-                                          />
-                                          <ProductCard
-                                                imgSource="http://localhost:3000/images/gun2.jpg"
-                                                decription="Lorem ipsum dolor sit consectetur"
-                                                prevPrice="$200"
-                                                newPrice="$150"
-                                          />
-                                    </Slider> 
+                                           
+                                    </Slider>
                               </div>
                         </div>
                   </>

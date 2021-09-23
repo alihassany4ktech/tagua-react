@@ -2,7 +2,14 @@ import React from 'react'
 import './Categories.css';
 import CategoryCard from './CategoryCard';
 const Categories = (props) => {
-
+    const data = [
+        { imgSource: 'http://localhost:3000/images/gun.jpg', category: 'KYDEX HOLSTERS' },
+        { imgSource: 'http://localhost:3000/images/gun2.jpg', category: 'SHOULDERS HOLSTERS' },
+        { imgSource: 'http://localhost:3000/images/gun3.jpg', category: 'OPEN CARRY HOLSTRERS' },
+        { imgSource: 'http://localhost:3000/images/gun2.jpg', category: 'KYDEX HOLSTERS' },
+        { imgSource: 'http://localhost:3000/images/gun3.jpg', category: 'SHOULDERS HOLSTERS' },
+        { imgSource: 'http://localhost:3000/images/gun.jpg', category: 'OPEN CARRY HOLSTRERS' },
+    ]
     return (
         <>
             <div className='row'>
@@ -13,30 +20,14 @@ const Categories = (props) => {
                     </div>
                     <div className='col-sm-10 mx-auto'>
                         <div className='row'>
-                            <CategoryCard
-                                imgSource="http://localhost:3000/images/gun.jpg"
-                                category="KYDEX HOLSTERS"
-                            />
-                            <CategoryCard
-                                imgSource="http://localhost:3000/images/gun2.jpg"
-                                category="SHOULDERS HOLSTERS"
-                            />
-                            <CategoryCard
-                                imgSource="http://localhost:3000/images/gun3.jpg"
-                                category="OPEN CARRY HOLSTRERS"
-                            />
-                            <CategoryCard
-                                imgSource="http://localhost:3000/images/gun2.jpg"
-                                category="KYDEX HOLSTERS"
-                            />
-                            <CategoryCard
-                                imgSource="http://localhost:3000/images/gun.jpg"
-                                category="SHOULDERS HOLSTERS"
-                            />
-                            <CategoryCard
-                                imgSource="http://localhost:3000/images/gun3.jpg"
-                                category="OPEN CARRY HOLSTRERS"
-                            />
+                            {
+                                data.map(item =>
+                                    <CategoryCard
+                                        imgSource={item.imgSource}
+                                        category={item.category}
+                                    />
+                                )
+                            }
                         </div>
                     </div>
                     <span className='m-5'>&nbsp;</span>

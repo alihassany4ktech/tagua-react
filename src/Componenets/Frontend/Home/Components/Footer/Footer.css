@@ -16,9 +16,7 @@
 }
 .about-footer p:hover{
     cursor: pointer;
-    color: var(--yellow);
-    border-bottom: 1px solid var(--yellow);
-    transform: scale(1.05);
+    color: var(--yellow); 
 }
 .footer-icon-btn {
     width: 35px;
@@ -27,11 +25,13 @@
     border: none;
     background-color: var(--white);
     color: var(--yellow); 
+    transition: all 0.1s ease-in-out;
 } 
 .footer-icon-btn i{
-    font-size: 20px;
+    font-size: 18px;
 }
 .footer-icon-btn:hover{
-    opacity: 0.8;
+    background-color: var(--yellow);
+    color: var(--white); 
     transform: scale(1.05);
 }

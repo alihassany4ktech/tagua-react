@@ -5,7 +5,7 @@
     border-radius: 15px;
     overflow: hidden;
     object-fit: cover;
-    height: 16rem;
+    height: 17rem;
 } 
 .product-card .card-body .btn:hover{
     opacity: 0.8;
@@ -26,7 +26,8 @@
     border-radius: 50%;
     border: none;
     background-color: var(--yellow);
-    color: #FFFFFF; 
+    color: #FFFFFF;  
+    transition: all 0.1s ease-in-out;
 } 
 .icon-btn:hover{
     opacity: 0.8;
