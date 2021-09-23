@@ -3,24 +3,60 @@
         rgba(255, 0, 0, 0.45), 
         rgba(255, 0, 0, 0.45)
       ),url("http://localhost:3000/images/special-offer.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;   
+    background-repeat: no-repeat; 
+    background-size: 100% 100%;  
 } 
 .special-offer-section .offer-content{  
     display: flex;
     flex-direction: column;  
     align-items: center;
-    justify-content: center;
+    justify-content: center; 
     height: 100%;
 }
 .offer-content button{
     background-color: #000000;
     color: var(--yellow);
     border: none;
-    width: 40%;
+    width: 15rem;
     padding-top: 0.8em;
     padding-bottom: 0.8em;
 }
 .offer-content button:hover{
     background-color: #202020;
+} 
+.special-offer-right{
+    background-color: rgb(224, 224, 224);
+    overflow: auto;
+}
+.special-offer-right-content button{
+    background-color: #000000;
+    color: #FFFFFF;
+    border: none;
+    width: 15rem;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+}
+.special-offer-right-content button:hover{
+    background-color: #202020;
+}
+@media screen and (max-width:1025px) {
+    .special-offer-section{
+        height: 45vh;
+    }
+    .special-offer-right{
+        height: max-content;
+    }
+    
+}
+@media screen and (max-width:800px) {
+    .special-offer-section{
+        height: 45vh
+    }
+    .special-offer-right{
+        height: max-content;  
+    }
+    .special-offer-right-content button{
+        display: block;
+        margin: 0 auto;
+    }
 }

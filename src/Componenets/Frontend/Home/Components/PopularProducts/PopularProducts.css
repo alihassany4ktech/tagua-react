@@ -2,6 +2,8 @@
     width: 16rem; 
 }
 .product-card img { 
+    border-radius: 15px;
+    overflow: hidden;
     object-fit: cover;
     height: 16rem;
 } 
@@ -28,4 +30,5 @@
 } 
 .icon-btn:hover{
     opacity: 0.8;
+    transform: scale(1.05);
 }
