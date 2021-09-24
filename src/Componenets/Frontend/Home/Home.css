@@ -3,7 +3,9 @@
     --black: #000000;
     --white: #FFFFFF;
 }
-
+html{
+    overflow-x: hidden;
+}
 .fab {
     width: 45px;
     height: 45px;

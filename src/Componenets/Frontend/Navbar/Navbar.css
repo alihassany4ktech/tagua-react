@@ -84,3 +84,18 @@
         display: none;
     }
 } 
+@media screen and (max-width:500px){
+    .searchBar .searchBar_btn_wrapper{
+        text-align: center;
+    }
+}
+.searchBar .searchBar_btn_wrapper .btn{
+    background-color: var(--black);
+    border-radius: 0;
+    color: var(--white);
+    height: 35px;
+    padding: 0 2rem; 
+}
+.searchBar .searchBar_btn_wrapper .btn:hover{
+    opacity: 0.8;
+}

@@ -3,6 +3,7 @@ import BackDrop from './BackDrop/BackDrop';
 import ContactBar from './ContactBar';
 import Menubar from './Menubar';
 import './Navbar.css';
+import SearchBar from './SearchBar';
 import SideDrawer from './SideDrawer/SideDrawer';
 import Toolbar from './Toolbar';
 const Navbar = () => {
@@ -21,7 +22,8 @@ const Navbar = () => {
             {backDrop}
             <ContactBar />
             <Toolbar drawerClickHandler={drawerToggleClickHandle} />
-            <Menubar />
+            <SearchBar />
+            <Menubar /> 
             <SideDrawer show={sideDrawerOpen} />
         </>
     );

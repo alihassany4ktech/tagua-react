@@ -52,6 +52,44 @@ export default class PopularProducts extends Component {
                         }
                   ]
             };
+            const data = [
+                  {
+                        imgSource: "http://localhost:3000/images/gun.jpg",
+                        decription: "Lorem ipsum dolor sit consectetur",
+                        prevPrice: "$200",
+                        newPrice: "$150",
+                  },
+                  {
+                        imgSource: "http://localhost:3000/images/gun.jpg",
+                        decription: "Lorem ipsum dolor sit consectetur",
+                        prevPrice: "$200",
+                        newPrice: "$150",
+                  },
+                  {
+                        imgSource: "http://localhost:3000/images/gun.jpg",
+                        decription: "Lorem ipsum dolor sit consectetur",
+                        prevPrice: "$200",
+                        newPrice: "$150",
+                  },
+                  {
+                        imgSource: "http://localhost:3000/images/gun.jpg",
+                        decription: "Lorem ipsum dolor sit consectetur",
+                        prevPrice: "$200",
+                        newPrice: "$150",
+                  },
+                  {
+                        imgSource: "http://localhost:3000/images/gun.jpg",
+                        decription: "Lorem ipsum dolor sit consectetur",
+                        prevPrice: "$200",
+                        newPrice: "$150",
+                  },
+                  {
+                        imgSource: "http://localhost:3000/images/gun.jpg",
+                        decription: "Lorem ipsum dolor sit consectetur",
+                        prevPrice: "$200",
+                        newPrice: "$150",
+                  },
+            ]
             return (
                   <>
                         <div className="mb-5">
@@ -68,10 +106,36 @@ export default class PopularProducts extends Component {
                                     <button className="icon-btn" onClick={this.next}>
                                           <i class="bi bi-arrow-right"></i>
                                     </button>
-                              </div> 
+                              </div>
                               <div className='col-sm-10 mx-auto'>
                                     <Slider ref={c => (this.slider = c)} {...settings}>
+                                          {
+                                                data.map(item => {
+                                                      return (
+                                                            <div>
+                                                                  <ProductCard
+                                                                        imgSource={item.imgSource}
+                                                                        decription={item.decription}
+                                                                        prevPrice={item.prevPrice}
+                                                                        newPrice={item.newPrice}
+                                                                  />
+                                                            </div>
+                                                      )
+                                                })
+                                          }
+                                          {/* <ProductCard
+                                                imgSource="http://localhost:3000/images/gun.jpg"
+                                                decription="Lorem ipsum dolor sit consectetur"
+                                                prevPrice="$200"
+                                                newPrice="$150"
+                                          />
                                           <ProductCard
+                                                imgSource="http://localhost:3000/images/gun.jpg"
+                                                decription="Lorem ipsum dolor sit consectetur"
+                                                prevPrice="$200"
+                                                newPrice="$150"
+                                          /> */}
+                                          {/* <ProductCard
                                                 imgSource="http://localhost:3000/images/gun.jpg"
                                                 decription="Lorem ipsum dolor sit consectetur"
                                                 prevPrice="$200"
@@ -112,8 +176,8 @@ export default class PopularProducts extends Component {
                                                 decription="Lorem ipsum dolor sit consectetur"
                                                 prevPrice="$205"
                                                 newPrice="$155"
-                                          />
-                                           
+                                          /> */}
+
                                     </Slider>
                               </div>
                         </div>
