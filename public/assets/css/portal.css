@@ -718,11 +718,11 @@ button.close:focus {
 }
 
 .app-nav .submenu-link.active {
-      color: #15a362
+      color: #E8C21E
 }
 
 .app-nav .submenu-link.active:before {
-      background-color: #15a362
+      background-color: #E8C21E
 }
 
 .app-sidepanel-footer {

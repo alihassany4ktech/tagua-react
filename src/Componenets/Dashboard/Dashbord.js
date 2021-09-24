@@ -10,13 +10,13 @@ const Dashboard = () => {
             <>
                   <div className="app-wrapper"  >
                         {/* style={{ backgroundColor: "#f5f6fe" }} */}
-                        <div className="app-content pt-3 p-md-3 p-lg-4" style={{ backgroundColor: "#f5f6fe" }}>
+                        <div className="app-content pt-3 p-md-3 p-lg-4" >
                               <div className="container-xl">
 
                                     <h1 className="app-page-title mt-5">Overview</h1>
                                     <div className="row g-4 mb-4">
                                           <div className="col-6 col-lg-3">
-                                                <div className="app-card app-card-stat shadow-sm h-100" style={{ backgroundColor: "#2196f3" }}>
+                                                <div className="app-card app-card-stat shadow h-100" style={{ backgroundColor: "#2196f3" }}>
                                                       <div className="app-card-body p-3 p-lg-4">
                                                             <h4 className="stats-type mb-1 text-white">Total Sales</h4>
                                                             <div className="stats-figure">$12,628</div>
@@ -33,7 +33,7 @@ const Dashboard = () => {
 
 
                                           <div className="col-6 col-lg-3">
-                                                <div className="app-card app-card-stat shadow-sm h-100" style={{ backgroundColor: "#19d895" }}>
+                                                <div className="app-card app-card-stat shadow h-100" style={{ backgroundColor: "#19d895" }}>
                                                       <div className="app-card-body p-3 p-lg-4">
                                                             <h4 className="stats-type mb-1 text-white">Expenses</h4>
                                                             <div className="stats-figure">$2,250</div>
@@ -49,7 +49,7 @@ const Dashboard = () => {
                                           </div>
 
                                           <div className="col-6 col-lg-3">
-                                                <div className="app-card app-card-stat shadow-sm h-100" style={{ backgroundColor: "#8862e0" }}>
+                                                <div className="app-card app-card-stat shadow h-100" style={{ backgroundColor: "#8862e0" }}>
                                                       <div className="app-card-body p-3 p-lg-4">
                                                             <h4 className="stats-type mb-1 text-white">Projects</h4>
                                                             <div className="stats-figure">23</div>
@@ -63,7 +63,7 @@ const Dashboard = () => {
                                           </div>
 
                                           <div className="col-6 col-lg-3">
-                                                <div className="app-card app-card-stat shadow-sm h-100" style={{ backgroundColor: "#f55fbc" }}>
+                                                <div className="app-card app-card-stat shadow h-100" style={{ backgroundColor: "#f55fbc" }}>
                                                       <div className="app-card-body p-3 p-lg-4">
                                                             <h4 className="stats-type mb-1 text-white">Invoices</h4>
                                                             <div className="stats-figure">6</div>
@@ -79,7 +79,7 @@ const Dashboard = () => {
 
                                     <div className="row g-4 mb-4">
                                           <div className="col-12 col-lg-6">
-                                                <div className="app-card app-card-chart h-100 shadow-sm">
+                                                <div className="app-card app-card-chart h-100 shadow">
                                                       <div className="app-card-header p-3">
                                                             <div className="row justify-content-between align-items-center">
                                                                   <div className="col-auto">
@@ -100,7 +100,7 @@ const Dashboard = () => {
                                           </div>
 
                                           <div className="col-12 col-lg-6">
-                                                <div className="app-card app-card-chart h-100 shadow-sm">
+                                                <div className="app-card app-card-chart h-100 shadow">
                                                       <div className="app-card-header p-3">
                                                             <div className="row justify-content-between align-items-center">
                                                                   <div className="col-auto">
