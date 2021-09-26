@@ -48,7 +48,7 @@ const Footer = (props) => {
                         <div className='footer-bottom d-flex flex-row justify-content-between align-items-center my-1'>
                             <small>Tagua Gun Leather 2021 Copyrights </small>
                             <div className='footer-credit-img-wrapper'>
-                                <img src='http://localhost:3000/images/credit.png' alt='credit-images'></img>
+                                <img src='images/credit.png' alt='credit-images'></img>
                             </div>
                         </div>
                     </div>

@@ -1,13 +1,11 @@
-import React, { useState } from 'react';
-// import './MenuDrop.scss'; 
-import './DropQueries.css';
+import React, { useState } from 'react'; 
+import './MenuDrop.css';
 import OutsideClickHandler from 'react-outside-click-handler'; 
-
 
 function Dropdown({ title, items, styles, multiSelect = false }) {
     const [name, setName] = useState(title); 
     const [open, setOpen] = useState(false);
-    const [selection, setSelection] = useState([]);
+    const [selection, setSelection] = useState([]); 
     const toggle = () => setOpen(!open); 
 
     function handleOnClick(item) {
@@ -17,14 +15,14 @@ function Dropdown({ title, items, styles, multiSelect = false }) {
             } else if (multiSelect) {
                 setSelection([...selection, item]);
             }
-            setName(item.value)
+            setName(item.value); 
         } else {
             let selectionAfterRemoval = selection;
             selectionAfterRemoval = selectionAfterRemoval.filter(
                 current => current.id !== item.id
             );
             setSelection([...selectionAfterRemoval]);
-            setName(title);
+            setName(title); 
         }
     }
 
@@ -59,10 +57,10 @@ function Dropdown({ title, items, styles, multiSelect = false }) {
                     <ul className="dd-list">
                         {items.map(item => (
                             <li className="dd-list-item" key={item.id}>
-                                <button type="button" onClick={() => handleOnClick(item)}>
+                                <span className={isItemInSelection(item) ? 'list-item-span active' : 'list-item-span'} onClick={() => handleOnClick(item)}>
                                     <span>{item.value}</span>
                                     <span>{isItemInSelection(item) && <i class="bi bi-check"></i>}</span>
-                                </button>
+                                </span>
                             </li>
                         ))}
                     </ul>

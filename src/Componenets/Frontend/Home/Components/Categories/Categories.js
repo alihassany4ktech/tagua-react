@@ -3,12 +3,12 @@ import './Categories.css';
 import CategoryCard from './CategoryCard';
 const Categories = (props) => {
     const data = [
-        { imgSource: 'http://localhost:3000/images/gun.jpg', category: 'KYDEX HOLSTERS' },
-        { imgSource: 'http://localhost:3000/images/gun2.jpg', category: 'SHOULDERS HOLSTERS' },
-        { imgSource: 'http://localhost:3000/images/gun3.jpg', category: 'OPEN CARRY HOLSTRERS' },
-        { imgSource: 'http://localhost:3000/images/gun2.jpg', category: 'KYDEX HOLSTERS' },
-        { imgSource: 'http://localhost:3000/images/gun3.jpg', category: 'SHOULDERS HOLSTERS' },
-        { imgSource: 'http://localhost:3000/images/gun.jpg', category: 'OPEN CARRY HOLSTRERS' },
+        { imgSource: 'images/gun.jpg', category: 'KYDEX HOLSTERS' },
+        { imgSource: 'images/gun2.jpg', category: 'SHOULDERS HOLSTERS' },
+        { imgSource: 'images/gun3.jpg', category: 'OPEN CARRY HOLSTRERS' },
+        { imgSource: 'images/gun2.jpg', category: 'KYDEX HOLSTERS' },
+        { imgSource: 'images/gun3.jpg', category: 'SHOULDERS HOLSTERS' },
+        { imgSource: 'images/gun.jpg', category: 'OPEN CARRY HOLSTRERS' },
     ]
     return (
         <>

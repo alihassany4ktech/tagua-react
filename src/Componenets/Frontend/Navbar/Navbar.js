@@ -23,7 +23,7 @@ const Navbar = () => {
             <ContactBar />
             <Toolbar drawerClickHandler={drawerToggleClickHandle} />
             <SearchBar />
-            <Menubar /> 
+            {/* <Menubar />  */}
             <SideDrawer show={sideDrawerOpen} />
         </>
     );

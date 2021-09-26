@@ -5,10 +5,10 @@
     height: 40vw;  
     overflow: hidden;
 }
-/* .top-head-right svg{
-    width: inherit;
-    height: inherit;
-} */
+.top-head-right svg{ 
+    height: 100%; 
+    width: fit-content;
+}
 .bg-black {
     background-color: #000000;
 }

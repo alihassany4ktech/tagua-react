@@ -50,6 +50,44 @@ export default class FeaturedProducts extends Component {
                         }
                   ]
             };
+            const data = [
+                  {
+                        imgSource: "images/gun.jpg",
+                        decription: "Lorem ipsum dolor sit consectetur",
+                        prevPrice: "$200",
+                        newPrice: "$150",
+                  },
+                  {
+                        imgSource: "images/gun2.jpg",
+                        decription: "Lorem ipsum dolor sit consectetur",
+                        prevPrice: "$200",
+                        newPrice: "$150",
+                  },
+                  {
+                        imgSource: "images/gun3.jpg",
+                        decription: "Lorem ipsum dolor sit consectetur",
+                        prevPrice: "$200",
+                        newPrice: "$150",
+                  },
+                  {
+                        imgSource: "images/gun2.jpg",
+                        decription: "Lorem ipsum dolor sit consectetur",
+                        prevPrice: "$200",
+                        newPrice: "$150",
+                  },
+                  {
+                        imgSource: "images/gun3.jpg",
+                        decription: "Lorem ipsum dolor sit consectetur",
+                        prevPrice: "$200",
+                        newPrice: "$150",
+                  },
+                  {
+                        imgSource: "images/gun.jpg",
+                        decription: "Lorem ipsum dolor sit consectetur",
+                        prevPrice: "$200",
+                        newPrice: "$150",
+                  },
+            ]
             return (
                   <>
                         <div className="mb-5">
@@ -69,48 +107,20 @@ export default class FeaturedProducts extends Component {
                               </div>
                               <div className='col-sm-10 mx-auto'>
                                     <Slider ref={c => (this.slider = c)} {...settings}>
-                                          <ProductCard
-                                                imgSource="http://localhost:3000/images/gun.jpg"
-                                                decription="Lorem ipsum dolor sit consectetur"
-                                                prevPrice="$200"
-                                                newPrice="$150"
-                                          />
-                                          <ProductCard
-                                                imgSource="http://localhost:3000/images/gun2.jpg"
-                                                decription="Lorem ipsum dolor sit consectetur"
-                                                prevPrice="$250"
-                                                newPrice="$155"
-                                          />
-                                          <ProductCard
-                                                imgSource="http://localhost:3000/images/gun3.jpg"
-                                                decription="Lorem ipsum dolor sit consectetur"
-                                                prevPrice="$205"
-                                                newPrice="$155"
-                                          />
-                                          <ProductCard
-                                                imgSource="http://localhost:3000/images/gun.jpg"
-                                                decription="Lorem ipsum dolor sit consectetur"
-                                                prevPrice="$270"
-                                                newPrice="$170"
-                                          />
-                                          <ProductCard
-                                                imgSource="http://localhost:3000/images/gun2.jpg"
-                                                decription="Lorem ipsum dolor sit consectetur"
-                                                prevPrice="$280"
-                                                newPrice="$150"
-                                          />
-                                          <ProductCard
-                                                imgSource="http://localhost:3000/images/gun2.jpg"
-                                                decription="Lorem ipsum dolor sit consectetur"
-                                                prevPrice="$200"
-                                                newPrice="$150"
-                                          />
-                                          <ProductCard
-                                                imgSource="http://localhost:3000/images/gun2.jpg"
-                                                decription="Lorem ipsum dolor sit consectetur"
-                                                prevPrice="$200"
-                                                newPrice="$150"
-                                          />
+                                          {
+                                                data.map(item => {
+                                                      return (
+                                                            <div>
+                                                                  <ProductCard
+                                                                        imgSource={item.imgSource}
+                                                                        decription={item.decription}
+                                                                        prevPrice={item.prevPrice}
+                                                                        newPrice={item.newPrice}
+                                                                  />
+                                                            </div>
+                                                      )
+                                                })
+                                          }                                    
                                     </Slider>
                               </div>
                         </div>
