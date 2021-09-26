@@ -1,35 +1,7 @@
-import React, { useState } from "react";
-import Select from 'react-select';
-
-const CreateProduct = () => {
-
-      let options = [
-            {
-                  value: 1,
-                  label: 'Technical',
-            },
-            {
-                  value: 2,
-                  label: 'labels',
-            },
-            {
-                  value: 3,
-                  label: 'Udemy',
-            },
-            {
-                  value: 4,
-                  label: 'Youtube',
-            }
-      ];
-
-      const [tage, settage] = useState(options)
+import React from "react";
 
 
-      const handleTage = (e) => {
-            console.log(e);
-      }
-
-
+const CreateOrder = () => {
       return (
             <>
                   <div className="app-wrapper px-3" >
@@ -40,7 +12,7 @@ const CreateProduct = () => {
 
                                     <div className="row g-3 mb-4 text-center mt-2">
 
-                                          <h1 className="app-page-title mb-0">Create Product</h1>
+                                          <h1 className="app-page-title mb-0">Create Order</h1>
 
                                     </div>
                               </div>
@@ -49,7 +21,7 @@ const CreateProduct = () => {
                         <div className="col-md-7 mx-auto shadow-lg p-5 mb-4 ">
                               <form>
                                     <div className="form-group mb-5">
-                                          <label className="mb-1 text-dark" for="exampleInputEmail1">Product Title</label>
+                                          <label className="mb-1 text-dark" for="exampleInputEmail1">Title</label>
                                           <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" />
                                     </div>
                                     <div class="form-group mb-3">
@@ -65,12 +37,6 @@ const CreateProduct = () => {
                                     <div className="form-group mb-3">
                                           <label className="mb-1 text-dark" for="exampleInputEmail1">Tag</label>
                                           <input type="text" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
-                                          {/* <Select
-                                                isMulti
-                                                options={tage}
-                                                displayValue="Tage"
-                                                onChange={handleTage}
-                                          ></Select> */}
                                     </div>
 
                                     <div className="row">
@@ -133,4 +99,4 @@ const CreateProduct = () => {
       );
 }
 
-export default CreateProduct;
+export default CreateOrder;

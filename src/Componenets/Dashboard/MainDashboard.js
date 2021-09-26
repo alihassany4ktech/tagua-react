@@ -10,6 +10,9 @@ import OrderList from "./orderlist/OrderList";
 import CreateProduct from "./poducts/CreateProdct";
 import EditProduct from "./poducts/EditProduct";
 import Category from "./category/Category";
+import OrderDetail from "./orderlist/OrderDetail";
+import CreateOrder from "./orderlist/CreateOrder";
+import CreateUser from "./users/CreateUser";
 const MainDahsboard = () => {
       return (
             <>
@@ -344,8 +347,11 @@ const MainDahsboard = () => {
                               <Route exact path="/product/create" component={CreateProduct} />
                               <Route exact path="/product/edit" component={EditProduct} />
                               <Route exact path="/order/list" component={OrderList} />
+                              <Route exact path="/order/details" component={OrderDetail} />
+                              <Route exact path="/order/create" component={CreateOrder} />
                               <Route exact path="/category" component={Category} />
                               <Route exact path="/users" component={User} />
+                              <Route exact path="/user/create" component={CreateUser} />
                               <Route exact path="/calender" component={Calender} />
                         </Switch>
 

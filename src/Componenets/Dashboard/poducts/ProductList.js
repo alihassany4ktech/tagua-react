@@ -12,7 +12,7 @@ const ProductList = () => {
                         <div className="app-content pt-3 p-md-3 p-lg-4" >
                               <div className="container-xl">
 
-                                    <div className="row g-3 mb-4 align-items-center justify-content-between">
+                                    <div className="row g-3 mb-4 mt-3 align-items-center justify-content-between">
                                           <div className="col-auto">
                                                 <h1 className="app-page-title mb-0">Products</h1>
                                           </div>
