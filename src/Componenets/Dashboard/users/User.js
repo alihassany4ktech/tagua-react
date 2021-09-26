@@ -2,7 +2,7 @@ import React from "react";
 
 
 
-const Message = () => {
+const User = () => {
       return (
             <>
                   <div className="app-wrapper"  >
@@ -10,7 +10,7 @@ const Message = () => {
                         <div className="app-content pt-3 p-md-3 p-lg-4" style={{ backgroundColor: "#f5f6fe" }}>
                               <div className="container-xl">
 
-                                    <h1 className="app-page-title mt-5">Message</h1>
+                                    <h1 className="app-page-title mt-5">User</h1>
 
 
 
@@ -25,4 +25,4 @@ const Message = () => {
       );
 }
 
-export default Message;
+export default User;
