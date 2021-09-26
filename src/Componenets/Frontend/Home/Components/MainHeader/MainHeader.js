@@ -17,7 +17,7 @@ const MainHeader = () => {
                         <h3 className='m-0 text-white'>20%</h3>
                         <small><b>OFF</b></small>
                     </span>
-                    {/* <svg viewBox="0 0 500 150" preserveAspectRatio="none"><path d="M25.39,-3.45 C63.76,62.66 10.15,134.70 0.57,149.50 L-0.56,148.52 L0.00,0.00 Z" style={{ stroke: 'none', fill: "#000000" }}></path></svg>                     */}
+                    <svg viewBox="0 0 500 150" preserveAspectRatio="none"><path d="M25.39,-3.45 C63.76,62.66 10.15,134.70 0.57,149.50 L-0.56,148.52 L0.00,0.00 Z" style={{ stroke: 'none', fill: "#000000" }}></path></svg>                    
                 </div>
             </div> 
 
