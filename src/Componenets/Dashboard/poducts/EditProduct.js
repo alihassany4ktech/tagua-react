@@ -12,7 +12,7 @@ const EditProduct = () => {
 
                                     <div className="row g-3 mb-4 text-center mt-2">
 
-                                          <h1 className="app-page-title mb-0">Edit Product</h1>
+                                          <h1 className="mb-0" style={{ fontSize: "30px" }}>Edit Product</h1>
 
                                     </div>
                               </div>

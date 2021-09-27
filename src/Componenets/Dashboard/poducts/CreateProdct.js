@@ -32,15 +32,15 @@ const CreateProduct = () => {
 
       return (
             <>
-                  <div className="app-wrapper px-3" >
+                  <div className="app-wrapper px-3"  >
                         <br />
                         <br />
-                        <div className="app-content pt-3 p-md-3 p-lg-4" >
+                        <div className="app-content pt-3 p-md-3 p-lg-4"  >
                               <div className="container-xl">
 
                                     <div className="row g-3 mb-4 text-center mt-2">
 
-                                          <h1 className="app-page-title mb-0">Create Product</h1>
+                                          <h1 className="mb-0" style={{ fontSize: "30px" }}>Create Product</h1>
 
                                     </div>
                               </div>

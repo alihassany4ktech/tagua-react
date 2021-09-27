@@ -12,7 +12,7 @@ const CreateOrder = () => {
 
                                     <div className="row g-3 mb-4 text-center mt-2">
 
-                                          <h1 className="app-page-title mb-0">Create Order</h1>
+                                          <h1 className="mb-0" style={{ fontSize: "30px" }}>Create Order</h1>
 
                                     </div>
                               </div>

@@ -9,12 +9,12 @@ const ProductList = () => {
                   <div className="app-wrapper" >
                         <br />
                         <br />
-                        <div className="app-content pt-3 p-md-3 p-lg-4" >
+                        <div className="app-content pt-3 p-md-3 p-lg-4" style={{ backgroundColor: "#f8f9fa" }}>
                               <div className="container-xl">
 
                                     <div className="row g-3 mb-4 mt-3 align-items-center justify-content-between">
                                           <div className="col-auto">
-                                                <h1 className="app-page-title mb-0">Products</h1>
+                                                <h1 className="mb-0" style={{ fontSize: "30px" }}>Products</h1>
                                           </div>
                                           <div className="col-auto">
                                                 <div className="page-utilities">
@@ -30,50 +30,53 @@ const ProductList = () => {
                                     </div>
 
 
-                                    <nav id="orders-table-tab" className="orders-table-tab app-nav-tabs nav shadow-sm flex-column flex-sm-row mb-4 p-2 justify-content-between align-content-center">
-                                          <div className="col-12 col-sm-4 col-md-4 mx-a d-flex flex-grow">
-                                                <td><input className="form-check-input" type="checkbox" value="" id="RememberPassword" /></td>
-                                                <select className="form-select mx-4" >
-                                                      <option selected value="option-1">All Category</option>
-                                                      <option value="option-2">Electronics</option>
-                                                      <option value="option-3">Clothes</option>
-                                                      <option value="option-4">Automobile</option>
 
-                                                </select>
-                                          </div>
-                                          <div className='d-flex flex-row'>
-
-                                                <div className="mx-4">
-
-                                                      <input type="date" name="searchorders" className=" form-select" placeholder="Search" />
-
-                                                </div>
-                                                <div className="">
-
-                                                      <select className="form-select w-auto" >
-                                                            <option selected value="option-1">Status</option>
-                                                            <option value="option-2">Active</option>
-                                                            <option value="option-3">Disabled</option>
-                                                            <option value="option-4">Show all</option>
-
-                                                      </select>
-                                                </div>
-                                          </div>
-                                    </nav>
 
 
                                     <div className="tab-content">
                                           <div className="tab-pane fade show active" id="orders-all" role="tabpanel" aria-labelledby="orders-all-tab">
                                                 <div className="app-card app-card-orders-table shadow mb-5">
                                                       <div className="app-card-body">
-                                                            <div className="table-responsive">
+                                                            <nav id="orders-table-tab" className="orders-table-tab app-nav-tabs nav flex-column flex-sm-row p-4  justify-content-between align-content-center">
+                                                                  <div className="col-12 col-sm-4 col-md-4 mx-a d-flex flex-grow">
+                                                                        <td><input className="form-check-input" type="checkbox" value="" id="RememberPassword" /></td>
+                                                                        <select className="form-select mx-4" >
+                                                                              <option selected value="option-1">All Category</option>
+                                                                              <option value="option-2">Electronics</option>
+                                                                              <option value="option-3">Clothes</option>
+                                                                              <option value="option-4">Automobile</option>
+
+                                                                        </select>
+                                                                  </div>
+                                                                  <div className='d-flex flex-row'>
+
+                                                                        <div className="mx-4">
+
+                                                                              <input type="date" name="searchorders" className=" form-select" placeholder="Search" />
+
+                                                                        </div>
+                                                                        <div className="">
+
+                                                                              <select className="form-select w-auto" >
+                                                                                    <option selected value="option-1">Status</option>
+                                                                                    <option value="option-2">Active</option>
+                                                                                    <option value="option-3">Disabled</option>
+                                                                                    <option value="option-4">Show all</option>
+
+                                                                              </select>
+                                                                        </div>
+                                                                  </div>
+                                                            </nav>
+                                                            <hr />
+                                                            <div className="table-responsive p-3">
                                                                   <table className="table app-table-hover mb-0 text-left">
                                                                         <tbody>
                                                                               <tr>
                                                                                     <td className="cell"><td><input className="form-check-input" type="checkbox" value="" id="RememberPassword" /></td></td>
                                                                                     <td className="cell"><span className="truncate"> <img className="img-thumbnail" src={image} style={{ height: "60px", width: "60px" }} alt="pic" /> &nbsp; <strong>Lorem ipsum dolor sit amet eget volutpat erat</strong> </span></td>
                                                                                     <td className="cell"><span>$34.50 </span></td>
-                                                                                    <td className="cell"><span className="badge bg-success rounded-pill p-2 px-3 " style={{ fontSize: "12px" }}>Active</span></td>
+                                                                                    <td className="cell"><button className="btn btn-sm  rounded-pill p-1" style={{ backgroundColor: "#ccf0d1", color: "green", fontSize: "12px", width: "75px" }}>Active</button></td>
+
                                                                                     <td className="cell">04.12.2020</td>
                                                                                     <td className="cell">
                                                                                           <div class="dropdown">
@@ -104,7 +107,7 @@ const ProductList = () => {
                                                                                     <td className="cell"><td><input className="form-check-input" type="checkbox" value="" id="RememberPassword" /></td></td>
                                                                                     <td className="cell"><span className="truncate"><img className="img-thumbnail" src={image} style={{ height: "60px", width: "60px" }} alt="pic" /> &nbsp;  <strong>Lorem ipsum dolor sit amet eget volutpat erat</strong></span></td>
                                                                                     <td className="cell"><span>$990.99</span></td>
-                                                                                    <td className="cell"><span className="badge bg-success rounded-pill p-2 px-3" style={{ fontSize: "12px" }}>Active</span></td>
+                                                                                    <td className="cell"><button className="btn btn-sm  rounded-pill p-1" style={{ backgroundColor: "#ccf0d1", color: "green", fontSize: "12px", width: "75px" }}>Active</button></td>
                                                                                     <td className="cell">04.12.2020</td>
                                                                                     <td className="cell">
                                                                                           <div class="dropdown">
@@ -135,7 +138,7 @@ const ProductList = () => {
                                                                                     <td className="cell"><td><input className="form-check-input" type="checkbox" value="" id="RememberPassword" /></td></td>
                                                                                     <td className="cell"><span className="truncate"><img className="img-thumbnail" src={image} style={{ height: "60px", width: "60px" }} alt="pic" />  &nbsp; <strong>Lorem ipsum dolor sit amet eget volutpat erat</strong></span></td>
                                                                                     <td className="cell"><span>$76.99</span></td>
-                                                                                    <td className="cell"><span className="badge bg-warning rounded-pill p-2 px-3" style={{ fontSize: "12px" }}>Archived</span></td>
+                                                                                    <td className="cell"><button className="btn btn-sm text-warning  rounded-pill p-1" style={{ backgroundColor: "rgba(255, 206, 86, 0.1)", fontSize: "12px", width: "75px" }}>Archived</button></td>
                                                                                     <td className="cell">04.12.2020</td>
                                                                                     <td className="cell">
                                                                                           <div class="dropdown">
@@ -165,9 +168,8 @@ const ProductList = () => {
                                                                               <tr>
                                                                                     <td className="cell"><td><input className="form-check-input" type="checkbox" value="" id="RememberPassword" /></td></td>
                                                                                     <td className="cell"><span className="truncate"><img className="img-thumbnail" src={image} style={{ height: "60px", width: "60px" }} alt="pic" /> &nbsp;  <strong>Lorem ipsum dolor sit amet eget volutpat erat</strong></span></td>
-
                                                                                     <td className="cell"><span>$18.00 </span></td>
-                                                                                    <td className="cell"><span className="badge bg-danger rounded-pill p-2 px-3" style={{ fontSize: "12px" }}>Disabled</span></td>
+                                                                                    <td className="cell"><button className="btn btn-sm text-danger  rounded-pill p-1" style={{ backgroundColor: "#fdcccc", fontSize: "12px", width: "75px" }}>Disabled</button></td>
                                                                                     <td className="cell">04.12.2020</td>
                                                                                     <td className="cell">
                                                                                           <div class="dropdown">
@@ -201,7 +203,7 @@ const ProductList = () => {
                                                                                     <td className="cell"><span className="truncate"><img className="img-thumbnail" src={image} style={{ height: "60px", width: "60px" }} alt="pic" />  &nbsp; <strong>Morbi vulputate lacinia neque et sollicitudin</strong> </span></td>
 
                                                                                     <td className="cell"><span className="cell-data">$76.99</span></td>
-                                                                                    <td className="cell"><span className="badge bg-success rounded-pill p-2 px-3" style={{ fontSize: "12px" }}>Active</span></td>
+                                                                                    <td className="cell"><button className="btn btn-sm  rounded-pill p-1" style={{ backgroundColor: "#ccf0d1", color: "green", fontSize: "12px", width: "75px" }}>Active</button></td>
                                                                                     <td className="cell">04.12.2020</td>
                                                                                     <td className="cell">
                                                                                           <div class="dropdown">
@@ -233,7 +235,7 @@ const ProductList = () => {
                                                                                     <td className="cell"><span className="truncate"><img className="img-thumbnail" src={image} style={{ height: "60px", width: "60px" }} alt="pic" /> &nbsp; <strong>Morbi vulputate lacinia neque et sollicitudin</strong></span></td>
 
                                                                                     <td className="cell"><span className="cell-data">$88.99</span></td>
-                                                                                    <td className="cell"><span className="badge bg-success rounded-pill p-2 px-3" style={{ fontSize: "12px" }}>Active</span></td>
+                                                                                    <td className="cell"><button className="btn btn-sm  rounded-pill p-1" style={{ backgroundColor: "#ccf0d1", color: "green", fontSize: "12px", width: "75px" }}>Active</button></td>
                                                                                     <td className="cell">04.12.2020</td>
                                                                                     <td className="cell">
                                                                                           <div class="dropdown">

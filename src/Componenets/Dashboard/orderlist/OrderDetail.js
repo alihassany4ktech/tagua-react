@@ -13,7 +13,7 @@ const OrderDetail = () => {
 
                                     <div className="row g-3 mb-4 mt-3 align-items-center justify-content-between">
                                           <div className="col-auto">
-                                                <h1 className="app-page-title mb-0 ">Orders Details</h1>
+                                                <h1 className="mb-0 " style={{ fontSize: "30px" }}>Orders Details</h1>
                                           </div>
                                     </div>
                                     <div className="tab-content">
@@ -164,8 +164,8 @@ const OrderDetail = () => {
                                                                   </div>
 
                                                                   <div class="col-12 col-lg-3  p-3 mt-5" style={{ height: "450px" }}>
-                                                                        <div className="row">
-                                                                              <div className="col-md-12 bg-light" style={{ marginTop: "-16px" }}>
+                                                                        <div className="row p-3">
+                                                                              <div className="col-md-12 bg-light p-2" style={{ marginTop: "-16px" }}>
                                                                                     <strong className="text-dark">Payment info</strong>
                                                                                     <p> <img src={mlogo} style={{ width: "30px", height: "20px" }} alt="mlogo" /> Master Card **** **** 4768 <br />
                                                                                           Business name: Grand Market LLC <br />

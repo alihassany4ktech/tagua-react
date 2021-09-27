@@ -13,6 +13,10 @@ import Category from "./category/Category";
 import OrderDetail from "./orderlist/OrderDetail";
 import CreateOrder from "./orderlist/CreateOrder";
 import CreateUser from "./users/CreateUser";
+import Setting from "./setting/Setting";
+import UserProfileEdit from "./users/UserPrfileEdit";
+import AdminProfile from "../admin/AdminProfile";
+import UserProfile from "./users/UserProfile";
 const MainDahsboard = () => {
       return (
             <>
@@ -141,10 +145,10 @@ const MainDahsboard = () => {
                                                             <div className="app-utility-item app-user-dropdown dropdown">
                                                                   <a className="dropdown-toggle" id="user-dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><img className="rounded-pill" src={user} alt="user profile" /></a>
                                                                   <ul className="dropdown-menu" aria-labelledby="user-dropdown-toggle">
-                                                                        <li><a className="dropdown-item" href="account.html">Account</a></li>
-                                                                        {/* <li><a className="dropdown-item" href="settings.html">Settings</a></li> */}
+                                                                        <li><NavLink activeClassName="active" className="dropdown-item" exact to="/admin/profile">My Profle</NavLink></li>
+                                                                        <li><NavLink activeClassName="active" className="dropdown-item" exact to="/setting">Settings</NavLink></li>
                                                                         <li><hr className="dropdown-divider" /></li>
-                                                                        <li><a className="dropdown-item" href="login.html">Log Out</a></li>
+                                                                        <li><a className="dropdown-item" href="/#">Log Out</a></li>
                                                                   </ul>
                                                             </div>
                                                       </div>
@@ -158,23 +162,26 @@ const MainDahsboard = () => {
                                     <div className="sidepanel-inner d-flex flex-column">
                                           <a href="#" id="sidepanel-close" className="sidepanel-close d-xl-none">&times;</a>
                                           <div className="app-branding text-center">
-                                                <a className="app-logo" href="index.html"><img className="logo-icon" src="assets/images/app-logo.png" alt="logo" /></a>
+                                                <NavLink exact to="/dashboard" className="app-logo"><img className="logo-icon" src="assets/images/app-logo.png" alt="logo" /></NavLink>
 
                                           </div>
 
                                           <nav id="app-nav-main" className="app-nav app-nav-main flex-grow-1">
+                                                <NavLink exact to="/admin/profile">
+                                                      <div className="p-4 hoverable"  >
+                                                            <div className="d-flex flex-row align-items-center">
+                                                                  <img class="icon-img rounded-pill" src={user} height="50" width="50" alt="image" />
 
-                                                <div className="p-4 hoverable"  >
-                                                      <div className="d-flex flex-row align-items-center">
-                                                            <img class="icon-img rounded-pill" src={user} height="50" width="50" alt="image" />
+                                                                  <div className="px-3 d-flex flex-column">
+                                                                        <span className="nav-link-text text-dark">Airbnb</span>
+                                                                        <small className="text-muted">Super admin</small>
+                                                                  </div>
 
-                                                            <div className="px-3 d-flex flex-column">
-                                                                  <span className="nav-link-text text-dark">Airbnb</span>
-                                                                  <small className="text-muted">Super admin</small>
                                                             </div>
-
                                                       </div>
-                                                </div>
+                                                </NavLink>
+
+
                                                 <ul className="app-menu list-unstyled accordion" id="menu-accordion">
                                                       <li className="nav-item">
                                                             <NavLink exact to="/dashboard" className="nav-link" activeClassName="active">
@@ -294,14 +301,14 @@ const MainDahsboard = () => {
                                                       </li>
 
                                                       <li className="nav-item">
-                                                            <NavLink exact to="/statistic" className="nav-link" activeClassName="active">
+                                                            <NavLink exact to="/setting" className="nav-link" activeClassName="active">
                                                                   <span className="nav-icon">
                                                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
                                                                               <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246  0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z" />
                                                                               <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.41 5-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z" />
                                                                         </svg>
                                                                   </span>
-                                                                  <span className="nav-link-text">Setting</span>
+                                                                  <span className="nav-link-text">Settings</span>
                                                             </NavLink>
                                                       </li>
 
@@ -342,7 +349,9 @@ const MainDahsboard = () => {
 
 
                         <Switch>
+
                               <Route exact path="/dashboard" component={Dashboard} />
+                              <Route exact path="/admin/profile" component={AdminProfile} />
                               <Route exact path="/product/list" component={ProductList} />
                               <Route exact path="/product/create" component={CreateProduct} />
                               <Route exact path="/product/edit" component={EditProduct} />
@@ -351,8 +360,11 @@ const MainDahsboard = () => {
                               <Route exact path="/order/create" component={CreateOrder} />
                               <Route exact path="/category" component={Category} />
                               <Route exact path="/users" component={User} />
+                              <Route exact path="/user/profile/edit" component={UserProfileEdit} />
+                              <Route exact path="/user/profile" component={UserProfile} />
                               <Route exact path="/user/create" component={CreateUser} />
                               <Route exact path="/calender" component={Calender} />
+                              <Route exact path="/setting" component={Setting} />
                         </Switch>
 
                   </BrowserRouter>

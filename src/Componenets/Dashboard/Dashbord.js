@@ -7,16 +7,16 @@ const Dashboard = () => {
 
       return (
             <>
-                  <div className="app-wrapper"  >
+                  <div className="app-wrapper">
                         {/* style={{ backgroundColor: "#f5f6fe" }} */}
-                        <div className="app-content pt-3 p-md-3 p-lg-4" >
-                              <div className="container-xl">
+                        <div className="app-content pt-3 p-md-3 p-lg-4" style={{ backgroundColor: "#f8f9fa" }} >
+                              <div className="container-xl" >
 
 
 
                                     <div className="row g-3 mb-4 align-items-center justify-content-between">
                                           <div className="col-auto">
-                                                <h1 className="app-page-title" style={{ fontSize: "28px", marginTop: "80px" }}>Dashboard</h1>
+                                                <h1 style={{ fontSize: "30px", marginTop: "80px" }}>Dashboard</h1>
                                           </div>
                                           <div className="col-auto" style={{ marginTop: "80px" }}>
                                                 <div className="page-utilities">
@@ -31,8 +31,8 @@ const Dashboard = () => {
 
                                     <div className="row g-4 mb-4">
                                           <div class="col-6 col-lg-4">
-                                                <div class="app-card app-card-basic d-flex flex-column align-items-start shadow-sm">
-                                                      <div class="app-card-header p-3 border-bottom-0">
+                                                <div class="app-card app-card-basic d-flex flex-column align-items-start shadow-sm h-100">
+                                                      <div class="app-card-header mx-3 border-bottom-0">
                                                             <div class="row align-items-center gx-3">
                                                                   <div class="col-auto">
                                                                         <div class="app-icon-holder">
@@ -55,8 +55,8 @@ const Dashboard = () => {
 
 
                                           <div class="col-6 col-lg-4">
-                                                <div class="app-card app-card-basic d-flex flex-column align-items-start shadow-sm">
-                                                      <div class="app-card-header p-3 border-bottom-0">
+                                                <div class="app-card app-card-basic d-flex flex-column align-items-start shadow-sm h-100">
+                                                      <div class="app-card-header mx-3 border-bottom-0">
                                                             <div class="row align-items-center gx-3">
                                                                   <div class="col-auto">
                                                                         <div class="app-icon-holder">
@@ -78,8 +78,8 @@ const Dashboard = () => {
                                           </div>
 
                                           <div class="col-6 col-lg-4">
-                                                <div class="app-card app-card-basic d-flex flex-column align-items-start shadow-sm">
-                                                      <div class="app-card-header p-3 border-bottom-0">
+                                                <div class="app-card app-card-basic d-flex flex-column align-items-start shadow-sm h-100">
+                                                      <div class="app-card-header mx-3 border-bottom-0">
                                                             <div class="row align-items-center gx-3">
                                                                   <div class="col-auto">
                                                                         <div class="app-icon-holder">

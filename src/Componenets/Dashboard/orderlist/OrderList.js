@@ -8,12 +8,12 @@ const OrderList = () => {
                   <div className="app-wrapper" >
                         <br />
                         <br />
-                        <div className="app-content pt-3 p-md-3 p-lg-4">
+                        <div className="app-content pt-3 p-md-3 p-lg-4" style={{ backgroundColor: "#f8f9fa" }}>
                               <div className="container-xl">
 
                                     <div className="row g-3 mt-3 mb-4 align-items-center justify-content-between">
                                           <div className="col-auto">
-                                                <h1 className="app-page-title mb-0">Orders</h1>
+                                                <h1 className="mb-0" style={{ fontSize: "30px" }}>Orders</h1>
                                           </div>
                                           <div className="col-auto">
                                                 <div className="page-utilities">
@@ -29,31 +29,33 @@ const OrderList = () => {
                                     </div>
 
 
-                                    <nav id="orders-table-tab" className="orders-table-tab app-nav-tabs nav shadow-sm flex-column flex-sm-row mb-4 p-2 justify-content-between align-content-center">
-                                          <div className="col-12 col-sm-4 col-md-4 mx-a d-flex flex-grow">
-                                                <input type="text" className="form-control" placeholder="Search..." />
 
-                                          </div>
-                                          <div className='d-flex flex-row'>
-                                                <div className="">
-
-                                                      <select className="form-select w-auto" >
-                                                            <option selected value="option-1">Status</option>
-                                                            <option value="option-2">Active</option>
-                                                            <option value="option-3">Disabled</option>
-                                                            <option value="option-4">Show all</option>
-
-                                                      </select>
-                                                </div>
-                                          </div>
-                                    </nav>
 
 
                                     <div className="tab-content">
                                           <div className="tab-pane fade show active" id="orders-all" role="tabpanel" aria-labelledby="orders-all-tab">
                                                 <div className="app-card app-card-orders-table shadow mb-5">
                                                       <div className="app-card-body">
-                                                            <div class="table-responsive">
+                                                            <nav id="orders-table-tab" className="orders-table-tab app-nav-tabs nav  flex-column flex-sm-row mb-4 p-4 justify-content-between align-content-center">
+                                                                  <div className="col-12 col-sm-4 col-md-4 mx-a d-flex flex-grow">
+                                                                        <input type="text" className="form-control" placeholder="Search..." />
+
+                                                                  </div>
+                                                                  <div className='d-flex flex-row'>
+                                                                        <div className="">
+
+                                                                              <select className="form-select w-auto" >
+                                                                                    <option selected value="option-1">Status</option>
+                                                                                    <option value="option-2">Active</option>
+                                                                                    <option value="option-3">Disabled</option>
+                                                                                    <option value="option-4">Show all</option>
+
+                                                                              </select>
+                                                                        </div>
+                                                                  </div>
+                                                            </nav>
+                                                            <hr style={{ marginTop: "-25px" }} />
+                                                            <div class="table-responsive p-3">
                                                                   <table class="table app-table-hover mb-0 text-left">
                                                                         <thead>
                                                                               <tr>
@@ -72,8 +74,7 @@ const OrderList = () => {
                                                                                     <td class="cell"><span class="truncate"> <strong>Lorem ipsum dolor sit amet eget volutpat erat</strong> </span></td>
                                                                                     <td class="cell">marvin@example.com</td>
                                                                                     <td class="cell"><span>$259.35</span></td>
-                                                                                    <td class="cell"><span className="badge bg-success rounded-pill p-2 px-3 " style={{ fontSize: "12px" }}>Active</span></td>
-                                                                                    <td class="cell">03.12.2020</td>
+                                                                                    <td className="cell"><button className="btn btn-sm  rounded-pill p-1" style={{ backgroundColor: "#ccf0d1", color: "green", fontSize: "12px", width: "75px" }}>Active</button></td>                                                                                    <td class="cell">03.12.2020</td>
                                                                                     <td class="cell">
                                                                                           <div class="dropdown">
                                                                                                 <button className="dropdown-toggle no-toggle-arrow btn btn-light" style={{ color: "gray" }} data-bs-toggle="dropdown" aria-expanded="false">
@@ -105,7 +106,9 @@ const OrderList = () => {
                                                                                     <td class="cell"><span class="truncate"><strong>Consectetur adipiscing elit</strong> </span></td>
                                                                                     <td class="cell">leslie@example.com</td>
                                                                                     <td class="cell"><span class="cell-data">$96.20</span></td>
-                                                                                    <td class="cell"><span className="badge bg-warning rounded-pill p-2 px-3" style={{ fontSize: "12px" }}>Pending</span></td>
+
+                                                                                    <td className="cell"><button className="btn btn-sm text-warning  rounded-pill p-1" style={{ backgroundColor: "rgba(255, 206, 86, 0.1)", fontSize: "12px", width: "75px" }}>Pending</button></td>
+
                                                                                     <td class="cell">21.02.2020</td>
                                                                                     <td class="cell">
                                                                                           <div class="dropdown">
@@ -137,8 +140,7 @@ const OrderList = () => {
                                                                                     <td class="cell"><span class="truncate"> <strong>Pellentesque diam imperdiet</strong> </span></td>
                                                                                     <td class="cell"> esther@example.com</td>
                                                                                     <td class="cell"><span class="cell-data">$123.00</span></td>
-                                                                                    <td class="cell"><span className="badge bg-success rounded-pill p-2 px-3 " style={{ fontSize: "12px" }}>Active</span></td>
-                                                                                    <td class="cell">03.07.2020</td>
+                                                                                    <td className="cell"><button className="btn btn-sm  rounded-pill p-1" style={{ backgroundColor: "#ccf0d1", color: "green", fontSize: "12px", width: "75px" }}>Active</button></td>                                                                                    <td class="cell">03.07.2020</td>
                                                                                     <td class="cell">
                                                                                           <div class="dropdown">
                                                                                                 <button className="dropdown-toggle no-toggle-arrow btn btn-light" style={{ color: "gray" }} data-bs-toggle="dropdown" aria-expanded="false">
@@ -170,8 +172,7 @@ const OrderList = () => {
                                                                                     <td class="cell"><span class="truncate"><strong>Vestibulum a accumsan lectus sed mollis ipsum</strong> </span></td>
                                                                                     <td class="cell">esther@example.com</td>
                                                                                     <td class="cell"><span class="cell-data">$199.00</span></td>
-                                                                                    <td class="cell"><span className="badge bg-success rounded-pill p-2 px-3 " style={{ fontSize: "12px" }}>Active</span></td>
-                                                                                    <td class="cell">03.07.2020</td>
+                                                                                    <td className="cell"><button className="btn btn-sm  rounded-pill p-1" style={{ backgroundColor: "#ccf0d1", color: "green", fontSize: "12px", width: "75px" }}>Active</button></td>                                                                                    <td class="cell">03.07.2020</td>
                                                                                     <td class="cell">
                                                                                           <div class="dropdown">
                                                                                                 <button className="dropdown-toggle no-toggle-arrow btn btn-light" style={{ color: "gray" }} data-bs-toggle="dropdown" aria-expanded="false">
@@ -203,7 +204,8 @@ const OrderList = () => {
                                                                                     <td class="cell"><span class="truncate"><strong>Justo feugiat neque</strong> </span></td>
                                                                                     <td class="cell">jenny@example.com</td>
                                                                                     <td class="cell"><span class="cell-data">$59.00</span></td>
-                                                                                    <td class="cell"><span className="badge bg-danger rounded-pill p-2 px-3" style={{ fontSize: "12px" }}>Canceled</span></td>
+                                                                                    <td className="cell"><button className="btn btn-sm text-danger  rounded-pill p-1" style={{ backgroundColor: "#fdcccc", fontSize: "12px", width: "75px" }}>Canceled</button></td>
+
                                                                                     <td class="cell">22.05.2020</td>
                                                                                     <td class="cell">
                                                                                           <div class="dropdown">
@@ -236,7 +238,7 @@ const OrderList = () => {
                                                                                     <td class="cell"><span class="truncate"> <strong>Morbi vulputate lacinia neque et sollicitudin</strong> </span></td>
                                                                                     <td class="cell">marvin@example.com</td>
                                                                                     <td class="cell"><span class="cell-data">$678.26</span></td>
-                                                                                    <td class="cell"><span className="badge bg-success rounded-pill p-2 px-3 " style={{ fontSize: "12px" }}>Active</span></td>
+                                                                                    <td className="cell"><button className="btn btn-sm  rounded-pill p-1" style={{ backgroundColor: "#ccf0d1", color: "green", fontSize: "12px", width: "75px" }}>Active</button></td>
                                                                                     <td class="cell">23.04.2020</td>
                                                                                     <td class="cell">
                                                                                           <div class="dropdown">
@@ -268,7 +270,7 @@ const OrderList = () => {
                                                                                     <td class="cell"><span class="truncate"> <strong>Morbi vulputate lacinia neque et sollicitudin</strong> </span></td>
                                                                                     <td class="cell">albert@example.com</td>
                                                                                     <td class="cell"><span class="cell-data">$678.26</span></td>
-                                                                                    <td class="cell"><span className="badge bg-success rounded-pill p-2 px-3 " style={{ fontSize: "12px" }}>Active</span></td>
+                                                                                    <td className="cell"><button className="btn btn-sm  rounded-pill p-1" style={{ backgroundColor: "#ccf0d1", color: "green", fontSize: "12px", width: "75px" }}>Active</button></td>
                                                                                     <td class="cell">13.03.2020</td>
                                                                                     <td class="cell">
                                                                                           <div class="dropdown">
@@ -300,7 +302,7 @@ const OrderList = () => {
                                                                                     <td class="cell"><span class="truncate"> <strong>Morbi vulputate lacinia neque et sollicitudin</strong> </span></td>
                                                                                     <td class="cell">albert@example.com</td>
                                                                                     <td class="cell"><span class="cell-data">$678.26</span></td>
-                                                                                    <td class="cell"><span className="badge bg-success rounded-pill p-2 px-3 " style={{ fontSize: "12px" }}>Active</span></td>
+                                                                                    <td className="cell"><button className="btn btn-sm  rounded-pill p-1" style={{ backgroundColor: "#ccf0d1", color: "green", fontSize: "12px", width: "75px" }}>Active</button></td>
                                                                                     <td class="cell">23.09.2019</td>
                                                                                     <td class="cell">
                                                                                           <div class="dropdown">
@@ -332,7 +334,7 @@ const OrderList = () => {
                                                                                     <td class="cell"><span class="truncate"> <strong>Morbi vulputate lacinia neque et sollicitudin</strong> </span></td>
                                                                                     <td class="cell">albert@example.com</td>
                                                                                     <td class="cell"><span class="cell-data">$678.26</span></td>
-                                                                                    <td class="cell"><span className="badge bg-success rounded-pill p-2 px-3 " style={{ fontSize: "12px" }}>Active</span></td>
+                                                                                    <td className="cell"><button className="btn btn-sm  rounded-pill p-1" style={{ backgroundColor: "#ccf0d1", color: "green", fontSize: "12px", width: "75px" }}>Active</button></td>
                                                                                     <td class="cell">28.04.2020</td>
                                                                                     <td class="cell">
                                                                                           <div class="dropdown">

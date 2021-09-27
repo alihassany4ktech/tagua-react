@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import userimg4 from "../users/userimages/user-5.jpg";
-import mlogo from "../../../mlogo.jpg";
-const CreateUser = () => {
+
+const UserProfileEdit = () => {
       const [imgData, setImgData] = useState(userimg4);
 
       const onChangePicture = e => {
@@ -24,13 +24,13 @@ const CreateUser = () => {
 
                                     <div className="row g-3 mb-4 text-center mt-2">
 
-                                          <h1 className="app-page-title mb-0">Create User</h1>
+                                          <h1 className="app-page-title mb-0">Edit User Profile</h1>
 
                                     </div>
                               </div>
 
                         </div>
-                        <div className="col-md-12 col-lg-7 mx-auto shadow-lg p-5 mb-4 ">
+                        <div className="col-md-7 mx-auto shadow-lg p-5 mb-4 ">
                               <form>
                                     <div className="row">
                                           <div className="col-md-8">
@@ -58,7 +58,6 @@ const CreateUser = () => {
                                                 </div>
                                           </div>
                                           <div className="col-md-4">
-
                                                 <div className="top-response d-flex flex-column">
                                                       <img className="rounded-pill" src={imgData} alt="profilepic" style={{ height: "200px", width: "200px" }} />
                                                       <label for="profilePic" className="btn  app-btn-secondary mt-4" style={{ marginTop: '-20px', width: "130px", marginLeft: "35px" }}>
@@ -73,8 +72,27 @@ const CreateUser = () => {
 
 
 
-                                    <button type="submit" className="btn mt-3 text-white" style={{ backgroundColor: "#E8C21E" }}>Create</button>
+                                    <button type="submit" className="btn mt-3 text-white" style={{ backgroundColor: "#E8C21E" }}>Update</button>
                               </form>
+                              <hr />
+
+
+                              <div class="row">
+                                    <div className="col-md-6 text-center">
+                                          <button type="button" className="btn  app-btn-secondary "> Change Password</button>
+
+                                    </div>
+                                    <div className="col-md-6 text-center">
+                                          <button type="button" className="btn  app-btn-secondary1 text-danger" > Deactive</button>
+
+                                    </div>
+
+
+
+
+                              </div>
+
+
 
                         </div>
 
@@ -84,5 +102,4 @@ const CreateUser = () => {
       );
 }
 
-
-export default CreateUser;
+export default UserProfileEdit;
