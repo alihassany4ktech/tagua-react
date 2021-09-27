@@ -35,3 +35,7 @@
     color: var(--white); 
     transform: scale(1.05);
 }
+.footer-icon-btn:focus{
+    outline:none;
+  box-shadow: none;
+}

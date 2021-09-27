@@ -1,11 +1,13 @@
 :root {
     --yellow: #E8C21E;
+    --yellow-light: #e7dca8;
     --black: #000000;
     --white: #FFFFFF;
 }
 html{
     overflow-x: hidden;
 }
+body{overflow-x: hidden;} 
 body{overflow-x: hidden;}
 .fab {
     width: 45px;
@@ -18,8 +20,8 @@ body{overflow-x: hidden;}
     color: var(--white);
     text-align: center;
     position: fixed;
-    right: 40px;
-    bottom: 40px;
+    right: 20px;
+    bottom: 20px;
     z-index: 1;
     padding: 5px;
 }
@@ -29,3 +31,51 @@ body{overflow-x: hidden;}
     box-shadow: 0 6px 14px 0 #666;
     transform: scale(1.05); 
 } 
+.paginationBttnsLight {  
+    width: fit-content;
+    height: 40px;
+    list-style: none;
+    display: flex; 
+    margin-left: auto;   
+    margin-top: 2vh;
+  }
+  .paginationBttnsLight a {  
+    border-radius: 5vh;
+    padding-left: 2vh;
+    padding-right: 2vh; 
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    margin: 3px;    
+    cursor: pointer;
+    background-color: var(--yellow-light);  
+    text-decoration: none; ;
+  }
+  .previousBttnLight,.nextBttnLight {
+    border-radius: 5vh;
+    padding-left: 2vh;
+    padding-right: 2vh; 
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    margin: 8px; 
+    border: 2px solid var(--yellow);  
+    color: #000000 !important;
+    cursor: pointer;
+    background-color: var(--yellow-light);  
+    text-decoration: none;
+  }
+  .paginationBttnsLight a:hover {
+    color: var(--green);
+    opacity: 0.8;
+  }
+  .paginationDisabledLight {
+    opacity: 0.5;
+  }
+  .paginationDisabledLight :hover {
+    cursor: inherit;
+  }
+  .paginationActiveLight a{  
+    color: #FFFFFF !important;
+    cursor: pointer;
+    background-color: var(--yellow);  
+    text-decoration: none;
+  } 

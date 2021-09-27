@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Navbar.css';
 import MenuDrop from './MenuDrop/MenuDrop';
 const SearchBar = () => {
@@ -32,7 +33,9 @@ const SearchBar = () => {
         <>
             <div className='container-fluid'>
                 <div className='row bg-yellow searchBar'> 
-                    <div className='col-lg-1 mx-auto'></div>
+                    <div className='col-lg-1 mx-auto'>
+                    <Link className='btn' to="/allproducts">All Product</Link> 
+                    </div>
                     <div className='col-sm-6 col-md-6 col-lg-4 col-xl-3 my-2'>
                         <MenuDrop title='Select Your Holsters By Gun' items={items} />
                     </div>
