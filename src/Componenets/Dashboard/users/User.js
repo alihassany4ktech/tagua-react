@@ -2,14 +2,13 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import userimg from "../users/userimages/user-1.jpg";
 import userimg1 from "../users/userimages/user-2.jpg";
-import userimg2 from "../users/userimages/user-3.jpg";
 import userimg3 from "../users/userimages/user-4.jpg";
 import userimg4 from "../users/userimages/user-5.jpg";
 import userimg5 from "../users/userimages/user-6.jpg";
 import userimg6 from "../users/userimages/user-7.jpg";
 import userimg7 from "../users/userimages/user-8.jpg";
 import userimg8 from "../users/userimages/user-9.jpg";
-
+import ReactPaginate from 'react-paginate';
 
 
 
@@ -48,11 +47,11 @@ const User = () => {
                                                 <div className="app-card app-card-orders-table shadow mb-5">
                                                       <div className="app-card-body">
                                                             <nav id="orders-table-tab" className="orders-table-tab app-nav-tabs nav  flex-column flex-sm-row mb-4 p-4 justify-content-between align-content-center">
-                                                                  <div className="col-12 col-sm-4 col-md-4 mx-a d-flex flex-grow">
+                                                                  <div className="col-12 col-sm-4 col-md-4 mx-a d-flex flex-grow mt-1">
                                                                         <input type="text" className="form-control" placeholder="Search..." />
 
                                                                   </div>
-                                                                  <div className='d-flex flex-row'>
+                                                                  <div className='d-flex flex-row mt-1'>
                                                                         <div className="">
 
                                                                               <select className="form-select w-auto" >
@@ -103,10 +102,10 @@ const User = () => {
                                                                                                       </svg>Edit</NavLink></li>
 
                                                                                                       <li><hr class="dropdown-divider" /></li>
-                                                                                                      <li><a class="dropdown-item" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                                                                      <li><NavLink exact to="/users" class="dropdown-item"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                                                                                             <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z" />
                                                                                                             <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4L4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z" />
-                                                                                                      </svg>Delete</a></li>
+                                                                                                      </svg>Delete</NavLink></li>
                                                                                                 </ul>
                                                                                           </div>
                                                                                     </td>
@@ -135,10 +134,10 @@ const User = () => {
                                                                                                       </svg>Edit</NavLink></li>
 
                                                                                                       <li><hr className="dropdown-divider" /></li>
-                                                                                                      <li><a className="dropdown-item" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                                                                      <li><NavLink exact to="/users" class="dropdown-item"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                                                                                             <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z" />
                                                                                                             <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4L4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z" />
-                                                                                                      </svg>Delete</a></li>
+                                                                                                      </svg>Delete</NavLink></li>
                                                                                                 </ul>
                                                                                           </div>
                                                                                     </td>
@@ -167,10 +166,10 @@ const User = () => {
                                                                                                       </svg>Edit</NavLink></li>
 
                                                                                                       <li><hr className="dropdown-divider" /></li>
-                                                                                                      <li><a className="dropdown-item" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" className="bi bi-trash me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                                                                      <li><NavLink exact to="/users" class="dropdown-item"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                                                                                             <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z" />
                                                                                                             <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4L4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z" />
-                                                                                                      </svg>Delete</a></li>
+                                                                                                      </svg>Delete</NavLink></li>
                                                                                                 </ul>
                                                                                           </div>
                                                                                     </td>
@@ -199,10 +198,10 @@ const User = () => {
                                                                                                       </svg>Edit</NavLink></li>
 
                                                                                                       <li><hr className="dropdown-divider" /></li>
-                                                                                                      <li><a className="dropdown-item" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                                                                      <li><NavLink exact to="/users" class="dropdown-item"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                                                                                             <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z" />
                                                                                                             <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4L4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z" />
-                                                                                                      </svg>Delete</a></li>
+                                                                                                      </svg>Delete</NavLink></li>
                                                                                                 </ul>
                                                                                           </div>
                                                                                     </td>
@@ -231,10 +230,10 @@ const User = () => {
                                                                                                       </svg>Edit</NavLink></li>
 
                                                                                                       <li><hr className="dropdown-divider" /></li>
-                                                                                                      <li><a className="dropdown-item" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" className="bi bi-trash me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                                                                      <li><NavLink exact to="/users" class="dropdown-item"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                                                                                             <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z" />
                                                                                                             <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4L4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z" />
-                                                                                                      </svg>Delete</a></li>
+                                                                                                      </svg>Delete</NavLink></li>
                                                                                                 </ul>
                                                                                           </div>
                                                                                     </td>
@@ -263,10 +262,10 @@ const User = () => {
                                                                                                       </svg>Edit</NavLink></li>
 
                                                                                                       <li><hr className="dropdown-divider" /></li>
-                                                                                                      <li><a className="dropdown-item" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" className="bi bi-trash me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                                                                      <li><NavLink exact to="/users" class="dropdown-item"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                                                                                             <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z" />
                                                                                                             <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4L4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z" />
-                                                                                                      </svg>Delete</a></li>
+                                                                                                      </svg>Delete</NavLink></li>
                                                                                                 </ul>
                                                                                           </div>
                                                                                     </td>
@@ -295,10 +294,10 @@ const User = () => {
                                                                                                       </svg>Edit</NavLink></li>
 
                                                                                                       <li><hr className="dropdown-divider" /></li>
-                                                                                                      <li><a className="dropdown-item" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" className="bi bi-trash me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                                                                      <li><NavLink exact to="/users" class="dropdown-item"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                                                                                             <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z" />
                                                                                                             <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4L4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z" />
-                                                                                                      </svg>Delete</a></li>
+                                                                                                      </svg>Delete</NavLink></li>
                                                                                                 </ul>
                                                                                           </div>
                                                                                     </td>
@@ -327,10 +326,10 @@ const User = () => {
                                                                                                       </svg>Edit</NavLink></li>
 
                                                                                                       <li><hr className="dropdown-divider" /></li>
-                                                                                                      <li><a className="dropdown-item" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" className="bi bi-trash me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                                                                      <li><NavLink exact to="/users" class="dropdown-item"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                                                                                             <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z" />
                                                                                                             <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4L4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z" />
-                                                                                                      </svg>Delete</a></li>
+                                                                                                      </svg>Delete</NavLink></li>
                                                                                                 </ul>
                                                                                           </div>
                                                                                     </td>
@@ -343,19 +342,20 @@ const User = () => {
 
                                                       </div>
                                                 </div>
-                                                <nav className="app-pagination">
-                                                      <ul className="pagination justify-content-center">
-                                                            <li className="page-item disabled">
-                                                                  <a className="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
-                                                            </li>
-                                                            <li className="page-item active"><a className="page-link" href="#">1</a></li>
-                                                            <li className="page-item"><a className="page-link" href="#">2</a></li>
-                                                            <li className="page-item"><a className="page-link" href="#">3</a></li>
-                                                            <li className="page-item">
-                                                                  <a className="page-link" href="#">Next</a>
-                                                            </li>
-                                                      </ul>
-                                                </nav>
+                                                <div className="overflow-auto">
+                                                      <ReactPaginate
+                                                            previousLabel={"Prev"}
+                                                            nextLabel={"Next"}
+                                                            // pageCount={pageCount}
+                                                            // onPageChange={changePage}
+                                                            containerClassName={"paginationBttnsLight1"}
+                                                            previousLinkClassName={"previousBttnLight1"}
+                                                            nextLinkClassName={"nextBttnLight1"}
+                                                            disabledClassName={"paginationDisabledLight1"}
+                                                            activeClassName={"paginationActiveLight1"}
+                                                      />
+
+                                                </div>
 
                                           </div>
                                     </div>

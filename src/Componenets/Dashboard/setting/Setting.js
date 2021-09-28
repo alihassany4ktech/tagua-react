@@ -1,7 +1,8 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+import React, { useState } from "react";
+import { CKEditor } from '@ckeditor/ckeditor5-react';
+import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 const Setting = () => {
-
+      const [text, setText] = useState("")
       return (
             <>
                   <div className="app-wrapper" >
@@ -73,7 +74,14 @@ const Setting = () => {
                                                                               </div>
                                                                               <div className="mb-3">
                                                                                     <label for="setting-input-2" className="form-label text-dark">Description</label>
-                                                                                    <textarea className="form-control" name="" style={{ height: "90px" }} id="" cols="30" rows="10" placeholder="Type here..."></textarea>
+                                                                                    <CKEditor
+                                                                                          editor={ClassicEditor}
+                                                                                          data={text}
+                                                                                          onChange={(event, editor) => {
+                                                                                                const data = editor.getData()
+                                                                                                setText(data)
+                                                                                          }}
+                                                                                    />
                                                                               </div>
 
                                                                               <button type="submit" className="btn app-btn-primary" >Save Changes</button>

@@ -1,7 +1,9 @@
-import React, { useState } from "react"; 
-
+import React, { useState } from "react";
+import { CKEditor } from '@ckeditor/ckeditor5-react';
+import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 const CreateProduct = () => {
-
+      const [text, setText] = useState("")
+      console.log(text);
       let options = [
             {
                   value: 1,
@@ -48,12 +50,19 @@ const CreateProduct = () => {
                         <div className="col-md-7 mx-auto shadow-lg p-5 mb-4 ">
                               <form>
                                     <div className="form-group mb-5">
-                                          <label className="mb-1 text-dark" for="exampleInputEmail1">Product Title</label>
-                                          <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" />
+                                          <label className="mb-1 text-dark" for="exampleInputEmail1">Product Name</label>
+                                          <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter name" />
                                     </div>
                                     <div class="form-group mb-3">
                                           <label className="mb-1 text-dark" for="exampleFormControlTextarea1">Full Description</label>
-                                          <textarea class="form-control" style={{ height: "150px" }} rows="10" placeholder="type here.."></textarea>
+                                          <CKEditor
+                                                editor={ClassicEditor}
+                                                data={text}
+                                                onChange={(event, editor) => {
+                                                      const data = editor.getData()
+                                                      setText(data)
+                                                }}
+                                          />
                                     </div>
                                     <div className="form-group mb-3">
                                           <label className="mb-1 text-dark" for="exampleInputEmail1">Image</label>

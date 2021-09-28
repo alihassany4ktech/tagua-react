@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import image from "../../../doc-thumb-2.jpg";
 import ReactPaginate from 'react-paginate';
 
-const ProductList = () => {
+const Blog = () => {
       return (
             <>
                   <div className="app-wrapper" >
@@ -14,7 +14,7 @@ const ProductList = () => {
 
                                     <div className="row g-3 mb-4 mt-3 align-items-center justify-content-between">
                                           <div className="col-auto">
-                                                <h1 className="mb-0" style={{ fontSize: "30px" }}>Products</h1>
+                                                <h1 className="mb-0" style={{ fontSize: "30px" }}>Blogs</h1>
                                           </div>
                                           <div className="col-auto">
                                                 <div className="page-utilities">
@@ -22,7 +22,7 @@ const ProductList = () => {
 
 
                                                             <div className="col-auto">
-                                                                  <NavLink exact to="/product/create" type="submit" className="btn  app-btn-secondary "> <i className="fa fa-plus"></i> Create Product</NavLink>
+                                                                  <NavLink exact to="/blog/create" type="submit" className="btn  app-btn-secondary "> <i className="fa fa-plus"></i> Create Blog</NavLink>
                                                             </div>
                                                       </div>
                                                 </div>
@@ -95,10 +95,10 @@ const ProductList = () => {
                                                                                                       </svg>Edit</NavLink></li>
 
                                                                                                       <li><hr class="dropdown-divider" /></li>
-                                                                                                      <li><NavLink exact to="/product/list" class="dropdown-item"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                                                                      <li><a class="dropdown-item" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                                                                                             <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z" />
                                                                                                             <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4L4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z" />
-                                                                                                      </svg>Delete</NavLink></li>
+                                                                                                      </svg>Delete</a></li>
                                                                                                 </ul>
                                                                                           </div>
                                                                                     </td>
@@ -126,10 +126,10 @@ const ProductList = () => {
                                                                                                       </svg>Edit</a></li>
 
                                                                                                       <li><hr class="dropdown-divider" /></li>
-                                                                                                      <li><NavLink exact to="/product/list" class="dropdown-item"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                                                                      <li><a class="dropdown-item" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                                                                                             <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z" />
                                                                                                             <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4L4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z" />
-                                                                                                      </svg>Delete</NavLink></li>
+                                                                                                      </svg>Delete</a></li>
                                                                                                 </ul>
                                                                                           </div>
                                                                                     </td>
@@ -157,10 +157,10 @@ const ProductList = () => {
                                                                                                       </svg>Edit</a></li>
 
                                                                                                       <li><hr class="dropdown-divider" /></li>
-                                                                                                      <li><NavLink exact to="/product/list" class="dropdown-item"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                                                                      <li><a class="dropdown-item" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                                                                                             <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z" />
                                                                                                             <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4L4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z" />
-                                                                                                      </svg>Delete</NavLink></li>
+                                                                                                      </svg>Delete</a></li>
                                                                                                 </ul>
                                                                                           </div>
                                                                                     </td>
@@ -188,10 +188,10 @@ const ProductList = () => {
                                                                                                       </svg>Edit</a></li>
 
                                                                                                       <li><hr class="dropdown-divider" /></li>
-                                                                                                      <li><NavLink exact to="/product/list" class="dropdown-item"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                                                                      <li><a class="dropdown-item" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                                                                                             <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z" />
                                                                                                             <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4L4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z" />
-                                                                                                      </svg>Delete</NavLink></li>
+                                                                                                      </svg>Delete</a></li>
                                                                                                 </ul>
                                                                                           </div>
                                                                                     </td>
@@ -222,10 +222,10 @@ const ProductList = () => {
                                                                                                       </svg>Edit</a></li>
 
                                                                                                       <li><hr class="dropdown-divider" /></li>
-                                                                                                      <li><NavLink exact to="/product/list" class="dropdown-item"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                                                                      <li><a class="dropdown-item" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                                                                                             <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z" />
                                                                                                             <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4L4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z" />
-                                                                                                      </svg>Delete</NavLink></li>
+                                                                                                      </svg>Delete</a></li>
                                                                                                 </ul>
                                                                                           </div>
                                                                                     </td>
@@ -254,10 +254,10 @@ const ProductList = () => {
                                                                                                       </svg>Edit</a></li>
 
                                                                                                       <li><hr class="dropdown-divider" /></li>
-                                                                                                      <li><NavLink exact to="/product/list" class="dropdown-item"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                                                                      <li><a class="dropdown-item" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                                                                                             <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z" />
                                                                                                             <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4L4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z" />
-                                                                                                      </svg>Delete</NavLink></li>
+                                                                                                      </svg>Delete</a></li>
                                                                                                 </ul>
                                                                                           </div>
                                                                                     </td>
@@ -296,4 +296,4 @@ const ProductList = () => {
       );
 }
 
-export default ProductList;
+export default Blog;

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { CKEditor } from '@ckeditor/ckeditor5-react';
 import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 
-const CreateOrder = () => {
+const EditOrder = () => {
       const [text, setText] = useState("")
       return (
             <>
@@ -14,7 +14,7 @@ const CreateOrder = () => {
 
                                     <div className="row g-3 mb-4 text-center mt-2">
 
-                                          <h1 className="mb-0" style={{ fontSize: "30px" }}>Create Order</h1>
+                                          <h1 className="mb-0" style={{ fontSize: "30px" }}>Edit Order</h1>
 
                                     </div>
                               </div>
@@ -98,7 +98,7 @@ const CreateOrder = () => {
                                     </div>
 
 
-                                    <button type="submit" className="btn mt-4 text-white" style={{ backgroundColor: "#E8C21E" }}>Submit item</button>
+                                    <button type="submit" className="btn mt-4 text-white" style={{ backgroundColor: "#E8C21E" }}>Update item</button>
                               </form>
                         </div>
 
@@ -108,4 +108,4 @@ const CreateOrder = () => {
       );
 }
 
-export default CreateOrder;
+export default EditOrder;
