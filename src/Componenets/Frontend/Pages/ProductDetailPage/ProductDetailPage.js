@@ -1,8 +1,5 @@
-import React, { useState } from 'react'
-import Footer from '../../Home/Components/Footer/Footer';
-import Navbar from '../../Navbar/Navbar';
+import React, { useState } from 'react';
 import './ProductDetailPage.css';
-import ImageGallery from 'react-image-gallery';
 import MenuDrop from '../../Navbar/MenuDrop/MenuDrop';
 import CartCounter from './CartCounter';
 import ReactStars from "react-rating-stars-component";
@@ -13,7 +10,7 @@ const ProductDetailPage = (props) => {
     const images = [
         {
             original: 'images/web-image.jpg',
-            thumbnail: 'images/web-image.jpg', 
+            thumbnail: 'images/web-image.jpg',
         },
         {
             original: 'images/special-offer.jpg',
@@ -21,7 +18,7 @@ const ProductDetailPage = (props) => {
         },
         {
             original: 'images/web-image.jpg',
-            thumbnail: 'images/web-image.jpg', 
+            thumbnail: 'images/web-image.jpg',
         },
     ];
     const items = [
@@ -52,33 +49,37 @@ const ProductDetailPage = (props) => {
     ];
     return (
         <>
-            
-                <div className='row'>
-                    <div className='col-12 col-sm-12 col-md-7 col-lg-7 p-0'>
-                        <ProductGallery images={images}/> 
-                    </div>
-                    <div className='col-12 col-sm-12 col-md-5 col-lg-5 product-detail-wrapper py-2 py-md-3 py-lg-5  px-xl-5'>
-                        <h2>TAGUA ECOLEATHER-PINK WEIGHTLESS 4 IN 1 OPEN TOP HOLSTER</h2>
-                        <h3 className='m-0'>$145</h3>
-                        <ReactStars
-                            count={5}
-                            value={3.5} 
-                            size={24}
-                            activeColor="#E8C21E"
-                            edit={false}
-                            isHalf={true}
-                        />
-                        <p>Lightweight, low profile, tough and comfortable. These, among others are some of the best words to describe the Foundation Series Gunbelt. </p>
-                        <MenuDrop title='Select Size' items={items} />
-                        <MenuDrop title='Select Color' items={items} styles={{ marginTop: 10 }} />
-                        <div className='d-flex flex-row justify-content-center align-items-center mt-3'>
-                            <CartCounter />
-                            <button className='btn add-card-btn mx-3'>Add to Cart</button>
-                        </div>
-                        
-                    </div>
+
+            <div className='row'>
+                <div className='col-12 col-sm-12 col-md-7 col-lg-7 p-0'>
+                    <ProductGallery images={images} />
                 </div>
-                
+                <div className='col-12 col-sm-12 col-md-5 col-lg-5 product-detail-wrapper py-2 py-md-3 py-lg-5  px-xl-5'>
+                    <h2>TAGUA ECOLEATHER-PINK WEIGHTLESS 4 IN 1 OPEN TOP HOLSTER</h2>
+                    <h3 className='m-0'>$145</h3>
+                    <ReactStars
+                        count={5}
+                        value={3.5}
+                        size={24}
+                        activeColor="#E8C21E"
+                        edit={false}
+                        isHalf={true}
+                    />
+                    <p>Lightweight, low profile, tough and comfortable. These, among others are some of the best words to describe the Foundation Series Gunbelt. </p>
+                    <div className='w-50'>
+                        <MenuDrop title='Guns' items={items} width='100%' />
+                    </div>
+                    <div className='w-50'>
+                        <MenuDrop title='Select Color' items={items} styles={{ marginTop: 10 }} width='100%' />
+                    </div>
+                    <div className='d-flex flex-row justify-content-center align-items-center mt-3'>
+                        <CartCounter />
+                        <button className='btn add-card-btn mx-3'>Add to Cart</button>
+                    </div>
+
+                </div>
+            </div>
+
 
         </>
     );

@@ -25,10 +25,10 @@ const Footer = (props) => {
                                     <p>Terms & Conditions</p>
                                     <p>Contact Us</p>
                                 </div>
-                                <div className='col-sm-12 col-md-6 col-lg-6 py-5'>
+                                <div className='col-sm-12 col-md-6 col-lg-6 py-5 footer-wrapper'>
                                     <h3 className='text-white mb-4'>Keep in Touch</h3>
-                                    <strong className='text-white'>Signup for our newsletter and be the first to<br /> know about the coupons ans special promotions.</strong>
-                                    <input type="email" className="form-control rounded-pill border-0 my-3" aria-describedby="emailHelp" placeholder="   Sign up with email.." />
+                                    <p className='text-white'>Signup for our newsletter and be the first to<br /> know about the coupons ans special promotions.</p>
+                                    <input type="email" className="form-control rounded-pill border-0 my-3" aria-describedby="emailHelp" placeholder="Sign up with email.." />
                                     <div>
                                         <button className='footer-icon-btn'>
                                             <i class="bi bi-twitter"></i>

@@ -7,7 +7,7 @@ const ContactBar = () => {
         <>
             <div className='container-fluid'>
                 <div className='row bg-black contact-bar'>
-                    <div className='col-sm-12 col-md-12 col-lg-12 col-xl-10 mx-auto d-flex flex-row justify-content-between'>
+                    <div className='col-sm-12 col-md-12 col-lg-12 col-xl-12 mx-auto d-flex flex-row justify-content-around'>
                         <div className='d-flex flex-row'>
                             <ContactItemGroup
                                 iconClass='bi bi-telephone'

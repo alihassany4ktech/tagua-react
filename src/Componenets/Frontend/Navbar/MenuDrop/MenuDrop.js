@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './MenuDrop.css';
 import OutsideClickHandler from 'react-outside-click-handler'; 
 
-function Dropdown({ title, items, styles, multiSelect = false }) {
+function Dropdown({ title, items, styles, width,multiSelect = false }) {
     const [name, setName] = useState(title); 
     const [open, setOpen] = useState(false);
     const [selection, setSelection] = useState([]); 
@@ -45,9 +45,10 @@ function Dropdown({ title, items, styles, multiSelect = false }) {
                     className="dd-header" 
                     onKeyPress={() => toggle(!open)}
                     onClick={() => toggle(!open)}
+                    style={{width:width}}
                 >
                     <div className="dd-header__title">
-                        <p className="dd-header__title--bold">{name}</p>
+                        <p className="dd-header__title--bold mx-2">{name}</p>
                     </div>
                     <div className="dd-header__title">
                         <p className='dd-header__title--bold'>{open ? <i class="bi bi-caret-up"></i> : <i class="bi bi-caret-down"></i>}</p>

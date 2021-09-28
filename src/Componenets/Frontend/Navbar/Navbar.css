@@ -17,8 +17,7 @@
 } 
 .nav-contact-span p{
     color: var(--yellow);
-    font-size: 12px;
-    font-weight: 700;
+    font-size: 14px;  
 }
 .toolbar{ 
     width: 100%; 
@@ -30,22 +29,27 @@
     justify-content: space-around;
 }
 .toolbar_logo img{
-    width: 120px;
+    width: 176px;
     height: 60px;
     object-fit: contain;
 }
-.toolbar_search_wrapper{
-    width: 30vw;
+.toolbar_search_wrapper input{
+    padding-left: 25px !important;
+    width: 570px;
+    height: 47px;
 }  
 .toolbar_yellow_btn .btn{
+    width: 205px;
+    height: 47px;
     border-radius: 0;
+    font-size: 16px; 
 }
 .toolbar_yellow_btn .btn:hover{
     opacity: 0.8;
 }
 .toolbar_nav_icon_span i{  
     color: var(--yellow);  
-    font-size: 28px;
+    font-size: 32px;
 }
 .toolbar_nav_icon_group{
     display: inline-flex;
@@ -53,13 +57,12 @@
 }
 .toolbar_nav_icon_group i{  
     color: var(--yellow);  
-    font-size: 22px;
+    font-size: 25px;
 }
 .toolbar_nav_icon_group p{
     color: var(--white);
     margin: 0; 
-    font-size: 12px;
-    font-weight: 700;
+    font-size: 16px; 
 }
 
 @media screen and (max-width:910px){
@@ -88,14 +91,18 @@
     .searchBar .searchBar_btn_wrapper{
         text-align: center;
     }
-}
+} 
 .searchBar .searchBar_btn_wrapper .btn{
     background-color: var(--black);
     border-radius: 0;
     color: var(--white);
-    height: 35px;
+    height: 30px;
     padding: 0 2rem; 
+    font-size: 14px;
 }
 .searchBar .searchBar_btn_wrapper .btn:hover{
     opacity: 0.8;
+}
+.menu-item-wrapper .btn{
+    font-size: 16px;
 }

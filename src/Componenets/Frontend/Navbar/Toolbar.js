@@ -1,6 +1,7 @@
 import React from 'react'
 import './Navbar.css';
 import ToggleButton from './ToggleButton/ToggleButton';
+import { Link } from 'react-router-dom';
 
 const Toolbar = (props) => {
     return (
@@ -11,10 +12,12 @@ const Toolbar = (props) => {
                         <ToggleButton click={props.drawerClickHandler} />
                     </div>
                     <div className='toolbar_logo'>
-                        <img src='assets/images/app-logo.png' alt='brand logo'></img>
+                        <Link to="/home">
+                            <img src='assets/images/app-logo.png' alt='brand logo'></img>
+                        </Link>
                     </div>
                     <div className='toolbar_search_wrapper'>
-                        <input type="email" className="form-control rounded-pill border-0 px-2" aria-describedby="emailHelp" placeholder=" Search the store" />
+                        <input type="email" className="form-control rounded-pill border-0 my-auto px-2" aria-describedby="emailHelp" placeholder="Search the store" />
                     </div>
                     <div className='d-flex flex-row align-items-center'>
                         <span className='toolbar_yellow_btn'>
@@ -25,7 +28,7 @@ const Toolbar = (props) => {
                             <i className='bi bi-bag'></i>
                             <p className='mx-2'>5 items - $39.95</p>
                         </span>
-                    </div> 
+                    </div>
                 </nav>
             </header>
         </>

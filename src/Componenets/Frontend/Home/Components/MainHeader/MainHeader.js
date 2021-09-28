@@ -7,7 +7,7 @@ const MainHeader = () => {
                 <div className='col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 bg-black rounded-50'>
                     <div className='col-8 mx-auto header-content-wrapper'>
                         <h2 className='text-white'>Search the Perfect Holsters that suits you</h2>
-                        <strong className='text-white mb-4'>Lorem ipsum dolor sit amet, consectetur adipiscing, dolor sit amet</strong>
+                        <p className='text-white mb-4'>Lorem ipsum dolor sit amet, consectetur adipiscing, dolor sit amet</p>
                         <button>Shop Now</button>
                     </div>
                 </div>

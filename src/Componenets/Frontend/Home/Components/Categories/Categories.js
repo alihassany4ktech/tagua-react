@@ -13,10 +13,10 @@ const Categories = (props) => {
     return (
         <>
             <div className='row'>
-                <div className="container-fluid bg-black">
+                <div className="container-fluid bg-black category-wrapper">
                     <div className='col-sm-7 col-md-7 col-lg-5 my-5 mx-auto text-center'>
                         <h2 className='color-yellow'>Categories</h2>
-                        <p className='color-yellow mt-3'><small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida porttitor lorem in blandit. Etiam id venenatis nisl.</small></p>
+                        <p className='color-yellow mt-3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida porttitor lorem in blandit. Etiam id venenatis nisl.</p>
                     </div>
                     <div className='col-sm-10 mx-auto'>
                         <div className='row'>

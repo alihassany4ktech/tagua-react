@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import SearchBar from './SearchBar';
 import './Navbar.css';
 const Menubar = () => {
     const [openSearchBar, setOpenSearchBar] = useState(false); 
@@ -9,6 +10,7 @@ const Menubar = () => {
                     <div className='col-4'>
                         <button onClick={() => {setOpenSearchBar(!openSearchBar)}}>Search Menu</button>
                     </div>
+                {openSearchBar && <SearchBar />}
                 </div>
             </div>
 

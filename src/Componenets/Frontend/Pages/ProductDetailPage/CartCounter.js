@@ -14,11 +14,11 @@ const CartCounter = () => {
         <>
             <div className='d-flex flex-row justify-content-center align-items-center'>
                 <button className="icon-btn" onClick={() => {decrementHandler()}}>
-                    <i class="bi bi-dash text-dark"></i>
+                    <i class="bi bi-dash"></i>
                 </button>
                 <strong className='mx-2'>{count}</strong>
                 <button className="icon-btn" onClick={() => {incremetHandler()}}>
-                    <i class="bi bi-plus text-dark"></i>
+                    <i class="bi bi-plus"></i>
                 </button>
             </div>
         </>
