@@ -1,6 +1,6 @@
 :root {
     --yellow: #E8C21E;
-    --yellow-light: #e7dca8;
+    --yellow-light: rgba(255, 206, 86, 0.1);
     --black: #000000;
     --white: #FFFFFF;
 }

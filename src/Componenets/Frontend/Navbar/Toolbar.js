@@ -7,7 +7,7 @@ const Toolbar = (props) => {
     return (
         <>
             <header className='toolbar'>
-                <nav className='toolbar_nav py-1'>
+                <nav className='toolbar_nav py-2'>
                     <div className='toolbar_toggler'>
                         <ToggleButton click={props.drawerClickHandler} />
                     </div>
@@ -24,10 +24,12 @@ const Toolbar = (props) => {
                             <button className='btn bg-yellow'>Access Dealer Area</button>
                         </span>
                         <span className='toolbar_nav_icon_span mx-3'><i className='bi bi-person'></i></span>
-                        <span className='toolbar_nav_icon_group'>
-                            <i className='bi bi-bag'></i>
-                            <p className='mx-2'>5 items - $39.95</p>
-                        </span>
+                        <Link to='/cart'>
+                            <span className='toolbar_nav_icon_group'>
+                                <i className='bi bi-bag'></i>
+                                <p className='mx-2'>5 items - $39.95</p>
+                            </span>
+                        </Link>
                     </div>
                 </nav>
             </header>

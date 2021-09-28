@@ -3,11 +3,16 @@
     color: var(--yellow);
 }
 .product-detail-wrapper .add-card-btn{
-    background-color: var(--yellow);
+    height: 45px;
+    padding: 5px 20px; 
     border-radius: 0;
+    color: var(--yellow);
+    background-color: var(--black);
 }
 .product-detail-wrapper .add-card-btn:hover{
-    opacity: 0.8;
+    color: var(--white);
+    background-color: var(--yellow); 
+    /* opacity: 0.8; */
 }
 .image-gallery-slide .image-gallery-image {
     width: 100%;

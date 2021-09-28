@@ -11,6 +11,7 @@ import { Switch, Route, Redirect, BrowserRouter } from "react-router-dom";
 import HomePage from '../Pages/HomePage/HomePage';
 import ProductDetailPage from '../Pages/ProductDetailPage/ProductDetailPage';
 import AllProduct from '../Pages/AllProduct/AllProduct';
+import Cart from '../Pages/Cart/Cart';
 const Home = () => {
     return (
         <>
@@ -22,6 +23,7 @@ const Home = () => {
                         <Route exact path="/home" component={HomePage} />
                         <Route exact path="/productdetail" component={ProductDetailPage} />
                         <Route exact path="/allproducts" component={AllProduct} /> 
+                        <Route exact path="/cart" component={Cart} />  
                     </Switch>
                 </div>
                 <Footer />

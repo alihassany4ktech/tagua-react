@@ -33,8 +33,7 @@ const SearchBar = () => {
         <>
             <div className='container-fluid'>
                 <div className='row bg-yellow searchBar py-2'>
-
-                    <div className='col-xl-4'>
+                    {/* <div className='col-xl-4'>
                         <div className='d-flex flex-row align-items-center justify-content-center'>
 
                             <div className='menu-item-wrapper'>
@@ -47,22 +46,37 @@ const SearchBar = () => {
                                 <Link className='btn' to="/allproducts">1836</Link>
                             </div>
                         </div>
-                    </div>
-                    <div className='col-xl-8'>
-                        <div className='d-flex flex-row align-items-center justify-content-center h-100'>
-
+                    </div> */}
+                    <div className='col-lg-12'>
+                        <div className='menubar-wrapper-row h-100'>
                             <div className='menu-item-wrapper'>
+                                <Link className='btn' to="/allproducts">HOLSTERS</Link>
+                            </div>
+                            <div className='menu-item-wrapper'>
+                                <Link className='btn' to="/allproducts">TAGUA GUN LEATHER</Link>
+                            </div>
+                            <div className='menu-item-wrapper'>
+                                <Link className='btn' to="/allproducts">ALL PRODUCTS</Link>
+                            </div>
+                            <div className='menu-item-wrapper'>
+                                <Link className='btn' to="/allproducts">SALE</Link>
+                            </div>
+                            <div className='menu-item-wrapper'>
+                                <Link className='btn' to="/allproducts">1836</Link>
+                            </div>
+                            <div className='menu-item-wrapper search-item'>
                                 <MenuDrop title='Select Your Holsters By Gun' items={items} width='258px' />
                             </div>
-                            <div className='menu-item-wrapper'>
-                                <MenuDrop title='Guns' items={items} width='134px' />
+                            <div className='menu-item-wrapper search-item'>
+                                <MenuDrop title='Guns' items={items} width='125px' />
                             </div>
-                            <div className='menu-item-wrapper'>
-                                <MenuDrop title='Model' items={items} width='134px' />
+                            <div className='menu-item-wrapper search-item'>
+                                <MenuDrop title='Model' items={items} width='125px' />
                             </div>
                             <div className='searchBar_btn_wrapper'>
                                 <button className='btn'>Search</button>
                             </div>
+
                         </div>
                     </div>
 

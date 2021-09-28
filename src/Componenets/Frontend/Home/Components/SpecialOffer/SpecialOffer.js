@@ -13,7 +13,7 @@ const SpecialOffer = () => {
                     </div>
                 </div>
                 <div className='col-lg-6 py-5 special-offer-right'>
-                    <div className='special-offer-right-content px-3 mt-4'>
+                    <div className='special-offer-right-content px-xl-5 mt-4'>
                         <h4 className='text-dark'>Introducing the All-New foundation Series Tactical Nylon Suit</h4>
                         <p align='justify' className='text-dark my-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mattis orci nec pretium tincidunt. Donec egestas semper tortor, ac viverra massa tempus eu. Fusce scelerisque ligula elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mattis orci nec pretium tincidunt. Donec egestas semper tortor, ac viverra massa tempus eu. Fusce scelerisque ligula elit, ut fringilla nisi suscipit quis. Sed consectetur felis at massa suscipit cursus.</p>
                         <button className='btn'>Learn More</button>

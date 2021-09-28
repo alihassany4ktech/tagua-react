@@ -20,6 +20,30 @@ const ProductDetailPage = (props) => {
             original: 'images/web-image.jpg',
             thumbnail: 'images/web-image.jpg',
         },
+        {
+            original: 'images/web-image.jpg',
+            thumbnail: 'images/web-image.jpg',
+        },
+        {
+            original: 'images/special-offer.jpg',
+            thumbnail: 'images/special-offer.jpg',
+        },
+        {
+            original: 'images/web-image.jpg',
+            thumbnail: 'images/web-image.jpg',
+        },
+        {
+            original: 'images/web-image.jpg',
+            thumbnail: 'images/web-image.jpg',
+        },
+        {
+            original: 'images/special-offer.jpg',
+            thumbnail: 'images/special-offer.jpg',
+        },
+        {
+            original: 'images/web-image.jpg',
+            thumbnail: 'images/web-image.jpg',
+        },
     ];
     const items = [
         {

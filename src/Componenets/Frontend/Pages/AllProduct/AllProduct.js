@@ -45,6 +45,8 @@ const AllProduct = () => {
             <div className='text-center mt-3'>
                 <h2>All Products</h2>
             </div>
+            <div className='col-md-10 mx-auto'>
+
             <div className='row'>
                 {
                     data.map(item => {
@@ -60,6 +62,7 @@ const AllProduct = () => {
                         )
                     })
                 }
+            </div>
             </div>
             <div className="overflow-auto">
                 <ReactPaginate
