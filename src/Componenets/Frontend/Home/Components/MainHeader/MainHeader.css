@@ -1,5 +1,7 @@
 .top-head-right{  
     background-image: url("http://localhost:3000/images/web-image.jpg");
+    /* background-image: url("../../../../../../public/images/web-image.jpg"); */
+    background-image: image-set();
     background-size: 100% 100%;
     background-repeat: no-repeat; 
     height: 40vw;  

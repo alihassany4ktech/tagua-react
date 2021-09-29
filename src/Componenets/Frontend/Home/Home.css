@@ -7,8 +7,10 @@
 html{
     overflow-x: hidden;
 }
-body{overflow-x: hidden;} 
-body{overflow-x: hidden;}
+body{overflow-x: hidden;}  
+.text-yellow{
+  color: var(--yellow);
+}
 .fab {
     width: 45px;
     height: 45px;

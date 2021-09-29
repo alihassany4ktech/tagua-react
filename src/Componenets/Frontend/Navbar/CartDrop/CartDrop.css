@@ -1,0 +1,26 @@
+.cart-drop-wrapper.open{
+    display: block;
+}
+.cart-drop-wrapper.close{
+    display: none;
+} 
+.cart-drop-wrapper .card{
+    margin-top: 10px;  
+    position: absolute;
+    transform: translateX(-88%); 
+    z-index: 2;
+    height: auto;
+    max-height: 400px;
+    overflow-y: auto;
+}
+.cart-menu-item-wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center; 
+    min-width: 320px;
+}
+.cart-menu-item-wrapper img{
+    width: 20vh;
+    height: 20vh;
+}

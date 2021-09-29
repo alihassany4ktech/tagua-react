@@ -22,8 +22,8 @@ const Navbar = () => {
             {backDrop}
             <ContactBar />
             <Toolbar drawerClickHandler={drawerToggleClickHandle} />
-            {/* <SearchBar /> */}
-            <Menubar /> 
+            <SearchBar />
+            {/* <Menubar />  */}
             <SideDrawer show={sideDrawerOpen} />
         </>
     );

@@ -2,6 +2,7 @@ import React from 'react'
 import './Navbar.css';
 import ToggleButton from './ToggleButton/ToggleButton';
 import { Link } from 'react-router-dom';
+import CartDrop from './CartDrop/CartDrop';
 
 const Toolbar = (props) => {
     return (
@@ -24,12 +25,7 @@ const Toolbar = (props) => {
                             <button className='btn bg-yellow'>Access Dealer Area</button>
                         </span>
                         <span className='toolbar_nav_icon_span mx-3'><i className='bi bi-person'></i></span>
-                        <Link to='/cart'>
-                            <span className='toolbar_nav_icon_group'>
-                                <i className='bi bi-bag'></i>
-                                <p className='mx-2'>5 items - $39.95</p>
-                            </span>
-                        </Link>
+                        <CartDrop />
                     </div>
                 </nav>
             </header>

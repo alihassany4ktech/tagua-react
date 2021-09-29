@@ -22,10 +22,7 @@ const Menubar = () => {
                             </div>
                             <div className='menu-item-wrapper'>
                                 <Link className='btn' to="/allproducts">SALE</Link>
-                            </div>
-                            <div className='menu-item-wrapper'>
-                                <Link className='btn' to="/allproducts">1836</Link>
-                            </div>
+                            </div> 
                             <div className='menu-item-wrapper'>
                                 <button className='btn' onClick={() => { setOpenSearchBar(!openSearchBar) }}>Search <i className={openSearchBar ? 'bi bi-caret-up-fill' : "bi bi-caret-down-fill"}></i></button>
                             </div>

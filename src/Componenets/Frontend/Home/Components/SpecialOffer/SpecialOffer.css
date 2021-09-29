@@ -35,7 +35,8 @@
 } 
 .special-offer-right{
     background-color: rgb(224, 224, 224);
-    overflow: auto;
+    overflow: auto; 
+    height: 70vh;
 }
 .special-offer-right-content .btn{
     background-color: #000000;

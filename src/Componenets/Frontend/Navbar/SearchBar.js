@@ -32,21 +32,7 @@ const SearchBar = () => {
     return (
         <>
             <div className='container-fluid'>
-                <div className='row bg-yellow searchBar py-2'>
-                    {/* <div className='col-xl-4'>
-                        <div className='d-flex flex-row align-items-center justify-content-center'>
-
-                            <div className='menu-item-wrapper'>
-                                <Link className='btn' to="/allproducts">ALL PRODUCTS</Link>
-                            </div>
-                            <div className='menu-item-wrapper'>
-                                <Link className='btn' to="/allproducts">SALE</Link>
-                            </div>
-                            <div className='menu-item-wrapper'>
-                                <Link className='btn' to="/allproducts">1836</Link>
-                            </div>
-                        </div>
-                    </div> */}
+                <div className='row bg-yellow searchBar py-2'> 
                     <div className='col-lg-12'>
                         <div className='menubar-wrapper-row h-100'>
                             <div className='menu-item-wrapper'>
@@ -60,10 +46,7 @@ const SearchBar = () => {
                             </div>
                             <div className='menu-item-wrapper'>
                                 <Link className='btn' to="/allproducts">SALE</Link>
-                            </div>
-                            <div className='menu-item-wrapper'>
-                                <Link className='btn' to="/allproducts">1836</Link>
-                            </div>
+                            </div> 
                             <div className='menu-item-wrapper search-item'>
                                 <MenuDrop title='Select Your Holsters By Gun' items={items} width='258px' />
                             </div>
