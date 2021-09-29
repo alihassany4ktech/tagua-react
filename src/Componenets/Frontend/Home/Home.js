@@ -12,6 +12,11 @@ import HomePage from '../Pages/HomePage/HomePage';
 import ProductDetailPage from '../Pages/ProductDetailPage/ProductDetailPage';
 import AllProduct from '../Pages/AllProduct/AllProduct';
 import Cart from '../Pages/Cart/Cart';
+import ContactUs from '../ContactUs/ContactUs';
+import PrivacyPolicy from '../PrivacyPolicy/PrivacyPolicy';
+import TermAndCondition from '../TermAndCondition/TermAndCondition';
+import About from '../AboutUs/About';
+import Faq from '../FAQ/Faq';
 const Home = () => {
     return (
         <>
@@ -22,8 +27,13 @@ const Home = () => {
                     <Switch >
                         <Route exact path="/home" component={HomePage} />
                         <Route exact path="/productdetail" component={ProductDetailPage} />
-                        <Route exact path="/allproducts" component={AllProduct} /> 
-                        <Route exact path="/cart" component={Cart} />  
+                        <Route exact path="/allproducts" component={AllProduct} />
+                        <Route exact path="/cart" component={Cart} />
+                        <Route exact path="/faq/help" component={Faq} />
+                        <Route exact path="/about-us" component={About} />
+                        <Route exact path="/contact" component={ContactUs} />
+                        <Route exact path="/provacy-policy" component={PrivacyPolicy} />
+                        <Route exact path="/terms-condition" component={TermAndCondition} />
                     </Switch>
                 </div>
                 <Footer />

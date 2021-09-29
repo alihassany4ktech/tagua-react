@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import './Footer.css';
 const Footer = (props) => {
 
@@ -14,16 +15,17 @@ const Footer = (props) => {
                                     <p>Shipping & Deliveries</p>
                                     <p>Return & Exchanges</p>
                                     <p>Our Story</p>
-                                    <p>FAQ/Help</p>
+                                    <Link exact to="/faq/help"> <p>FAQ/Help</p> </Link>
                                     <p>Terms of Service</p>
                                     <p>Refund Policy</p>
                                 </div>
                                 <div className='col-6 col-sm-6 col-md-6 col-lg-3 about-footer py-5'>
                                     <h3 className='text-white mb-4'>Company</h3>
-                                    <p className='font-weight-bold'>About Us</p>
-                                    <p>Privacy Policy</p>
-                                    <p>Terms & Conditions</p>
-                                    <p>Contact Us</p>
+
+                                    <Link exact to="/about-us"> <p className='font-weight-bold'>About Us</p></Link>
+                                    <Link exact to="/provacy-policy"> <p>Privacy Policy</p> </Link>
+                                    <Link exact to="/terms-condition"> <p>Terms & Conditions</p> </Link>
+                                    <Link exact to="/contact"><p> Contact Us</p></Link>
                                 </div>
                                 <div className='col-sm-12 col-md-6 col-lg-5 py-5 footer-wrapper'>
                                     <h3 className='text-white mb-4'>Keep in Touch</h3>
