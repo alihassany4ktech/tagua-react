@@ -1,0 +1,14 @@
+.background-pic{
+      background-image: url("./track-order-image.jpg");
+       background-repeat: no-repeat;
+        background-size: cover;
+        height: 500px;
+}
+
+@media screen and (max-width:500px)
+{
+      .background-pic{
+            background-image: none;
+            background-color: black !important;
+      }
+}

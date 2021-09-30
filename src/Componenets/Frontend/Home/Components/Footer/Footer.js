@@ -12,7 +12,7 @@ const Footer = (props) => {
                             <div className='row pb-5 px-3 p-sm-0'>
                                 <div className='col-6 col-sm-6 col-md-6 col-lg-3 about-footer py-5'>
                                     <h3 className='text-white mb-4'>About</h3>
-                                    <p>Shipping & Deliveries</p>
+                                    <Link exact to="/track/order"> <p>Track Order</p></Link>
                                     <p>Return & Exchanges</p>
                                     <p>Our Story</p>
                                     <Link exact to="/faq/help"> <p>FAQ/Help</p> </Link>

@@ -17,6 +17,7 @@ import PrivacyPolicy from '../PrivacyPolicy/PrivacyPolicy';
 import TermAndCondition from '../TermAndCondition/TermAndCondition';
 import About from '../AboutUs/About';
 import Faq from '../FAQ/Faq';
+import TrackOrder from '../TrackOrder/TrackOrder';
 const Home = () => {
     return (
         <>
@@ -29,6 +30,7 @@ const Home = () => {
                         <Route exact path="/productdetail" component={ProductDetailPage} />
                         <Route exact path="/allproducts" component={AllProduct} />
                         <Route exact path="/cart" component={Cart} />
+                        <Route exact path="/track/order" component={TrackOrder} />
                         <Route exact path="/faq/help" component={Faq} />
                         <Route exact path="/about-us" component={About} />
                         <Route exact path="/contact" component={ContactUs} />
