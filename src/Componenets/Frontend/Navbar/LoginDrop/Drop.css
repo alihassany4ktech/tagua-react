@@ -1,0 +1,63 @@
+.ND-drop-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+.ND-drop-button .activate {
+  opacity: 0.8; 
+}
+.ND-icon-button {
+    width: 40px;
+    height: 40px;
+    color: var(--green);
+    /* color: #FFFFFF; */
+    /* background-color: rgb(139, 138, 138); */
+    border-radius: 50%;
+    padding: 5px;
+    margin: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: filter 300ms;
+}
+.ND-icon-button .badge { 
+  position: relative;
+  top: -10px;  
+  left: -3px;
+  border-radius: 50%;
+  background: var(--green);
+  color: white;
+}
+.ND-icon-button:hover {
+    cursor: pointer;
+    color: var(--green);
+    filter: brightness(1.2);
+    /* color: #FFFFFF; */
+} 
+.ND-dropdown-dark {
+    position: absolute;  
+    top: 45px;
+    width: 320px;
+    transform: translateX(-45%);
+    background-color: #000000;
+    border: 1px solid #5c5d5e;
+    border-radius: 5px; 
+    padding: 0.6rem;
+    overflow: scroll;
+    height: auto;
+    max-height: 400px;
+    overflow-y: auto;
+    transition: height 500ms; 
+    z-index: 1;
+  } 
+  
+  .ND-menu-item-dark:hover { 
+    opacity: 0.8;
+    cursor: pointer;
+  } 
+  @media screen and (max-width: 500px) {
+    .ND-dropdown-dark {
+        width: 250px;
+    }
+
+  } 

@@ -1,0 +1,23 @@
+.login-drop-wrapper.open{
+    display: block;
+}
+.login-drop-wrapper.close{
+    display: none;
+} 
+.login-drop-wrapper .card{
+    margin-top: 4px;  
+    position: absolute;
+    transform: translateX(-45%); 
+    z-index: 2;
+    height: auto;
+    max-height: 400px;
+    overflow-y: auto;
+    min-width: 200px;
+}
+.login-menu-item-wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center; 
+    min-width: 320px;
+} 

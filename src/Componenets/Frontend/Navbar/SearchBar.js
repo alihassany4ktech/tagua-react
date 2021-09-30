@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 import MenuDrop from './MenuDrop/MenuDrop';
+import MenuBarDropDown from './MenuBarDropDown/MenuBarDropDown';
+import SearchSelect from './SearchSelect/SearchSelect';
 const SearchBar = () => {
     const items = [
         {
@@ -32,21 +34,38 @@ const SearchBar = () => {
     return (
         <>
             <div className='container-fluid'>
-                <div className='row bg-yellow searchBar py-2'> 
+                <div className='row bg-yellow searchBar'> 
                     <div className='col-lg-12'>
-                        <div className='menubar-wrapper-row h-100'>
+                        <div className='menubar-wrapper-row p-0 h-100'> 
+                            <MenuBarDropDown 
+                                title='Holsters'
+                                items={[
+                                    {id: 1, value: '4 in 1 holsters'},
+                                    {id: 2,value: 'cross draw holsters'},
+                                    {id: 3,value: 'iwb/owh'},
+                                    {id: 4,value: 'owb/iwh'},
+                                    {id: 5,value: 'owb'},
+                                    {id: 6,value: 'sholder holsters'},
+                                ]}
+                            /> 
+                            <MenuBarDropDown 
+                                title='Tagua gun leather'
+                                items={[
+                                    {id: 1, value: '4 in 1 holsters'},
+                                    {id: 2,value: 'cross draw holsters'},
+                                    {id: 3,value: 'iwb/owh'},
+                                    {id: 4,value: 'owb/iwh'},
+                                    {id: 5,value: 'owb'},
+                                    {id: 6,value: 'sholder holsters'},
+                                ]}
+                            />
                             <div className='menu-item-wrapper'>
-                                <Link className='btn' to="/allproducts">HOLSTERS</Link>
+                                <Link className='btn text-black' to="/allproducts">ALL PRODUCTS</Link>
                             </div>
                             <div className='menu-item-wrapper'>
-                                <Link className='btn' to="/allproducts">TAGUA GUN LEATHER</Link>
-                            </div>
-                            <div className='menu-item-wrapper'>
-                                <Link className='btn' to="/allproducts">ALL PRODUCTS</Link>
-                            </div>
-                            <div className='menu-item-wrapper'>
-                                <Link className='btn' to="/allproducts">SALE</Link>
+                                <Link className='btn text-black' to="/allproducts">SALE</Link>
                             </div> 
+                            {/* <SearchSelect /> */}
                             <div className='menu-item-wrapper search-item'>
                                 <MenuDrop title='Select Your Holsters By Gun' items={items} width='258px' />
                             </div>

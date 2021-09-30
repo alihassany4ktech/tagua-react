@@ -1,5 +1,6 @@
 .contact-bar{
     border-bottom: 1px solid var(--white);
+    min-height: 53.5px;
 } 
 .nav-contact-span{
     margin-right: 15px;
@@ -21,13 +22,14 @@
 }
 .toolbar{ 
     width: 100%;  
-    background-color: var(--black);
+    background-color: var(--black); 
 }
 .toolbar_nav{
     display: flex;
     flex-flow: row wrap;
     align-items: center;
     justify-content: space-around; ;
+    min-height: 80px;
 }
 .toolbar_logo img{
     width: 176px;
@@ -85,6 +87,9 @@
         display: none;
     }
 } 
+/* .searchBar {
+    min-height: 50px;
+} */
 @media screen and (max-width:500px){
     .searchBar .searchBar_btn_wrapper{
         text-align: center;
