@@ -18,10 +18,10 @@ const About = () => {
                                                 <button type="button" className="btn mt-4  px-5 text-dark mb-3 bg-yellow rounded-0" >Learn More</button>
 
                                           </div>
-                                          <div class="col-lg-5 px-5 mx-auto order-1 order-lg-2"><img src="https://res.cloudinary.com/mhmd/image/upload/v1556834139/img-1_e25nvh.jpg" alt="" class="img-fluid mb-4 mb-lg-0" /></div>
+                                          <div class="col-lg-5  mx-auto order-1 order-lg-2"><img src="assets/images/background/background-3.jpg" alt="pic" class="img-fluid mb-4 mb-lg-0" style={{ height: "330px", width: "550px" }} /></div>
                                     </div>
                                     <div class="row align-items-center">
-                                          <div class="col-lg-5  px-5 mx-auto"><img src="https://res.cloudinary.com/mhmd/image/upload/v1556834136/img-2_vdgqgn.jpg" alt="" class="img-fluid mb-4 mb-lg-0" /></div>
+                                          <div class="col-lg-5  mx-auto"><img src="assets/images/background/background-2.jpg" alt="pic" class="img-fluid mb-4 mb-lg-0" style={{ height: "330px", width: "550px" }} /></div>
                                           <div class="col-lg-6 shadow p-5"><i class="fa fa-leaf fa-2x mb-3" style={{ color: "#E8C21E" }}></i>
                                                 <h2 class="font-weight-light">Lorem ipsum dolor sit amet</h2>
                                                 <p class="font-italic text-muted mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
