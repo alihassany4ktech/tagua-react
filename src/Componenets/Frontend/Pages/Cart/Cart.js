@@ -1,6 +1,7 @@
 import React from 'react';
 import CartItem from './CartItem';
 import './Cart.css';
+import EmptyCart from './EmptyCart/EmptyCart';
 const Cart = (props) => {
   return (
     <>
@@ -20,7 +21,7 @@ const Cart = (props) => {
             <div className="col-lg-4">
               {/* cart summary */}
               <div className="cart-summary shadow">
-              <h5 className="text-white mb-3">Check Out Summary</h5>
+                <h5 className="text-white mb-3">Check Out Summary</h5>
                 <div className='d-flex flex-row justify-content-between align-items-center'>
                   <p>Subtotal:</p>
                   <p>Value</p>
@@ -46,6 +47,8 @@ const Cart = (props) => {
 
         </section>
       </div>
+
+      <EmptyCart />
 
     </>
   );

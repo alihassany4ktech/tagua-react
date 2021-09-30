@@ -1,6 +1,6 @@
 import React from "react";
 import { Accordion, AccordionSummary, AccordionDetails, Typography, } from "@mui/material";
-
+import "./faq.css";
 
 
 const Faq = () => {
@@ -9,7 +9,7 @@ const Faq = () => {
                   <div className="container">
                         <div className="row mt-5">
                               <h2 className="mb-3">FAQ/Help</h2>
-                              <div className="col-md-6 mt-5 mb-5" style={{ borderRight: "2px solid  #333" }}>
+                              <div className="col-md-6 mt-5 mb-5 faqdiv">
                                     <Accordion>
                                           <AccordionSummary
                                                 expandIcon={<i className='bi bi-caret-down'></i>}
@@ -34,7 +34,7 @@ const Faq = () => {
                                                 aria-controls="panel2a-content"
                                                 id="panel2a-header"
                                           >
-                                                <Typography>What brand of lasers or lights will your holsters accommodate? </Typography>
+                                                <Typography className="text-yellow">What brand of lasers or lights will your holsters accommodate? </Typography>
                                           </AccordionSummary>
                                           <AccordionDetails>
                                                 <Typography>
@@ -51,7 +51,7 @@ const Faq = () => {
                                                 aria-controls="panel2a-content"
                                                 id="panel2a-header"
                                           >
-                                                <Typography>Can I ship to a PO Box? </Typography>
+                                                <Typography className="text-yellow">Can I ship to a PO Box? </Typography>
                                           </AccordionSummary>
                                           <AccordionDetails>
                                                 <Typography>
@@ -68,7 +68,7 @@ const Faq = () => {
                                                 aria-controls="panel2a-content"
                                                 id="panel2a-header"
                                           >
-                                                <Typography>Where can I purchase Blackhawk products? </Typography>
+                                                <Typography className="text-yellow">Where can I purchase Blackhawk products? </Typography>
                                           </AccordionSummary>
                                           <AccordionDetails>
                                                 <Typography>
@@ -85,7 +85,7 @@ const Faq = () => {
                                                 aria-controls="panel2a-content"
                                                 id="panel2a-header"
                                           >
-                                                <Typography>Who do I contact to find out which parts I need?    </Typography>
+                                                <Typography className="text-yellow">Who do I contact to find out which parts I need?    </Typography>
                                           </AccordionSummary>
                                           <AccordionDetails>
                                                 <Typography>
@@ -102,7 +102,7 @@ const Faq = () => {
                                                 aria-controls="panel2a-content"
                                                 id="panel2a-header"
                                           >
-                                                <Typography>Will you be making it in the future? </Typography>
+                                                <Typography className="text-yellow">Will you be making it in the future? </Typography>
                                           </AccordionSummary>
                                           <AccordionDetails>
                                                 <Typography>
@@ -119,7 +119,7 @@ const Faq = () => {
                                                 aria-controls="panel2a-content"
                                                 id="panel2a-header"
                                           >
-                                                <Typography>Why don’t you offer holsters for every make and model of weapon? </Typography>
+                                                <Typography className="text-yellow">Why don’t you offer holsters for every make and model of weapon? </Typography>
                                           </AccordionSummary>
                                           <AccordionDetails>
                                                 <Typography>
@@ -136,7 +136,7 @@ const Faq = () => {
                                                 aria-controls="panel2a-content"
                                                 id="panel2a-header"
                                           >
-                                                <Typography> What is Tencel? </Typography>
+                                                <Typography className="text-yellow"> What is Tencel? </Typography>
                                           </AccordionSummary>
                                           <AccordionDetails>
                                                 <Typography>
@@ -153,7 +153,7 @@ const Faq = () => {
                                                 aria-controls="panel2a-content"
                                                 id="panel2a-header"
                                           >
-                                                <Typography>I searched your website and used your Holster Selector Tool. Now what? </Typography>
+                                                <Typography className="text-yellow">I searched your website and used your Holster Selector Tool. Now what? </Typography>
                                           </AccordionSummary>
                                           <AccordionDetails>
                                                 <Typography>
@@ -170,7 +170,7 @@ const Faq = () => {
                                                 aria-controls="panel2a-content"
                                                 id="panel2a-header"
                                           >
-                                                <Typography>What brand of lasers or lights will your holsters accommodate? </Typography>
+                                                <Typography className="text-yellow">What brand of lasers or lights will your holsters accommodate? </Typography>
                                           </AccordionSummary>
                                           <AccordionDetails>
                                                 <Typography>
@@ -190,7 +190,7 @@ const Faq = () => {
                                                 aria-controls="panel1a-content"
                                                 id="panel1a-header"
                                           >
-                                                <Typography>What clip options are there and what do they do? </Typography>
+                                                <Typography className="text-yellow">What clip options are there and what do they do? </Typography>
                                           </AccordionSummary>
                                           <AccordionDetails>
                                                 <Typography>
@@ -206,7 +206,7 @@ const Faq = () => {
                                                 aria-controls="panel2a-content"
                                                 id="panel2a-header"
                                           >
-                                                <Typography>What size of belt do I need? </Typography>
+                                                <Typography className="text-yellow">What size of belt do I need? </Typography>
                                           </AccordionSummary>
                                           <AccordionDetails>
                                                 <Typography>
@@ -227,7 +227,7 @@ const Faq = () => {
                                                 aria-controls="panel2a-content"
                                                 id="panel2a-header"
                                           >
-                                                <Typography>What about my personal information?  </Typography>
+                                                <Typography className="text-yellow">What about my personal information?  </Typography>
                                           </AccordionSummary>
                                           <AccordionDetails>
                                                 <Typography>
@@ -248,7 +248,7 @@ const Faq = () => {
                                                 aria-controls="panel2a-content"
                                                 id="panel2a-header"
                                           >
-                                                <Typography>What are your shipping policies?  </Typography>
+                                                <Typography className="text-yellow">What are your shipping policies?  </Typography>
                                           </AccordionSummary>
                                           <AccordionDetails>
                                                 <Typography>
@@ -269,7 +269,7 @@ const Faq = () => {
                                                 aria-controls="panel2a-content"
                                                 id="panel2a-header"
                                           >
-                                                <Typography>What about my personal information?  </Typography>
+                                                <Typography className="text-yellow">What about my personal information?  </Typography>
                                           </AccordionSummary>
                                           <AccordionDetails>
                                                 <Typography>
@@ -290,7 +290,7 @@ const Faq = () => {
                                                 aria-controls="panel2a-content"
                                                 id="panel2a-header"
                                           >
-                                                <Typography>Can you explain your lifetime warranty?  </Typography>
+                                                <Typography className="text-yellow">Can you explain your lifetime warranty?  </Typography>
                                           </AccordionSummary>
                                           <AccordionDetails>
                                                 <Typography>
@@ -311,7 +311,7 @@ const Faq = () => {
                                                 aria-controls="panel2a-content"
                                                 id="panel2a-header"
                                           >
-                                                <Typography>Can I combine multiple discounts or promotions?  </Typography>
+                                                <Typography className="text-yellow">Can I combine multiple discounts or promotions?  </Typography>
                                           </AccordionSummary>
                                           <AccordionDetails>
                                                 <Typography>
@@ -332,7 +332,7 @@ const Faq = () => {
                                                 aria-controls="panel2a-content"
                                                 id="panel2a-header"
                                           >
-                                                <Typography>Are there any videos explaining Crossbreed products and features?  </Typography>
+                                                <Typography className="text-yellow">Are there any videos explaining Crossbreed products and features?  </Typography>
                                           </AccordionSummary>
                                           <AccordionDetails>
                                                 <Typography>
@@ -353,7 +353,7 @@ const Faq = () => {
                                                 aria-controls="panel2a-content"
                                                 id="panel2a-header"
                                           >
-                                                <Typography>What is the difference between Standard Cut and Combat Cut options? </Typography>
+                                                <Typography className="text-yellow">What is the difference between Standard Cut and Combat Cut options? </Typography>
                                           </AccordionSummary>
                                           <AccordionDetails>
                                                 <Typography>
@@ -374,7 +374,7 @@ const Faq = () => {
                                                 aria-controls="panel2a-content"
                                                 id="panel2a-header"
                                           >
-                                                <Typography>How can I adjust the retention of my holster?  </Typography>
+                                                <Typography className="text-yellow">How can I adjust the retention of my holster?  </Typography>
                                           </AccordionSummary>
                                           <AccordionDetails>
                                                 <Typography>

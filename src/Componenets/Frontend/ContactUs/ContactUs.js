@@ -8,39 +8,42 @@ const ContactUs = () => {
                   <Map /> <br /><br />
                   <div className="container" style={{ marginTop: "80px" }}>
                         <div className="row justify-content-center">
+                              <h1 className="text-center" >Contact us</h1>
+                              <p className="text-dark text-center" >We’re always here for you. Drop us an e-mail, call or fill out <br /> the contact form.</p>
                               <div className="col-lg-6 col-md-8 d-flex align-items-center justify-content-center">
+
                                     <form className="bg-black p-5">
                                           <strong className="text-white">CONTACT US FOR ANY QUESTIONS</strong>
                                           <div className="row mt-3">
                                                 <div class="form-group col-md-6 mb-3">
                                                       <label className="text-white mb-1" htmlFor="Your name">Your Name</label>
-                                                      <input type="emtextil" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Type here" />
+                                                      <input type="emtextil" className="form-control rounded-0" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Type here" />
 
                                                 </div>
                                                 <div class="form-group col-md-6 mb-3">
                                                       <label className="text-white mb-1" htmlFor="Your name">Your Email</label>
-                                                      <input type="emtextil" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Type here" />
+                                                      <input type="emtextil" className="form-control  rounded-0" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Type here" />
 
                                                 </div>
                                           </div>
                                           <div className="row">
                                                 <div class="form-group col-md-6 mb-3">
                                                       <label className="text-white mb-1" htmlFor="Your name">Phone Number</label>
-                                                      <input type="emtextil" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Type here" />
+                                                      <input type="emtextil" className="form-control  rounded-0" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Type here" />
 
                                                 </div>
                                                 <div class="form-group col-md-6 mb-3">
                                                       <label className="text-white mb-1" htmlFor="Your name">Company</label>
-                                                      <input type="emtextil" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Type here" />
+                                                      <input type="emtextil" className="form-control  rounded-0" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Type here" />
 
                                                 </div>
                                           </div>
                                           <label className="text-white mb-1" htmlFor="Your name">Yor Message</label>
-                                          <textarea className="form-control" style={{ height: "120px" }} name="" id="" cols="30" rows="10" placeholder="Type here" ></textarea>
+                                          <textarea className="form-control  rounded-0" style={{ height: "120px" }} name="" id="" cols="30" rows="10" placeholder="Type here" ></textarea>
 
 
 
-                                          <button type="submit" className="btn mt-4 text-dark mb-3 bg-yellow rounded-0" >ASK A QUESTION</button> <br />
+                                          <button type="submit" className="btn mt-4 text-white mb-3 bg-yellow rounded-0" >ASK A QUESTION</button> <br />
 
                                     </form>
                               </div>

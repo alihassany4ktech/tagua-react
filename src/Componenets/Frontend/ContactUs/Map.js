@@ -15,20 +15,20 @@ const MapContainer = (props) => {
                   <div className="row" style={{ height: "320px" }}>
                         <Map google={props.google}
                               style={style}
-                              zoom={5}
+                              zoom={14}
                               initialCenter={{
 
-                                    lat: 30.375320,
-                                    lng: 69.345116,
+                                    lat: 25.795210,
+                                    lng: -80.235380,
                               }}
                               center={{
-                                    lat: 30.375320,
-                                    lng: 69.345116,
+                                    lat: 25.795210,
+                                    lng: -80.235380,
                               }}
 
                         >
                               <Marker
-                                    position={{ lat: 30.375320, lng: 69.345116, }}
+                                    position={{ lat: 25.795210, lng: -80.235380, }}
 
                               />
 
