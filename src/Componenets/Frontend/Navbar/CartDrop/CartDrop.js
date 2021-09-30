@@ -9,7 +9,7 @@ const CartDrop = (props) => {
         return (
             <div className='cart-drop-wrapper'>
                 <div className='card p-2 rounded-0'>
-                    <h5 className="text-center bg-yellow py-2 mb-2">Cart (<span>n</span> items)</h5>
+                    <h5 className="text-center py-2 mb-2">Cart (<span>n</span> items)</h5>
                     {
                         data.map(item => {
                             return (

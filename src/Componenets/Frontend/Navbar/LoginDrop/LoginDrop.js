@@ -9,7 +9,7 @@ const LoginDrop = (props) => {
                 <div className='card p-2 rounded-0'> 
 
                     <button onClick={() => setOpen(false)} className='btn bg-yellow rounded-0 w-100'>Login</button>
-                    <button onClick={() => setOpen(false)} className='btn bg-yellow rounded-0 w-100 mt-2'>Register</button>
+                    <button onClick={() => setOpen(false)} className='btn bg-yellow rounded-0 w-100 mt-2'>Demo</button>
 
                 </div>
 
