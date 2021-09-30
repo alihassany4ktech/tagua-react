@@ -14,7 +14,9 @@
     border-radius: 15px;
     overflow: hidden;
     object-fit: cover;
-    height: 17rem;
+    width: 311px;
+    height: 336px;
+    /* height: 17rem; */
 } 
 .product-card .card-body .btn{
     border-radius: 0;
