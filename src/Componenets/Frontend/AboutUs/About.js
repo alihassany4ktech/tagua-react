@@ -1,12 +1,38 @@
 import React from "react";
 import "./about.css"
-import img1 from "./user-1.jpg";
-import img2 from "./user-8.jpg";
-import img3 from "./user-9.jpg";
-import img4 from "./user-7.jpg";
+
 const About = () => {
       return (
             <>
+                  <div className="row background-pic1 mb-5">
+                        <div className="col-md-12">
+                              <div className="container h-100">
+                                    <div className="row align-items-center h-100 ">
+                                          <div className="d-flex flex-column">
+                                                <div className="col-10 col-md-6 col-lg-4 mx-auto">
+                                                      <div className="jumbotron">
+                                                            <h1 className="text-white text-center">WHO WE ARE </h1>
+                                                      </div>
+
+                                                </div>
+                                                <div className="col-10 mx-auto">
+                                                      <div className="jumbotron ">
+                                                            <p className="text-white text-center">
+                                                                  Tagua Gunleather was founded in 2005 and has since experienced a
+                                                                  strong and sustained growth rate, one of the highest in the market
+                                                                  . Over time, we have achieved profound quality and dependability in
+                                                                  our products.
+                                                            </p>
+
+                                                      </div>
+                                                </div>
+
+                                          </div>
+                                    </div>
+                              </div>
+
+                        </div>
+                  </div>
                   <div className="container-fluid">
 
                         <div class="bg-white py-5 mt-5">
@@ -31,76 +57,7 @@ const About = () => {
                               </div>
                         </div>
 
-                        <div class="py-5">
-                              <div class="container py-5">
-                                    <div class="row mb-4">
-                                          <div class="col-lg-5">
-                                                <h2 class="display-4 font-weight-light">Our team</h2>
-                                                <p class="font-italic text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                          </div>
-                                    </div>
 
-                                    <div class="row text-center">
-
-                                          <div class="col-xl-3 col-sm-6 mb-5">
-                                                <div class="bg-white rounded shadow py-5 px-4">
-                                                      <img src={img1} alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow" />
-                                                      <h5 class="mb-0">Manuella Nevoresky</h5><span class="small text-uppercase text-muted">CEO - Founder</span>
-                                                      <ul class="social mb-0 list-inline mt-3">
-                                                            <i class="fa fa-facebook social-link" style={{ fontSize: "16px" }}></i>
-                                                            <i class="fa fa-instagram social-link " style={{ fontSize: "16px" }}></i>
-                                                            <i class="fa fa-twitter social-link" style={{ fontSize: "16px" }}></i>
-                                                            <i class="fa fa-youtube-play social-link " style={{ fontSize: "16px" }}></i>
-                                                      </ul>
-
-                                                </div>
-                                          </div>
-
-                                          <div class="col-xl-3 col-sm-6 mb-5">
-                                                <div class="bg-white rounded shadow py-5 px-4">
-                                                      <img src={img2} alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow" />
-                                                      <h5 class="mb-0">Samuel Hardy</h5><span class="small text-uppercase text-muted">CEO - Founder</span>
-                                                      <ul class="social mb-0 list-inline mt-3">
-                                                            <i class="fa fa-facebook social-link" style={{ fontSize: "16px" }}></i>
-                                                            <i class="fa fa-instagram social-link " style={{ fontSize: "16px" }}></i>
-                                                            <i class="fa fa-twitter social-link" style={{ fontSize: "16px" }}></i>
-                                                            <i class="fa fa-youtube-play social-link " style={{ fontSize: "16px" }}></i>
-                                                      </ul>
-                                                </div>
-                                          </div>
-
-                                          <div class="col-xl-3 col-sm-6 mb-5">
-                                                <div class="bg-white rounded shadow py-5 px-4">
-                                                      <img src={img3} alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow" />
-                                                      <h5 class="mb-0">Tom Sunderland</h5><span class="small text-uppercase text-muted">CEO - Founder</span>
-                                                      <ul class="social mb-0 list-inline mt-3">
-                                                            <i class="fa fa-facebook social-link" style={{ fontSize: "16px" }}></i>
-                                                            <i class="fa fa-instagram social-link " style={{ fontSize: "16px" }}></i>
-                                                            <i class="fa fa-twitter social-link" style={{ fontSize: "16px" }}></i>
-                                                            <i class="fa fa-youtube-play social-link " style={{ fontSize: "16px" }}></i>
-                                                      </ul>
-                                                </div>
-                                          </div>
-
-
-
-                                          <div class="col-xl-3 col-sm-6 mb-5">
-                                                <div class="bg-white rounded shadow py-5 px-4">
-                                                      <img src={img4} alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow" />
-                                                      <h5 class="mb-0">John Tarly</h5><span class="small text-uppercase text-muted">CEO - Founder</span>
-                                                      <ul class="social mb-0 list-inline mt-3">
-                                                            <i class="fa fa-facebook social-link" style={{ fontSize: "16px" }}></i>
-                                                            <i class="fa fa-instagram social-link " style={{ fontSize: "16px" }}></i>
-                                                            <i class="fa fa-twitter social-link" style={{ fontSize: "16px" }}></i>
-                                                            <i class="fa fa-youtube-play social-link " style={{ fontSize: "16px" }}></i>
-                                                      </ul>
-                                                </div>
-                                          </div>
-
-
-                                    </div>
-                              </div>
-                        </div>
 
 
 

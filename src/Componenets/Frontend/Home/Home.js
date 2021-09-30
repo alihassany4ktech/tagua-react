@@ -18,6 +18,8 @@ import TermAndCondition from '../TermAndCondition/TermAndCondition';
 import About from '../AboutUs/About';
 import Faq from '../FAQ/Faq';
 import TrackOrder from '../TrackOrder/TrackOrder';
+import Login from '../Auth/Login';
+import Register from '../Auth/Register';
 const Home = () => {
     return (
         <>
@@ -36,6 +38,8 @@ const Home = () => {
                         <Route exact path="/contact" component={ContactUs} />
                         <Route exact path="/provacy-policy" component={PrivacyPolicy} />
                         <Route exact path="/terms-condition" component={TermAndCondition} />
+                        <Route exact path="/login" component={Login} />
+                        <Route exact path="/register" component={Register} />
                     </Switch>
                 </div>
                 <Footer />
