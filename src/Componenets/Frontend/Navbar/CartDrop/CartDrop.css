@@ -18,9 +18,16 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center; 
-    min-width: 320px;
+    justify-content: space-around;
+    min-width: 230px;
 }
 .cart-menu-item-wrapper img{
-    width: 20vh;
-    height: 20vh;
+    width: 15vh;
+    height: 15vh;
+}
+.cart-drop-wrapper h6{
+    font-size: 12px;
+}
+.cart-drop-wrapper p{
+    font-size: 12px;
 }

@@ -9,7 +9,7 @@ const CartDrop = (props) => {
         return (
             <div className='cart-drop-wrapper'>
                 <div className='card p-2 rounded-0'>
-                    <h5 className="text-center bg-yellow py-2 mb-2">Cart (<span>n</span> items)</h5>
+                    <h5 className="text-center py-2 mb-2">Cart (<span>n</span> items)</h5>
                     {
                         data.map(item => {
                             return (
@@ -38,7 +38,7 @@ const CartDrop = (props) => {
         },
         {
             title: 'Title',
-            imgSource: 'https://www.taguagunleather.com/wp-content/uploads/2019/03/p_4_4_3_443-TWHS-H4-PINK-THE-PINK-4-IN-1-Open-Top-Holster.jpg',
+            imgSource: 'https://www.taguagunleather.com/wp-content/uploads/2019/04/p_5_0_3_503-TWHS-THE-WEIGHTLESS-with-Magazine-Holder.jpg',
             unitPrice: 'Price',
             quantity: 'quantity',
         },
