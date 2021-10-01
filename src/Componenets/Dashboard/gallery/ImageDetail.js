@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { CKEditor } from '@ckeditor/ckeditor5-react';
 import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
+import img from "./doc-thumb-1.jpg";
 const ImageDetail = () => {
       const [text, setText] = useState("")
       const [text2, setText2] = useState("")
@@ -16,7 +17,7 @@ const ImageDetail = () => {
                                     <div className="row g-4 settings-section">
                                           <div className="col-12 col-md-7 text-center" style={{ borderRight: "1px solid #efeff1" }}>
 
-                                                <img src="assets/images/doc-thumb-1.jpg" width="100%" height="250" alt="pic" />
+                                                <img src={img} width="100%" height="250" alt="pic" />
                                                 <button type="button" className="btn app-btn-primary mt-3" >Edit Image</button>
 
                                           </div>
@@ -93,7 +94,7 @@ const ImageDetail = () => {
 
 
                                                 <hr className="my-4" />
-                                                <p> <NavLink exact to="/image-details" className="text-link" style={{ color: "#E8C21E" }}> View attachment page </NavLink> | <NavLink exact to="/image-details" style={{ color: "#E8C21E" }} className="text-link" > Edit more details </NavLink> |  <a type="button" className="text-danger">Delete permannently</a>  </p>
+                                                <p> <NavLink exact to="/dashboard/image-details" className="text-link" style={{ color: "#E8C21E" }}> View attachment page </NavLink> | <NavLink exact to="/dashboard/image-details" style={{ color: "#E8C21E" }} className="text-link" > Edit more details </NavLink> |  <a type="button" className="text-danger">Delete permannently</a>  </p>
                                           </div>
                                     </div>
 

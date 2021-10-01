@@ -22,7 +22,9 @@ import ImageDetail from "./gallery/ImageDetail";
 import Blog from "./blog/Blog";
 import CreateBlog from "./blog/CreateBlog";
 import EditOrder from "./orderlist/EditOrder";
-const MainDahsboard = () => {
+import logo from "./app-logo.png"
+const MainDahsboard = ({ match }) => {
+
       return (
             <>
                   <BrowserRouter>
@@ -150,8 +152,8 @@ const MainDahsboard = () => {
                                                             <div className="app-utility-item app-user-dropdown dropdown">
                                                                   <a className="dropdown-toggle" id="user-dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><img className="rounded-pill" src={user} alt="user profile" /></a>
                                                                   <ul className="dropdown-menu" aria-labelledby="user-dropdown-toggle">
-                                                                        <li><NavLink activeClassName="active" className="dropdown-item" exact to="/admin/profile">My Profle</NavLink></li>
-                                                                        <li><NavLink activeClassName="active" className="dropdown-item" exact to="/setting">Settings</NavLink></li>
+                                                                        <li><NavLink activeClassName="active" className="dropdown-item" exact={true} to={`${match.url}/admin/profile`}>My Profle</NavLink></li>
+                                                                        <li><NavLink activeClassName="active" className="dropdown-item" exact={true} to={`${match.url}/setting`}>Settings</NavLink></li>
                                                                         <li><hr className="dropdown-divider" /></li>
                                                                         <li><a className="dropdown-item" href="/#">Log Out</a></li>
                                                                   </ul>
@@ -167,12 +169,12 @@ const MainDahsboard = () => {
                                     <div className="sidepanel-inner d-flex flex-column">
                                           <a href="#" id="sidepanel-close" className="sidepanel-close d-xl-none">&times;</a>
                                           <div className="app-branding text-center">
-                                                <NavLink exact to="/dashboard" className="app-logo"><img className="logo-icon" src="assets/images/app-logo.png" alt="logo" /></NavLink>
+                                                <NavLink to={`${match.url}`} exact={true} className="app-logo"><img className="logo-icon" src={logo} alt="logo" /></NavLink>
 
                                           </div>
 
                                           <nav id="app-nav-main" className="app-nav app-nav-main flex-grow-1">
-                                                <NavLink exact to="/admin/profile">
+                                                <NavLink exact={true} to={`${match.url}/admin/profile`}>
                                                       <div className="p-4 hoverable"  >
                                                             <div className="d-flex flex-row align-items-center">
                                                                   <img class="icon-img rounded-pill" src={user} height="50" width="50" alt="image" />
@@ -189,7 +191,7 @@ const MainDahsboard = () => {
 
                                                 <ul className="app-menu list-unstyled accordion" id="menu-accordion">
                                                       <li className="nav-item">
-                                                            <NavLink exact to="/dashboard" className="nav-link" activeClassName="active">
+                                                            <NavLink exact={true} to={`${match.url}`} className="nav-link" activeClassName="active">
                                                                   <span className="nav-icon">
                                                                         <svg width="1em" height="1em" viewBox="0 0 16 16" className="bi bi-house-door" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                                                               <path fill-rule="evenodd" d="M7.646 1.146a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 .146.354v7a.5.5 0 0 1-.5.5H9.5a.5.5 0 0 1-.5-.5v-4H7v4a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .146-.354l6-6zM2.5 7.707V14H6v-4a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5v4h3.5V7.707L8 2.207l-5.5 5.5z" />
@@ -201,7 +203,7 @@ const MainDahsboard = () => {
                                                       </li>
 
                                                       <li className="nav-item">
-                                                            <NavLink exact to="/users" className="nav-link" activeClassName="active">
+                                                            <NavLink to={`${match.url}/users`} exact={true} className="nav-link" activeClassName="active">
                                                                   <span className="nav-icon">
                                                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people" viewBox="0 0 16 16">
                                                                               <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z" />
@@ -228,8 +230,8 @@ const MainDahsboard = () => {
                                                             </a>
                                                             <div id="submenu-1" class="collapse submenu submenu-1" data-bs-parent="#menu-accordion">
                                                                   <ul class="submenu-list list-unstyled">
-                                                                        <li class="submenu-item"><NavLink exact to="/product/list" className="submenu-link" activeClassName="submenu-link active"  >Product list</NavLink></li>
-                                                                        <li class="submenu-item"><NavLink exact to="/product/create" className="submenu-link" ctiveClassName="submenu-link active" >Add Product</NavLink></li>
+                                                                        <li class="submenu-item"><NavLink exact={true} to={`${match.url}/product/list`} className="submenu-link" activeClassName="submenu-link active"  >Product list</NavLink></li>
+                                                                        <li class="submenu-item"><NavLink exact={true} to={`${match.url}/create-product`} className="submenu-link" ctiveClassName="submenu-link active" >Add Product</NavLink></li>
                                                                         {/* <li class="submenu-item"><a class="submenu-link" href="settings.html">Settings</a></li> */}
                                                                   </ul>
                                                             </div>
@@ -253,7 +255,7 @@ const MainDahsboard = () => {
                                                             </a>
                                                             <div id="submenu-2" className="collapse submenu submenu-2" data-bs-parent="#menu-accordion">
                                                                   <ul className="submenu-list list-unstyled">
-                                                                        <li className="submenu-item"><NavLink exact to="/order/list" activeClassName="submenu-link active" className="submenu-link" href="login.html">Oerder list</NavLink></li>
+                                                                        <li className="submenu-item"><NavLink exact={true} to={`${match.url}/order/list`} activeClassName="submenu-link active" className="submenu-link" href="login.html">Oerder list</NavLink></li>
                                                                         {/* <li className="submenu-item"><a className="submenu-link" href="signup.html">Signup</a></li>
                                                                         <li className="submenu-item"><a className="submenu-link" href="reset-password.html">Reset password</a></li>
                                                                         <li className="submenu-item"><a className="submenu-link" href="404.html">404 page</a></li> */}
@@ -266,7 +268,7 @@ const MainDahsboard = () => {
                                                       <li className="nav-item">
 
 
-                                                            <NavLink exact to="/category" className="nav-link" activeClassName="active">
+                                                            <NavLink exact={true} to={`${match.url}/category`} className="nav-link" activeClassName="active">
                                                                   <span className="nav-icon">
                                                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark-plus" viewBox="0 0 16 16">
                                                                               <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
@@ -279,7 +281,7 @@ const MainDahsboard = () => {
                                                       </li>
 
                                                       <li className="nav-item">
-                                                            <NavLink exact to="/gallery" className="nav-link" activeClassName="active">
+                                                            <NavLink exact={true} to={`${match.url}/gallery`} className="nav-link" activeClassName="active">
                                                                   <span className="nav-icon">
                                                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-card-image" viewBox="0 0 16 16">
                                                                               <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
@@ -291,7 +293,7 @@ const MainDahsboard = () => {
                                                       </li>
 
                                                       <li className="nav-item">
-                                                            <NavLink exact to="/blogs" className="nav-link" activeClassName="active">
+                                                            <NavLink exact={true} to={`${match.url}/blogs`} className="nav-link" activeClassName="active">
                                                                   <span className="nav-icon">
                                                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tablet" viewBox="0 0 16 16">
                                                                               <path d="M12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1 -1h8zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z" />
@@ -304,7 +306,7 @@ const MainDahsboard = () => {
 
 
                                                       <li className="nav-item">
-                                                            <NavLink exact to="/tags" className="nav-link" activeClassName="active">
+                                                            <NavLink exact={true} to={`${match.url}/tags`} className="nav-link" activeClassName="active">
                                                                   <span className="nav-icon">
                                                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tags" viewBox="0 0 16 16">
                                                                               <path d="M3 2v4.586l7 7L14.586 9l-7-7H3zM2 2a1 1 0 0 1 1-1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 2 6.586V2z" />
@@ -316,7 +318,7 @@ const MainDahsboard = () => {
                                                       </li>
 
                                                       <li className="nav-item">
-                                                            <NavLink exact to="/setting" className="nav-link" activeClassName="active">
+                                                            <NavLink exact={true} to={`${match.url}/setting`} className="nav-link" activeClassName="active">
                                                                   <span className="nav-icon">
                                                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
                                                                               <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246  0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z" />
@@ -366,25 +368,25 @@ const MainDahsboard = () => {
                         <Switch>
 
                               <Route exact path="/dashboard" component={Dashboard} />
-                              <Route exact path="/admin/profile" component={AdminProfile} />
-                              <Route exact path="/product/list" component={ProductList} />
-                              <Route exact path="/product/create" component={CreateProduct} />
-                              <Route exact path="/product/edit" component={EditProduct} />
-                              <Route exact path="/order/list" component={OrderList} />
-                              <Route exact path="/order/details" component={OrderDetail} />
-                              <Route exact path="/order/edit" component={EditOrder} />
-                              <Route exact path="/order/create" component={CreateOrder} />
-                              <Route exact path="/category" component={Category} />
-                              <Route exact path="/users" component={User} />
-                              <Route exact path="/user/profile/edit" component={UserProfileEdit} />
-                              <Route exact path="/user/profile" component={UserProfile} />
-                              <Route exact path="/user/create" component={CreateUser} />
-                              <Route exact path="/gallery" component={Gallery} />
-                              <Route exact path="/image-details" component={ImageDetail} />
-                              <Route exact path="/blogs" component={Blog} />
-                              <Route exact path="/blog/create" component={CreateBlog} />
-                              <Route exact path="/tags" component={Tage} />
-                              <Route exact path="/setting" component={Setting} />
+                              <Route path={`${match.url}/admin/profile`} component={AdminProfile} />
+                              <Route path={`${match.url}/product/list`} component={ProductList} />
+                              <Route path={`${match.url}/create-product`} component={CreateProduct} />
+                              <Route path={`${match.url}/product/edit`} component={EditProduct} />
+                              <Route path={`${match.url}/order/list`} component={OrderList} />
+                              <Route path={`${match.url}/order/details`} component={OrderDetail} />
+                              <Route path={`${match.url}/order/edit`} component={EditOrder} />
+                              <Route path={`${match.url}/create-order`} component={CreateOrder} />
+                              <Route path={`${match.url}/category`} component={Category} />
+                              <Route path={`${match.url}/users`} component={User} />
+                              <Route path={`${match.url}/user/profile/edit`} component={UserProfileEdit} />
+                              <Route path={`${match.url}/user/profile`} component={UserProfile} />
+                              <Route path={`${match.url}/create-user`} component={CreateUser} />
+                              <Route path={`${match.url}/gallery`} component={Gallery} />
+                              <Route path={`${match.url}/image-details`} component={ImageDetail} />
+                              <Route path={`${match.url}/blogs`} component={Blog} />
+                              <Route path={`${match.url}/create-blog`} component={CreateBlog} />
+                              <Route path={`${match.url}/tags`} component={Tage} />
+                              <Route path={`${match.url}/setting`} component={Setting} />
                         </Switch>
 
                   </BrowserRouter>
