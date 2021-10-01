@@ -72,9 +72,9 @@
     .toolbar_nav .toolbar_search_wrapper{
         display: none;
     }
-    .toolbar_nav .toolbar_nav_icon_span{
+    /* .toolbar_nav .toolbar_nav_icon_span{
         display: none;
-    } 
+    }  */
     .toolbar_nav .toolbar_yellow_btn{
         display: none;
     }

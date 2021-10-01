@@ -2,24 +2,23 @@ import React from 'react';
 import CartItem from './CartItem';
 import './Cart.css';
 import EmptyCart from './EmptyCart/EmptyCart';
+import CartTest from './CartTest/CartTest';
 const Cart = (props) => {
   return (
     <>
-      <div className='col-lg-12 p-md-5'>
+      {/* <div className='col-lg-12 p-md-5'>
         <section>
           <div className="row">
             <div className="col-lg-8">
               <div className="mb-3">
                 <div className="card border-0 rounded-0 shadow p-4">
-                  <h5 className="mb-4">Cart (<span>2</span> items)</h5>
-                  {/* render cart items */}
+                  <h5 className="mb-4">Cart (<span>2</span> items)</h5> 
                   <CartItem />
                   <CartItem />
                 </div>
               </div>
             </div>
-            <div className="col-lg-4">
-              {/* cart summary */}
+            <div className="col-lg-4"> 
               <div className="cart-summary shadow">
                 <h5 className="text-white mb-3">Check Out Summary</h5>
                 <div className='d-flex flex-row justify-content-between align-items-center'>
@@ -46,10 +45,11 @@ const Cart = (props) => {
           </div>
 
         </section>
-      </div>
+      </div> */}
 
-      <EmptyCart />
+      <EmptyCart /> 
 
+      <CartTest /> 
     </>
   );
 }

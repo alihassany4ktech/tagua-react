@@ -4,20 +4,45 @@
 .login-drop-wrapper.close{
     display: none;
 } 
-.login-drop-wrapper .card{
+.login-drop-wrapper .login-drop-ul{
     margin-top: 4px;  
     position: absolute;
-    transform: translateX(-45%); 
+    transform: translateX(-70%); 
     z-index: 2;
     height: auto;
     max-height: 400px;
     overflow-y: auto;
-    min-width: 200px;
+    min-width: 150px;
+} 
+.login-drop-wrapper .login-drop-ul li{
+    list-style: none;
 }
-.login-menu-item-wrapper{
+.login-drop-ul li:first-of-type > .login-item-span{
+    border-top: 1px solid #ccc;
+    /* border-top-left-radius: 4px;
+    border-top-right-radius: 4px; */
+}
+/* .login-drop-ul li:last-of-type > .login-item-span{
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+} */
+.login-drop-ul .login-drop-item .login-item-span{ 
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center; 
-    min-width: 320px;
-} 
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--white);
+    font-size: 15px;
+    padding: 8px 10px;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    width: inherit;
+    text-align: left;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+.login-drop-ul .login-drop-item .login-item-span:hover{
+    cursor: pointer;
+    background-color: var(--yellow);
+    color: var(--black);
+}  

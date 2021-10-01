@@ -3,15 +3,25 @@ import OutsideClickHandler from 'react-outside-click-handler';
 import './LoginDrop.css';
 const LoginDrop = (props) => {
     const [open, setOpen] = useState(false);
+    const closeHandler = () => {
+        setOpen(false);
+    }
     const LoginDropMenu = (props) => {
         return (
             <div className='login-drop-wrapper'>
-                <div className='card p-2 rounded-0'> 
-
-                    <button onClick={() => setOpen(false)} className='btn bg-yellow rounded-0 w-100'>Login</button>
-                    <button onClick={() => setOpen(false)} className='btn bg-yellow rounded-0 w-100 mt-2'>Demo</button>
-
-                </div>
+                <ul className="login-drop-ul">
+                    <li className="login-drop-item">
+                        <span className='login-item-span' onClick={ () => closeHandler() }>
+                            <span><i className="bi bi-person-fill"></i> Account</span>
+                        </span>
+                        <span className='login-item-span' onClick={ () => closeHandler() }>
+                            <span><i className="bi bi-person-fill"></i> Register</span>
+                        </span>
+                        <span className='login-item-span' onClick={ () => closeHandler() }>
+                            <span><i className="bi bi-box-arrow-right"></i> Login</span>
+                        </span>
+                    </li>
+                </ul>
 
             </div>
         )
@@ -24,7 +34,7 @@ const LoginDrop = (props) => {
                     setOpen(false)
                 }
             >
-                <span type="button" onClick={() => setOpen(!open)} className='toolbar_nav_icon_span mx-3'>
+                <span type="button" onClick={() => setOpen(!open)} className='toolbar_nav_icon_span mx-md-1 mx-lg-3'>
                     <i className='bi bi-person'></i>
                 </span>
                 {open && <LoginDropMenu />}
