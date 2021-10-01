@@ -19,7 +19,7 @@ const App = () => {
         <Route exact path="/verify-otp" component={VerifyOtp} />
         <Route exact path="/reset-password" component={ResetPassword} />
         <Route exact path="/signup" component={Signup} />
-        <Route exact path="/dashboard" component={MainDahsboard} />
+        <Route path="/dashboard" component={MainDahsboard} />
         <Route exact path="/home" component={Home} />
         <Redirect to="/" />
       </Switch>
