@@ -2,6 +2,7 @@ import React from 'react';
 import ProductCard from '../../Home/Components/PopularProducts/ProductCard';
 import ReactPaginate from 'react-paginate';
 import Filter from './Filter/Filter';
+import './AllProduct.css';
 const AllProduct = () => {
     const data = [
         {
@@ -33,40 +34,38 @@ const AllProduct = () => {
             decription: "Lorem ipsum dolor sit consectetur",
             prevPrice: "$200",
             newPrice: "$150",
-        }, 
+        },
     ]
     return (
         <>
             <div className='text-center mt-3'>
                 <h2>All Products</h2>
             </div>
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-3 px-3">
+                    <div class="col-md-3 col-lg-3 col-xl-3 px-3">
                         <h2>Filter</h2>
                         <Filter />
                     </div>
-                    <div class="col-md-9"> 
-                        <div class="row">
+                    <div class="col-md-9">
+                        <div className='responsive-grid'>
                             {
                                 data.map(item => {
                                     return (
-                                        <div class="col-sm-6 col-md-6 col-lg-5 col-xl-4 mb-4 p-0">
-                                            <ProductCard
-                                                imgSource={item.imgSource}
-                                                decription={item.decription}
-                                                prevPrice={item.prevPrice}
-                                                newPrice={item.newPrice}
-                                            />
-                                        </div>
+                                        <ProductCard
+                                            imgSource={item.imgSource}
+                                            decription={item.decription}
+                                            prevPrice={item.prevPrice}
+                                            newPrice={item.newPrice}
+                                        />
                                     )
                                 })
-                            } 
-
+                            }
                         </div>
                     </div>
                 </div>
             </div>
+
 
             <div className="overflow-auto">
                 <ReactPaginate

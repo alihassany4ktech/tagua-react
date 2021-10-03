@@ -21,14 +21,11 @@
 .dd-header{ 
     display: flex;
     background-color: var(--white);
-    border-color: #ccc; 
-    border-style: solid;
-    border-width: 1px; 
     display: flex; 
     justify-content: center;
     align-items: center;
     cursor: pointer; 
-    height: 30px; 
+    height: 28px; 
     min-width: max-content;
 } 
 .dd-header__title p{ 

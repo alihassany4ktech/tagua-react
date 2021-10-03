@@ -12,7 +12,7 @@
     height: auto;
     max-height: 400px;
     overflow-y: auto;
-    min-width: 150px;
+    min-width: 200px;
 } 
 .login-drop-wrapper .login-drop-ul li{
     list-style: none;

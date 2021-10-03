@@ -7,7 +7,7 @@ const MainHeader = () => {
             <div className='row'>
                 <div className='col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 bg-black rounded-50'>
                     <div className='col-8 header-content-wrapper'>
-                        <h1 className='text-white'>Search the Perfect Holsters that suits you</h1>
+                        <h2 className='text-white'>Search the Perfect Holsters that suits you</h2>
                         <p className='text-white mb-4'>Lorem ipsum dolor sit amet, consectetur adipiscing, dolor sit amet</p> 
                         <button>Shop Now</button> 
                     </div>

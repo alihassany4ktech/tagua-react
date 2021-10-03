@@ -2,9 +2,10 @@
  * Main wrapper
  */
  .select-search {
-    width: 300px;
+    width: 258px;
+    height: 28px;
     position: relative;
-    font-family: "Nunito Sans", sans-serif;
+    font-family: "Nunito",;
     box-sizing: border-box;
   }
   
@@ -37,7 +38,7 @@
   */
   .select-search__input {
     display: block;
-    height: 30px;
+    height: 28px;
     width: 100%;
     padding: 0 16px;
     background: #fff;

@@ -34,7 +34,7 @@ const LoginDrop = (props) => {
                     setOpen(false)
                 }
             >
-                <span type="button" onClick={() => setOpen(!open)} className='toolbar_nav_icon_span mx-md-1 mx-lg-3'>
+                <span type="button" onClick={() => setOpen(!open)} className='toolbar_nav_icon_span mx-3'>
                     <i className='bi bi-person'></i>
                 </span>
                 {open && <LoginDropMenu />}

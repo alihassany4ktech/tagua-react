@@ -28,7 +28,7 @@ const SearchSelect = () => {
     ];
     return (
         <> 
-            <div style={{ margin: "0 auto", width: 300 }}>
+            <div>
                 <SelectSearch
                     options={options}
                     value={value}

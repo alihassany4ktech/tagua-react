@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import CartDrop from './CartDrop/CartDrop';
 import LoginDrop from './LoginDrop/LoginDrop';
 import Drop from './LoginDrop/Drop';
+import LanguagePopover from './Popover/LanguagePopover';
 
 const Toolbar = (props) => {
     return (
@@ -29,6 +30,7 @@ const Toolbar = (props) => {
                         {/* <span className='toolbar_nav_icon_span mx-3'><i className='bi bi-person'></i></span> */}
                         <LoginDrop />
                         <CartDrop />
+                        {/* <LanguagePopover /> */}
                         {/* <Drop /> */}
                     </div>
                 </nav>
