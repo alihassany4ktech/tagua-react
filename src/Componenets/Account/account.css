@@ -1,0 +1,13 @@
+.account-responsive-grid{
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+          gap: 1rem;
+}
+.account-div:hover{
+      cursor: pointer;
+}
+
+.account-div:hover .bi {
+      color: var(--yellow);
+     
+}
