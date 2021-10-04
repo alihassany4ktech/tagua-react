@@ -6,16 +6,20 @@
     margin-right: 15px;
 }
 .nav-contact-span .icon-span{ 
-    background-color: rgb(50, 53, 16); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(50, 53, 16);  
     width: 32px;
     height: 32px;
+    padding-top: 1.5px;
     border-radius: 50%; 
-    text-align: center; 
-    padding: 4px;
+    text-align: center;   
     color: var(--yellow); 
     font-size: 15px;
     margin-right: 5px;
-} 
+}  
 .nav-contact-span p{
     color: var(--yellow);
     font-size: 14px;  
@@ -109,6 +113,8 @@
     height: 28px;
     padding: 0 2rem; 
     font-size: 14px;
+    margin: 0px 5px;
+
 }
 .searchBar .searchBar_btn_wrapper .btn:hover{
     opacity: 0.8;
@@ -132,5 +138,5 @@
     align-items: center;
 }
 .menubar-wrapper-row .search-item{
-    margin: 3px 5px;
+    margin: 0px 5px;
 }

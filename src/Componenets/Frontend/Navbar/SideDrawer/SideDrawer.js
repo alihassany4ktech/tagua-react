@@ -27,13 +27,7 @@ const SideDrawer = (props) => {
               <button className='btn bg-yellow'>Access Dealer Area</button>
             </span>
           </div>
-          <div className='d-flex flex-row align-items-center justify-content-center'>
-            <span className='toolbar_nav_icon_span mx-3'><i className='bi bi-person'></i></span> 
-            {/* <span className='toolbar_nav_icon_group'>
-              <i className='bi bi-bag'></i>
-              <p className='mx-2'>5 items - $39.95</p>
-            </span> */}
-          </div>
+         
 
           <div className='mt-4 pl-1'>
             {

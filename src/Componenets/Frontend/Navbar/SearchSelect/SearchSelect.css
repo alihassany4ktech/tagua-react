@@ -6,7 +6,7 @@
     height: 28px;
     position: relative;
     font-family: "Nunito",;
-    box-sizing: border-box;
+    box-sizing: border-box; 
   }
   
   .select-search *,
@@ -20,7 +20,7 @@
   */
   .select-search__value {
     position: relative;
-    z-index: 1;
+    z-index: 1; 
   }
   
   .select-search__value::after {

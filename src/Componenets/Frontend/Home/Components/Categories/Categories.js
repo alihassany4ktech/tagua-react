@@ -3,7 +3,7 @@ import './Categories.css';
 import CategoryCard from './CategoryCard';
 const Categories = (props) => {
     const data = [
-        { imgSource: 'images/gun.jpg', category: 'KYDEX HOLSTERS' },
+        { imgSource: 'https://www.taguagunleather.com/wp-content/uploads/2019/03/p_4_4_3_443-TWHS-H4-PINK-THE-PINK-4-IN-1-Open-Top-Holster.jpg', category: 'KYDEX HOLSTERS' },
         { imgSource: 'images/gun2.jpg', category: 'SHOULDERS HOLSTERS' },
         { imgSource: 'images/gun3.jpg', category: 'OPEN CARRY HOLSTRERS' },
         { imgSource: 'images/gun2.jpg', category: 'KYDEX HOLSTERS' },
@@ -19,7 +19,18 @@ const Categories = (props) => {
                         <p className='color-yellow mt-3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida porttitor lorem in blandit. Etiam id venenatis nisl.</p>
                     </div>
                     <div className='col-sm-10 mx-auto'>
-                        <div className='row'>
+                        
+                        {/* <div className='row'>
+                            {
+                                data.map(item =>
+                                    <CategoryCard
+                                        imgSource={item.imgSource}
+                                        category={item.category}
+                                    />
+                                )
+                            }
+                        </div> */}
+                        <div className='category-responsive-grid'>
                             {
                                 data.map(item =>
                                     <CategoryCard
