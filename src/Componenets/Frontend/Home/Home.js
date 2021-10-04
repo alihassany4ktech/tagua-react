@@ -20,6 +20,7 @@ import Faq from '../FAQ/Faq';
 import TrackOrder from '../TrackOrder/TrackOrder';
 import Login from '../Auth/Login';
 import Register from '../Auth/Register';
+import Account from '../../Account/Account';
 const Home = () => {
     return (
         <>
@@ -40,6 +41,8 @@ const Home = () => {
                         <Route exact path="/terms-condition" component={TermAndCondition} />
                         <Route exact path="/login" component={Login} />
                         <Route exact path="/register" component={Register} />
+                        <Route exact path="/account" component={Account} />
+
                     </Switch>
                 </div>
                 <Footer />
