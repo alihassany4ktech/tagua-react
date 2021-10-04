@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './ProductDetailPage.css';
 import MenuDrop from '../../Navbar/MenuDrop/MenuDrop';
 import CartCounter from './CartCounter';

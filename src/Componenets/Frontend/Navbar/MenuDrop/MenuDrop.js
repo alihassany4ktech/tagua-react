@@ -48,19 +48,18 @@ function Dropdown({ title, items, styles, width,multiSelect = false }) {
                     style={{width:width}}
                 >
                     <div className="dd-header__title">
-                        <p className="dd-header__title--bold mx-2">{name}</p>
+                        <p className="mx-2">{name}&nbsp;{open ? <i class="bi bi-caret-up"></i> : <i class="bi bi-caret-down"></i>}</p>
                     </div>
-                    <div className="dd-header__title">
+                    {/* <div className="dd-header__title">
                         <p className='dd-header__title--bold'>{open ? <i class="bi bi-caret-up"></i> : <i class="bi bi-caret-down"></i>}</p>
-                    </div>
+                    </div> */}
                 </div>
                 {open && (
                     <ul className="dd-list">
                         {items.map(item => (
                             <li className="dd-list-item" key={item.id}>
                                 <span className={isItemInSelection(item) ? 'list-item-span active' : 'list-item-span'} onClick={() => handleOnClick(item)}>
-                                    <span>{item.value}</span>
-                                    <span>{isItemInSelection(item) && <i class="bi bi-check"></i>}</span>
+                                    <span>{item.value}</span> 
                                 </span>
                             </li>
                         ))}

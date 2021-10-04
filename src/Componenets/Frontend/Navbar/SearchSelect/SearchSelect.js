@@ -35,22 +35,10 @@ const SearchSelect = () => {
                     onChange={setValue}
                     search
                     filterOptions={fuzzySearch}
-                    placeholder="Search something"
+                    placeholder="Select Your Holster by Gun"
                 />
             </div>
-            {/* <div style={{ margin: "0 auto", width: 300, marginTop: 100 }}>
-                <SelectSearch
-                    multiple={true}
-                    printOptions={"on-focus"}
-                    closeOnSelect={false}
-                    options={options}
-                    value={multipleValues}
-                    onChange={setMultipleValues}
-                    search
-                    filterOptions={fuzzySearch}
-                    placeholder="Search something"
-                />
-            </div> */}
+           
         </>
     );
 };

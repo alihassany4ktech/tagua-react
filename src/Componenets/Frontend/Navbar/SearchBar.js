@@ -9,7 +9,7 @@ const SearchBar = () => {
     const items = [
         {
             id: 1,
-            value: 'item 1 has name',
+            value: 'item 1 has name item 1 has name',
         },
         {
             id: 2,

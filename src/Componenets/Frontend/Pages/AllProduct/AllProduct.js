@@ -70,9 +70,7 @@ const AllProduct = () => {
             <div className="overflow-auto">
                 <ReactPaginate
                     previousLabel={"Prev"}
-                    nextLabel={"Next"}
-                    // pageCount={pageCount}
-                    // onPageChange={changePage}
+                    nextLabel={"Next"} 
                     containerClassName={"paginationBttnsLight"}
                     previousLinkClassName={"previousBttnLight"}
                     nextLinkClassName={"nextBttnLight"}
