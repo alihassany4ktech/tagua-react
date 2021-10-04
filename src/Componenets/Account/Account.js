@@ -3,6 +3,7 @@ import { BrowserRouter, NavLink, Switch, Route, Link } from "react-router-dom";
 import Dashboard from "./dashboard/Dashboard";
 import "./account.css";
 import Order from "./orders/Order";
+import Address from "./Addresses/Address";
 const Account = () => {
 
       return (
@@ -36,10 +37,11 @@ const Account = () => {
                                                             </a>
                                                       </li>
                                                       <li className="nav-item">
-                                                            <a href="#" className="nav-link">
+
+                                                            <NavLink exact to="/addresses" className="nav-link" activeClassName="active1">
 
                                                                   <span className="nav-link-text">Addresses</span>
-                                                            </a>
+                                                            </NavLink>
                                                       </li>
                                                       <li className="nav-item">
                                                             <a href="#" className="nav-link">
@@ -77,6 +79,7 @@ const Account = () => {
                                     <Switch>
                                           <Route exact path="/account" component={Dashboard} />
                                           <Route exact path="/orders" component={Order} />
+                                          <Route exact path="/addresses" component={Address} />
 
                                     </Switch>
 
