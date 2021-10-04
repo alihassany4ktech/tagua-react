@@ -1,3 +1,8 @@
+.category-responsive-grid { 
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem; 
+}
 .category-wrapper h2{
     font-size: 38px;
 }
@@ -6,13 +11,15 @@
 }
 .category-card { 
     width: 100%;
+    height: 380px;
+    overflow: hidden;
+    background: #ccc;
 }
-.category-card img { 
-    object-fit: cover; 
-    height: 16rem;
+.category-card img {  
+    height: 100%;
 } 
 .category-card .btn{
-    font-size: 16px;
+    font-size: 16px; 
 }
 .category-card .btn:hover{
     opacity: 0.8;
