@@ -40,9 +40,6 @@
     color: var(--yellow);
 }
 .icon-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 35px;
     height: 35px; 
     border-radius: 50%;
@@ -50,6 +47,7 @@
     background-color: var(--white);
     color: var(--yellow); 
     transition: all 0.1s ease-in-out;
+    padding: 0;
     z-index: 1;
 }  
 .icon-btn:hover{  
@@ -60,6 +58,7 @@
     -webkit-text-stroke: 1px var(--white);
 }
 .icon-btn i{
+    height: 100%;
     font-size: 16px;
     -webkit-text-stroke: 1px var(--yellow);
 } 
@@ -77,4 +76,4 @@
     .dnsm-dbmd{
         display: none;
     }
-}
+} 

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins'); 
 :root {
     --yellow: #E8C21E;
     --yellow-light: rgba(255, 206, 86, 0.1);
@@ -9,7 +10,8 @@ html{
 }
 body{
   overflow-x: hidden;
-  font-family: 'Nunito';
+  /* font-family: 'Nunito'; */
+  font-family: 'poppins' !important;
  
 }  
  body p {

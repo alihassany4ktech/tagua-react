@@ -97,8 +97,9 @@ export default class PopularProducts extends Component {
                                     <h2>Popular Products</h2>
                                     <p className='text-dark mt-3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida porttitor lorem in blandit. Etiam id venenatis nisl.</p>
                               </div>
+                             
                               {/* card-carousal arros small screen */}
-                              <div className="text-center mb-3 d-flex flex-row align-items-center justify-content-center dnmd-dbm">
+                              <div className="text-center mb-3 dnmd-dbm">
                                     {/* carousal arrows small screen left and right */}
                                     <button className="icon-btn mx-2" onClick={this.previous}>
                                           <i class="bi bi-arrow-left"></i>

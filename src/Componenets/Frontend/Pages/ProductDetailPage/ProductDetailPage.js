@@ -44,6 +44,7 @@ const ProductDetailPage = (props) => {
             original: 'images/web-image.jpg',
             thumbnail: 'images/web-image.jpg',
         },
+        
     ];
     const items = [
         {
@@ -74,11 +75,11 @@ const ProductDetailPage = (props) => {
     return (
         <>
 
-            <div className='row'>
-                <div className='col-12 col-sm-12 col-md-7 col-lg-7 p-0'>
+            <div className='row p-3 p-md-3 p-lg-4'>
+                <div className='col-12 col-sm-12 col-md-6 col-lg-7 p-0'>
                     <ProductGallery images={images} />
                 </div>
-                <div className='col-12 col-sm-12 col-md-5 col-lg-5 product-detail-wrapper py-2 py-md-3 py-lg-5  px-xl-5'>
+                <div className='col-12 col-sm-12 col-md-6 col-lg-5 product-detail-wrapper p-0 mt-2 mt-md-0 px-md-3 px-lg-4'>
                     <h2>TAGUA ECOLEATHER-PINK WEIGHTLESS 4 IN 1 OPEN TOP HOLSTER</h2>
                     <h3 className='m-0'>$145</h3>
                     <ReactStars
