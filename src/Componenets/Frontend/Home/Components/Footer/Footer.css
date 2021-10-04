@@ -39,6 +39,7 @@
     height: 44px; 
     border-radius: 50%;
     border: none;
+    padding: 7px;
     background-color: var(--white);
     color: var(--yellow); 
     transition: all 0.1s ease-in-out;

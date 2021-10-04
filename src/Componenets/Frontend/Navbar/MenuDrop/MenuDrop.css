@@ -20,18 +20,16 @@
 }
 .dd-header{  
     background-color: var(--white);
-    /* display: flex; 
-    justify-content: center;
-    align-items: center; */
     cursor: pointer; 
     height: 28px; 
-    /* min-width: max-content; */
-    color: var(--black);
-    
+    color: var(--black);    
 } 
 .dd-header__title{ 
     white-space: nowrap; 
     width: 100%; 
+    height: 100%;
+    text-align: center;
+    padding-top: 4px;
     overflow: hidden;
     text-overflow: ellipsis;
 }
