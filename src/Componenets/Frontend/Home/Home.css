@@ -9,8 +9,12 @@ html{
 }
 body{
   overflow-x: hidden;
-  font-family: 'Nutnito';
+  font-family: 'Nunito';
+ 
 }  
+ body p {
+   font-family: 'Poppins';
+ }
 .text-yellow{
   color: var(--yellow);
 }
