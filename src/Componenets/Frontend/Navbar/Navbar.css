@@ -142,3 +142,9 @@
 .menubar-wrapper-row .search-item{
     margin: 0px 5px;
 }
+.search-item input{
+    height: 28px;
+    width: 100%;
+    font-size: 14px; 
+    text-overflow: ellipsis;
+}

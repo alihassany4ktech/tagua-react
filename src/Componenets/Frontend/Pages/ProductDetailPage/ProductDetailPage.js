@@ -91,12 +91,15 @@ const ProductDetailPage = (props) => {
                         isHalf={true}
                     />
                     <p>Lightweight, low profile, tough and comfortable. These, among others are some of the best words to describe the Foundation Series Gunbelt. </p>
-                    <div className='w-50'>
-                        <MenuDrop title='Guns' items={items} width='100%' />
+                    <div className='row'>
+                        <div className='col-sm-6 my-1'>
+                            <MenuDrop title='Guns' items={items} width='100%' background='#E8C21E'/>
+                        </div>
+                        <div className='col-sm-6 my-1'>
+                            <MenuDrop title='Select Color' items={items} width='100%' background='#E8C21E' />
+                        </div>
                     </div>
-                    <div className='w-50'>
-                        <MenuDrop title='Select Color' items={items} styles={{ marginTop: 10 }} width='100%' />
-                    </div>
+
                     <div className='d-flex flex-row justify-content-center align-items-center mt-3'>
                         <CartCounter />
                         <button className='btn add-card-btn mx-3'>Add to Cart</button>

@@ -6,20 +6,18 @@
     height: 45px;
     padding: 5px 20px; 
     border-radius: 0;
-    color: var(--yellow);
-    background-color: var(--black);
-}
-.product-detail-wrapper .add-card-btn:hover{
     color: var(--white);
-    background-color: var(--yellow); 
-    /* opacity: 0.8; */
+    background-color: var(--yellow);
+}
+.product-detail-wrapper .add-card-btn:hover{ 
+    opacity: 0.8;
 }
 .image-gallery-slide .image-gallery-image {
     /* border-radius: 15px; */
     width: 100%;
     height: 380px;
     object-fit: 100% !important;
-} 
+}  
 .image-gallery-bullets .image-gallery-bullet.active {
     transform: scale(1.2);
     border: 1px solid #fff;

@@ -2,10 +2,9 @@
  * Main wrapper
  */
  .select-search {
-    width: 258px;
-    height: 28px;
-    position: relative;
-    font-family: "Nunito",;
+    /* width: 258px;
+    height: 28px; */ 
+    position: relative; 
     box-sizing: border-box; 
   }
   
@@ -20,7 +19,7 @@
   */
   .select-search__value {
     position: relative;
-    z-index: 1; 
+    z-index: 1;  
   }
   
   .select-search__value::after {
@@ -37,21 +36,24 @@
   * Input
   */
   .select-search__input {
-    display: block;
-    height: 28px;
-    width: 100%;
-    padding: 0 16px;
-    padding-top: 2px;
-    background: #fff;
+    display: block; 
+    /* height: 28px;
+    width: 100%; */
+    padding: 0 16px; 
+    background: #fff; 
     border: 1px solid transparent;
     /* box-shadow: 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.15); */ 
     outline: none; 
-    font-size: 14px;
+    font-size: 15px;
     text-align: left;
     text-overflow: ellipsis;
     line-height: 28px;
     -webkit-appearance: none;
     color: gray;
+    border-radius: 25px; 
+    width: 570px;
+    height: 47px;
+
   }
   
   .select-search__input::-webkit-search-decoration,
@@ -164,10 +166,7 @@
   
   .select-search:not(.is-loading):not(.select-search--multiple)
     .select-search__value::after {
-    transform: rotate(45deg);
-    /* border-right: 1px solid #000;
-    border-bottom: 1px solid #000;
-    pointer-events: none; */
+    transform: rotate(45deg); 
   }
   
   .select-search--multiple .select-search__input {
@@ -189,7 +188,7 @@
   .select-search:not(.select-search--multiple) .select-search__select {
     position: absolute;
     z-index: 2;
-    top: 35px;
+    top: 50px;
     right: 0;
     left: 0;
     border-radius: 3px;

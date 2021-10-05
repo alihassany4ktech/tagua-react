@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './MenuDrop.css';
 import OutsideClickHandler from 'react-outside-click-handler'; 
 
-function Dropdown({ title, items, styles, width,multiSelect = false }) {
+function Dropdown({ title, items, styles, width, background, multiSelect = false }) {
     const [name, setName] = useState(title); 
     const [open, setOpen] = useState(false);
     const [selection, setSelection] = useState([]); 
@@ -24,6 +24,7 @@ function Dropdown({ title, items, styles, width,multiSelect = false }) {
             setSelection([...selectionAfterRemoval]);
             setName(title); 
         }
+        setOpen(false);
     }
 
     function isItemInSelection(item) {
@@ -45,7 +46,7 @@ function Dropdown({ title, items, styles, width,multiSelect = false }) {
                     className="dd-header" 
                     onKeyPress={() => toggle(!open)}
                     onClick={() => toggle(!open)}
-                    style={{width:width}}
+                    style={{width:width,background:background}}
                 >
                     <div className="dd-header__title">
                         <p className="mx-2">{name}&nbsp;{open ? <i class="bi bi-caret-up"></i> : <i class="bi bi-caret-down"></i>}</p>
