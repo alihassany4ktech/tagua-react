@@ -30,18 +30,20 @@ const Pay = () => {
                                                 <tbody>
 
                                                       <tr style={{ lineHeight: "60px" }}>
-                                                            <td class="cell align-middle" style={{ fontSize: "12px", lineHeight: "23px" }}>TAGUA NYLON-CAMO IWB/OWB HOLSTER × 1 <br /> <br />
+                                                            <td class="cell align-middle" style={{ fontSize: "12px", lineHeight: "23px" }}>
+                                                                  <p className="mt-1">TAGUA LEATHER-CLIP ON MAG CARRIER</p>
                                                                   <b> Color: </b>Camouflage <br />
                                                                   <b> Hand Options: </b>Ambidextrous <br />
-                                                                  <b> Gun Models: </b>COLT - .380 Mustang - (2.75")(.380)
+                                                                  <b> Magazine Holder Options: <br /> </b>Glock 42/43, S&W Shield Single Stack <br />
+
                                                             </td>
                                                             <td class="cell align-middle text-end" style={{ fontSize: "12px" }}>× 1</td>
-                                                            <td class="cell align-middle text-end" style={{ fontSize: "12px" }}>$18.80 </td>
+                                                            <td class="cell align-middle text-end" style={{ fontSize: "14px", color: "#E8C21E" }}> <b>$29.25</b></td>
                                                       </tr>
                                                       <tr style={{ lineHeight: "40px" }}>
                                                             <td class="cell align-middle" colspan="2" style={{ fontSize: "12px" }}> <b>Subtotal:</b> </td>
 
-                                                            <td class="cell align-middle text-end" style={{ fontSize: "12px" }}> <span style={{ color: "#E8C21E" }}> <b>$18.80</b> </span>  </td>
+                                                            <td class="cell align-middle text-end" style={{ fontSize: "14px" }}> <span style={{ color: "#E8C21E" }}> <b>$29.25</b> </span>  </td>
                                                       </tr>
 
                                                       <tr style={{ lineHeight: "40px" }}>
@@ -58,13 +60,13 @@ const Pay = () => {
                                                       <tr style={{ lineHeight: "40px" }}>
                                                             <td class="cell align-middle" colspan="2" style={{ fontSize: "24px" }}> <b>Total:</b> </td>
 
-                                                            <td class="cell align-middle text-end" style={{ fontSize: "24px" }}><span style={{ color: "#E8C21E" }}> $18.80 </span> </td>
+                                                            <td class="cell align-middle text-end" style={{ fontSize: "24px" }}><span style={{ color: "#E8C21E" }}> <b>$29.25</b> </span> </td>
                                                       </tr>
                                                       <tr style={{ lineHeight: "23px" }}>
                                                             <td class="cell align-middle" colspan="3" >
                                                                   {
-                                                                        hideShow ? <div>
-                                                                              <input className="form-check-input rounded-pill" style={{ marginTop: "13px" }} type="radio" onChange={showHideHandler} name="pay" value="" id="settings-checkbox-1" checked /> &nbsp; <small>payPal <img src={cardsimg} width="200px" height="35px" alt="pic" /> <NavLink exact to="#" className="paypal-link"> <u>What is PayPal?</u></NavLink> </small>  <br />
+                                                                        hideShow ? <div className="mt-4">
+                                                                              <input className="form-check-input rounded-pill" style={{ marginTop: "9px" }} type="radio" onChange={showHideHandler} name="pay" value="" id="settings-checkbox-1" checked /> &nbsp; <small>payPal <img src={cardsimg} width="200px" height="35px" alt="pic" /> <NavLink exact to="#" className="paypal-link"> <u>What is PayPal?</u></NavLink> </small>  <br />
 
                                                                         </div> : <div>
                                                                               <input className="form-check-input rounded-pill" style={{ marginTop: "13px" }} type="radio" onChange={showHideHandler} name="pay" value="" id="settings-checkbox-1" /> &nbsp; <small>payPal <img src={cardsimg} width="200px" height="35px" alt="pic" /> <NavLink exact to="#" className="paypal-link"> <u>What is PayPal?</u></NavLink> </small>  <br />
