@@ -36,11 +36,11 @@ const MenuBarDropDown = (props) => {
                     setOpen(false);
                 }}
             >
-                <div className="dd-m-wrapper">
+                <div className="dd-m-wrapper"  onKeyPress={() => toggle(!open)}
+                        onClick={() => toggle(!open)} >
                     <div 
                         className="dd-m-header text-uppercase"
-                        onKeyPress={() => toggle(!open)}
-                        onClick={() => toggle(!open)} 
+                       
                     >
                         <div className="dd-m-header__title">
                             <p className="dd-header__title--bold mx-2">{name}</p>

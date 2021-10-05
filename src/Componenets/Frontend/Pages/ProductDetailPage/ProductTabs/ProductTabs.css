@@ -1,0 +1,22 @@
+.productTabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+    color: var(--yellow); 
+    background-color: #fff; ;
+    border-color: #E8C21E #E8C21E #fff; 
+}
+.nav-link {
+    display: block;
+    padding: .5rem 1rem;
+    font-size: 15px;
+    font-weight: 600;
+    color: #495057;
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+.nav-link:hover{
+    color: var(--yellow);
+    border-bottom: unset;
+
+}
+.nav-tabs {
+    border-bottom: 1px solid var(--yellow);
+}

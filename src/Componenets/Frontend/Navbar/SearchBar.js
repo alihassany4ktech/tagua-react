@@ -72,7 +72,8 @@ const SearchBar = () => {
                                 <Link className='btn text-black' to="/allproducts">SALE</Link>
                             </div>
                             <div className='menu-item-wrapper search-item'>
-                                <SearchSelect />
+                                {/* <SearchSelect /> */}
+                                <input type="email" className="form-control border-0 rounded-0 my-auto px-3" aria-describedby="emailHelp" placeholder="Search the Holster by Gun"/> 
                                 {/* <MenuDrop title='Select Your Holsters By Gun' items={items} width='258px' /> */}
                             </div>
                             {/* <Select options={options}/> */}

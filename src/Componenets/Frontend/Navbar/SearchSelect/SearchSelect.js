@@ -35,7 +35,7 @@ const SearchSelect = () => {
                     onChange={setValue}
                     search
                     filterOptions={fuzzySearch}
-                    placeholder="Select Your Holster by Gun"
+                    placeholder="Select Store..."
                 />
             </div>
            
