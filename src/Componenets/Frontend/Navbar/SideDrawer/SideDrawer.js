@@ -1,9 +1,9 @@
-import React from "react";
-import ContactItemGroup from "../ContactItemGroup";
+import React from "react"; 
+import ContactItemGroup from "../ContactItemGroup"; 
 import "./SideDrawer.css";
 const SideDrawer = (props) => {
 
-  const data = [
+  const dataContact = [
     { iconClass: 'bi bi-telephone', content: '+1-866-233-44' },
     { iconClass: 'bi bi-envelope-open', content: 'hello@tagualeather.com' },
     { iconClass: 'bi bi-truck', content: 'Free Shipping' },
@@ -27,11 +27,11 @@ const SideDrawer = (props) => {
               <button className='btn bg-yellow'>Access Dealer Area</button>
             </span>
           </div>
-         
+          
 
           <div className='mt-4 pl-1'>
             {
-              data.map(item => 
+              dataContact.map(item =>
                 <ContactItemGroup
                   iconClass={item.iconClass}
                   content={item.content}

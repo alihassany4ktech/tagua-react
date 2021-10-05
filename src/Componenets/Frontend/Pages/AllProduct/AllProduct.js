@@ -43,7 +43,7 @@ const AllProduct = () => {
             </div>
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-3 col-lg-3 col-xl-3 px-3">
+                    <div class="col-md-3 col-lg-3 col-xl-3  px-3">
                         <h2>Filter</h2>
                         <Filter />
                     </div>
