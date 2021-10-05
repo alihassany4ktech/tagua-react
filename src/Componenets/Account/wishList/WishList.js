@@ -1,7 +1,7 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
-const Dashboard = () => {
+const WishList = () => {
 
       return (
             <>
@@ -76,65 +76,22 @@ const Dashboard = () => {
 
 
                               </div>
-
-                              <div className="col-12 col-md-9 p-4">
-
-                                    <p>Hello peter (not peter? Log out)</p>
-
-                                    <p>From your account dashboard you can view your recent orders, manage your shipping and billing
-                                          addresses, and <Link exact to="#"> edit your password and account details</Link>.</p>
-                                    <div className="account-responsive-grid mt-4">
-                                          <Link exact to="/orders">
-                                                <div className="text-center shadow border-0 account-div" style={{ border: "1px solid #dbdddc", height: "130px" }}>
-                                                      <i class="bi bi-list-check mt-4 " style={{ fontSize: '50px' }}></i>
-                                                      <p className="mb-5">ORDERS</p>
-                                                </div>
-                                          </Link>
-                                          <Link exact to="/download">
-                                                <div className="text-center shadow border-0 account-div" style={{ border: "1px solid #dbdddc", height: "130px" }}>
-                                                      <i class="bi bi-download mt-4 " style={{ fontSize: '50px' }}></i>
-                                                      <p className="mb-5">DOWNLOADS</p>
-
-                                                </div>
-                                          </Link>
-                                          <Link exact to="/addresses">
-                                                <div className="text-center shadow border-0 account-div" style={{ border: "1px solid #dbdddc", height: "130px" }}>
-                                                      <i class="bi bi-geo-alt mt-4" style={{ fontSize: '50px' }}></i>
-                                                      <p className="mb-5">ADDRESSES</p>
-                                                </div>
-                                          </Link>
-                                          <Link exact to="/payment-method">
-                                                <div className="text-center shadow border-0 account-div" style={{ border: "1px solid #dbdddc", height: "130px" }}>
-                                                      <i class="bi bi-credit-card-2-front mt-4" style={{ fontSize: '50px' }}></i>
-                                                      <p className="mb-5">PAYMENT METHODS</p>
-                                                </div>
-                                          </Link>
-                                          <Link exact to="/account-details">
-                                                <div className="text-center shadow border-0 account-div" style={{ border: "1px solid #dbdddc", height: "130px" }}>
-                                                      <i class="bi bi-person-circle mt-4" style={{ fontSize: '50px' }}></i>
-                                                      <p className="mb-5">ACCOUNT DETAILS</p>
-                                                </div>
-                                          </Link>
-                                          <Link exact to="/wish-list">
-                                                <div className="text-center shadow border-0 account-div" style={{ border: "1px solid #dbdddc", height: "130px" }}>
-                                                      <i class="bi bi-suit-heart mt-4" style={{ fontSize: '50px' }}></i>
-                                                      <p className="mb-5">WISHLIST</p>
-                                                </div>
-
-                                          </Link>
-                                          <div className="text-center shadow border-0  account-div" style={{ border: "1px solid #dbdddc", height: "130px" }}>
-                                                <i class="bi bi-box-arrow-right mt-4" style={{ fontSize: '50px' }}></i>
-                                                <p className="mb-5">LOGOUT</p>
+                              <div className="col-12 col-md-9 p-3">
+                                    <div className="row">
+                                          <div className="col-md-12 text-center mb-5">
+                                                <i className="bi bi-suit-heart" style={{ fontSize: "160px", color: "#efeff1" }}></i>
+                                                <h2 className="text-dark">Wishlist is empty.</h2>
+                                                <p><small className="mt-3">
+                                                      You don't have any products in the wishlist yet. <br />You will find a lot of interesting products on our "Shop" page.
+                                                </small></p>
+                                                <button className="btn bg-yellow rounded-0 text-white mt-3 px-4 py-2" >RETURN TO SHOP</button>
                                           </div>
                                     </div>
                               </div>
                         </div>
-
-                  </div>
-
+                  </div >
             </>
       );
 }
 
-
-export default Dashboard;
+export default WishList;

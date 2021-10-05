@@ -43,6 +43,7 @@ const Home = () => {
                         <Route exact path="/register" component={Register} />
                         <Route exact path="/account" component={Account} />
 
+
                     </Switch>
                 </div>
                 <Footer />

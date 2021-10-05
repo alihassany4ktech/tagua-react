@@ -1,8 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom"
 
+const OrderView = () => {
 
-const Address = () => {
       return (
             <>
                   <div className="container-fluid p-0">
@@ -77,29 +77,78 @@ const Address = () => {
 
                               </div>
                               <div className="col-12 col-md-9 p-4">
-                                    <p>The following addresses will be used on the checkout page by default. </p>
-                                    <div className="row">
+                                    <p style={{ fontSize: "13px" }}>Order # <b>24154</b>  was placed on  <b>February 24, 2021</b>  and is currently <b>Processing</b> .</p> <br />
+                                    <h4>ORDER DETAILS</h4>
+                                    <div class="table-responsive p-2">
+                                          <table class="table app-table-hover mb-0 text-left">
+                                                <thead>
+                                                      <tr style={{ lineHeight: "30px" }}>
+                                                            <th class="cell">PRODUCT</th>
+
+                                                            <th class="cell text-end">TOTAL</th>
+                                                      </tr>
+                                                </thead>
+                                                <tbody>
+
+                                                      <tr style={{ lineHeight: "60px" }}>
+                                                            <td class="cell align-middle" style={{ fontSize: "12px", lineHeight: "23px" }}>TAGUA NYLON-CAMO IWB/OWB HOLSTER × 1 <br /> <br />
+                                                                  <b> Color: </b>Camouflage <br />
+                                                                  <b> Hand Options: </b>Ambidextrous <br />
+                                                                  <b> Gun Models: </b>COLT - .380 Mustang - (2.75")(.380)
+                                                            </td>
+                                                            <td class="cell align-middle text-end" style={{ fontSize: "12px" }}>$18.80 </td>
+                                                      </tr>
+
+                                                      <tr style={{ lineHeight: "40px" }}>
+                                                            <td class="cell align-middle" style={{ fontSize: "12px" }}> <b>Subtotal:</b> </td>
+                                                            <td class="cell align-middle text-end" style={{ fontSize: "12px" }}> <span style={{ color: "#E8C21E" }}> <b>$18.80</b> </span>  </td>
+                                                      </tr>
+
+                                                      <tr style={{ lineHeight: "40px" }}>
+                                                            <td class="cell align-middle" style={{ fontSize: "12px" }}> <b>Shipping:</b> </td>
+                                                            <td class="cell align-middle text-end" style={{ fontSize: "12px" }}> Flat rate  </td>
+                                                      </tr>
+                                                      <tr style={{ lineHeight: "40px" }}>
+                                                            <td class="cell align-middle" style={{ fontSize: "12px" }}> <b>Payment method:</b> </td>
+                                                            <td class="cell align-middle text-end" style={{ fontSize: "12px" }}> Credit Card (Stripe)  </td>
+                                                      </tr>
+
+                                                      <tr style={{ lineHeight: "40px" }}>
+                                                            <td class="cell align-middle" style={{ fontSize: "24px" }}> <b>Total:</b> </td>
+                                                            <td class="cell align-middle text-end" style={{ fontSize: "24px" }}><span style={{ color: "#E8C21E" }}> $18.80 </span> </td>
+                                                      </tr>
+
+                                                </tbody>
+                                          </table>
+                                    </div>
+                                    <div className="row mt-3">
 
                                           <div className="col-md-6 p-3">
-                                                <h3 className="section-title">Billing address <small className="edit-address" style={{ fontSize: "12px" }}>Edit</small> </h3> <br />
-                                                <p style={{ lineHeight: "30px" }}>PEDRO KELLEMEN
+                                                <h4 className="section-title">BILLING ADDRESS </h4> <br />
+                                                <p style={{ lineHeight: "30px", fontSize: "13px" }} >PEDRO KELLEMEN
                                                       <br />1800 SW 1st Avenue Suite # 305
                                                       <br />FPY132965
-                                                      <br />Miami, FL, FL 33129 </p>
+                                                      <br />Miami, FL, FL 33129
+                                                      <br />3057183595
+                                                      <br />pepeq68@gmail.com
+                                                </p>
                                           </div>
                                           <div className="col-md-6 p-3">
-                                                <h3 className="section-title">Shipping address <small className="edit-address" style={{ fontSize: "12px" }}>Edit</small></h3> <br />
-                                                <p style={{ lineHeight: "30px" }}>PEDRO KELLEMEN
+                                                <h4 className="section-title">SHIPPING ADDRESS</h4> <br />
+                                                <p style={{ lineHeight: "30px", fontSize: "13px" }}>PEDRO KELLEMEN
                                                       <br />1800 SW 1st Avenue Suite # 305
                                                       <br />FPY132965
-                                                      <br />Miami, FL, FL 33129 </p>
+                                                      <br />Miami, FL, FL 33129
+
+                                                </p>
                                           </div>
                                     </div>
                               </div>
                         </div>
                   </div>
+
             </>
       );
 }
 
-export default Address;
+export default OrderView;

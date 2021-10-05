@@ -1,8 +1,7 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
-
-const Dashboard = () => {
-
+import { NavLink } from "react-router-dom";
+import cardsimg from "../orders/cards2.png";
+const AddPaymentMethod = () => {
       return (
             <>
                   <div className="container-fluid p-0">
@@ -76,65 +75,52 @@ const Dashboard = () => {
 
 
                               </div>
+                              <div className="col-12 col-md-9 p-3">
 
-                              <div className="col-12 col-md-9 p-4">
 
-                                    <p>Hello peter (not peter? Log out)</p>
+                                    <div className="row">
+                                          <div className="col-md-12">
+                                                <form action="">
+                                                      <input className="form-check-input rounded-pill" type="radio" name="pay" value="" id="settings-checkbox-1" checked />  &nbsp; <small>Credit Card (Stripe) </small> <img src={cardsimg} width="200px" height="30px" alt="pic" style={{ float: "right" }} />
 
-                                    <p>From your account dashboard you can view your recent orders, manage your shipping and billing
-                                          addresses, and <Link exact to="#"> edit your password and account details</Link>.</p>
-                                    <div className="account-responsive-grid mt-4">
-                                          <Link exact to="/orders">
-                                                <div className="text-center shadow border-0 account-div" style={{ border: "1px solid #dbdddc", height: "130px" }}>
-                                                      <i class="bi bi-list-check mt-4 " style={{ fontSize: '50px' }}></i>
-                                                      <p className="mb-5">ORDERS</p>
-                                                </div>
-                                          </Link>
-                                          <Link exact to="/download">
-                                                <div className="text-center shadow border-0 account-div" style={{ border: "1px solid #dbdddc", height: "130px" }}>
-                                                      <i class="bi bi-download mt-4 " style={{ fontSize: '50px' }}></i>
-                                                      <p className="mb-5">DOWNLOADS</p>
+                                                      <p className="mb-3" style={{ fontSize: "12px" }}>Pay with your credit card via Stripe.</p>
+                                                      <div className="row">
 
-                                                </div>
-                                          </Link>
-                                          <Link exact to="/addresses">
-                                                <div className="text-center shadow border-0 account-div" style={{ border: "1px solid #dbdddc", height: "130px" }}>
-                                                      <i class="bi bi-geo-alt mt-4" style={{ fontSize: '50px' }}></i>
-                                                      <p className="mb-5">ADDRESSES</p>
-                                                </div>
-                                          </Link>
-                                          <Link exact to="/payment-method">
-                                                <div className="text-center shadow border-0 account-div" style={{ border: "1px solid #dbdddc", height: "130px" }}>
-                                                      <i class="bi bi-credit-card-2-front mt-4" style={{ fontSize: '50px' }}></i>
-                                                      <p className="mb-5">PAYMENT METHODS</p>
-                                                </div>
-                                          </Link>
-                                          <Link exact to="/account-details">
-                                                <div className="text-center shadow border-0 account-div" style={{ border: "1px solid #dbdddc", height: "130px" }}>
-                                                      <i class="bi bi-person-circle mt-4" style={{ fontSize: '50px' }}></i>
-                                                      <p className="mb-5">ACCOUNT DETAILS</p>
-                                                </div>
-                                          </Link>
-                                          <Link exact to="/wish-list">
-                                                <div className="text-center shadow border-0 account-div" style={{ border: "1px solid #dbdddc", height: "130px" }}>
-                                                      <i class="bi bi-suit-heart mt-4" style={{ fontSize: '50px' }}></i>
-                                                      <p className="mb-5">WISHLIST</p>
-                                                </div>
+                                                            <div className="col-md-4">
+                                                                  <label htmlFor="" style={{ fontSize: "12px" }} className="mb-1">Card Number <span className="text-danger"> *</span></label>
+                                                                  <input type="text" className="form-control" style={{ fontSize: "12px" }} placeholder="1234 1234 1234" />
 
-                                          </Link>
-                                          <div className="text-center shadow border-0  account-div" style={{ border: "1px solid #dbdddc", height: "130px" }}>
-                                                <i class="bi bi-box-arrow-right mt-4" style={{ fontSize: '50px' }}></i>
-                                                <p className="mb-5">LOGOUT</p>
+                                                            </div>
+                                                      </div>
+                                                      <div className="row">
+                                                            <div className="col-md-4 mt-2">
+                                                                  <label htmlFor="" style={{ fontSize: "12px" }} className="mb-1">Expiry Date <span className="text-danger"> *</span></label>
+                                                                  <input type="text" className="form-control" style={{ fontSize: "12px" }} placeholder="MM/YY" />
+
+                                                            </div>
+                                                      </div>
+                                                      <div className="row">
+                                                            <div className="col-md-4 mt-2">
+                                                                  <label htmlFor="" style={{ fontSize: "12px" }} className="mb-1">Card Code (CVC) <span className="text-danger"> *</span></label>
+                                                                  <input type="text" className="form-control" style={{ fontSize: "12px" }} placeholder="CVC" />
+
+                                                            </div>
+
+
+                                                      </div>
+                                                      <NavLink exact to="/add-payment-method" type="button" className="btn btn-sm p-3 mt-4" style={{ backgroundColor: "#E8C21E", fontSize: "12px", color: "white", width: "180px", height: "47px" }}>ADD PAYMENT METHOD</NavLink>
+
+                                                </form>
                                           </div>
+
                                     </div>
+
+
                               </div>
                         </div>
-
                   </div>
-
             </>
       );
 }
 
-
-export default Dashboard;
+export default AddPaymentMethod;
