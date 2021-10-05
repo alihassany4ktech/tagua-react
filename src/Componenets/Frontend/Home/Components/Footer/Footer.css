@@ -41,16 +41,14 @@
     border: none;
     padding: 7px;
     background-color: var(--white);
-    color: var(--yellow); 
-    transition: all 0.1s ease-in-out;
+    color: var(--yellow);  
 } 
 .footer-icon-btn i{
     font-size: 22px;
 }
 .footer-icon-btn:hover{
     background-color: var(--yellow);
-    color: var(--white); 
-    transform: scale(1.05);
+    color: var(--white);  
 }
 .footer-icon-btn:focus{
     outline:none;
