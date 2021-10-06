@@ -161,4 +161,5 @@
     width: 260px;
     font-size: 14px; 
     text-overflow: ellipsis;
+    padding-top: 10px;
 }

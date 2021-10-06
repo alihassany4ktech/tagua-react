@@ -73,12 +73,9 @@ const SearchBar = () => {
                             <div className='menu-item-wrapper'>
                                 <Link className='btn text-black' to="/allproducts">SALE</Link>
                             </div>
-                            <div className='search-item'>
-                                {/* <SearchSelect /> */}
-                                <input type="email" className="form-control border-0 rounded-0 my-auto px-3" aria-describedby="emailHelp" placeholder="Search the Holster by Gun" />
-                                {/* <MenuDrop title='Select Your Holsters By Gun' items={items} width='258px' /> */}
-                            </div>
-                            {/* <Select options={options}/> */}
+                            <div className='search-item'> 
+                                <input type="email" className="form-control border-0 rounded-0 my-auto px-3" aria-describedby="emailHelp" placeholder="Search the Holster by Gun" /> 
+                            </div> 
                             <div className='search-item'>
                                 <MenuDrop title='Guns' items={items} width='125px' />
                             </div>
@@ -88,22 +85,8 @@ const SearchBar = () => {
                             <div className='searchBar_btn_wrapper'>
                                 <button className='btn'>Search</button>
                             </div>
-
                         </div>
-                    </div>
-
-                    {/* 
-                    <div className='col-lg-1 mx-auto'>
-                    </div>
-                    <div className='col-sm-6 col-md-6 col-lg-4 col-xl-3 my-2'>
-                    </div>
-                    <div className='col-6 col-sm-6 col-md-3 col-lg-2 my-2'>
-                    </div>
-                    <div className='col-6 col-sm-6 col-md-3 col-lg-2 my-2'>
-                    </div>
-                    <div className='col-12 col-sm-3 col-md-3 col-lg-2 my-2 searchBar_btn_wrapper'>
-                    </div>
-                    <div className='col-lg-1 mx-auto'></div> */}
+                    </div> 
                 </div>
             </div>
 

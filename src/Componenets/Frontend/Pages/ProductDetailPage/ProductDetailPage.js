@@ -4,8 +4,7 @@ import MenuDrop from '../../Navbar/MenuDrop/MenuDrop';
 import CartCounter from './CartCounter';
 import ReactStars from "react-rating-stars-component";
 import ProductGallery from './ProductGallery';
-import ProductTabs from './ProductTabs/ProductTabs';
-import { Link } from 'react-router-dom';
+import ProductTabs from './ProductTabs/ProductTabs'; 
 
 const ProductDetailPage = (props) => {
 
