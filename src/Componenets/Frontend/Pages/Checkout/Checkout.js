@@ -1,5 +1,4 @@
-import React from 'react';
-import Pay from '../../../Account/orders/Pay';
+import React from 'react'; 
 import './Checkout.css';
 import PaymentDetail from './PaymentDetail';
 const Checkout = (props) => {

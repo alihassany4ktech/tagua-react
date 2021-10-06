@@ -1,40 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Navbar.css';
-import MenuDrop from './MenuDrop/MenuDrop';
-import MenuBarDropDown from './MenuBarDropDown/MenuBarDropDown'; 
+import './Navbar.css'; 
+import MenuBarDropDown from './MenuBarDropDown/MenuBarDropDown';
+import SearchMenus from './SearchMenus';
+import Menubar from './Menubar';
 const SearchBar = () => {
-    const items = [
-        {
-            id: 1,
-            value: 'item 1 has name item 1 has name',
-        },
-        {
-            id: 2,
-            value: 'item 2 ',
-        },
-        {
-            id: 3,
-            value: 'item 3',
-        },
-        {
-            id: 4,
-            value: 'item 4',
-        },
-        {
-            id: 5,
-            value: 'item 5',
-        },
-        {
-            id: 6,
-            value: 'item 6',
-        },
-    ];
+    
     const options = [
         { value: 'chocolate', label: 'Chocolate' },
         { value: 'strawberry', label: 'Strawberry' },
         { value: 'vanilla', label: 'Vanilla' }
-    ];
+    ]; 
     return (
         <>
             <div className='container-fluid'>
@@ -73,20 +49,14 @@ const SearchBar = () => {
                             <div className='menu-item-wrapper'>
                                 <Link className='btn text-black' to="/allproducts">SALE</Link>
                             </div>
-                            <div className='search-item'> 
-                                <input type="email" className="form-control border-0 rounded-0 my-auto px-3" aria-describedby="emailHelp" placeholder="Search the Holster by Gun" /> 
-                            </div> 
-                            <div className='search-item'>
-                                <MenuDrop title='Guns' items={items} width='125px' />
+                            <div className='d-flex flex-row flex-wrap justify-content-center align-items-center search-menu-wrapper'>
+                                <SearchMenus />
                             </div>
-                            <div className='search-item'>
-                                <MenuDrop title='Model' items={items} width='125px' />
-                            </div>
-                            <div className='searchBar_btn_wrapper'>
-                                <button className='btn'>Search</button>
+                            <div className='d-flex flex-row flex-wrap justify-content-center align-items-center search-toggler'>
+                                <Menubar />
                             </div>
                         </div>
-                    </div> 
+                    </div>
                 </div>
             </div>
 

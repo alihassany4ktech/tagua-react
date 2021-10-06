@@ -25,12 +25,9 @@ const Toolbar = (props) => {
                     <div className='d-flex flex-row align-items-center'>
                         <span className='toolbar_yellow_btn'>
                             <button className='btn bg-yellow'>Access Dealer Area</button>
-                        </span>
-                        {/* <span className='toolbar_nav_icon_span mx-3'><i className='bi bi-person'></i></span> */}
+                        </span> 
                         <LoginDrop />
-                        <CartDrop />
-                        {/* <LanguagePopover /> */}
-                        {/* <Drop /> */}
+                        <CartDrop /> 
                     </div>
                 </nav>
             </header>
