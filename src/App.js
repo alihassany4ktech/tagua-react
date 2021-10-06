@@ -10,11 +10,13 @@ import "react-image-gallery/styles/css/image-gallery.css";
 import VerifyEmail from "./Componenets/Auth/VerifyEmail";
 import VerifyOtp from "./Componenets/Auth/VerifyOtp";
 import ResetPassword from "./Componenets/Auth/ResetPassword";
+import Invoice from "./Componenets/Account/orders/Invoice";
 const App = () => {
   return (
     <BrowserRouter>
       <Switch >
         <Route exact path="/" component={Login} />
+        <Route exact path="/invoice" component={Invoice} />
         <Route exact path="/verify-email" component={VerifyEmail} />
         <Route exact path="/verify-otp" component={VerifyOtp} />
         <Route exact path="/reset-password" component={ResetPassword} />
