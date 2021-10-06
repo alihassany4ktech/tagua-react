@@ -19,9 +19,8 @@ const Toolbar = (props) => {
                             <img src='assets/images/app-logo.png' alt='brand logo'></img>
                         </Link>
                     </div>
-                    <div className='toolbar_search_wrapper rounded-pill'>
-                        <SearchSelect />
-                        {/* <input type="email" className="form-control rounded-pill border-0 my-auto px-2" aria-describedby="emailHelp" placeholder="Search the store" /> */}
+                    <div className='toolbar_search_wrapper'>
+                        <SearchSelect /> 
                     </div>
                     <div className='d-flex flex-row align-items-center'>
                         <span className='toolbar_yellow_btn'>

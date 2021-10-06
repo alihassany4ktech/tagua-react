@@ -366,7 +366,6 @@ const MainDahsboard = ({ match }) => {
 
 
                         <Switch>
-
                               <Route exact path="/dashboard" component={Dashboard} />
                               <Route path={`${match.url}/admin/profile`} component={AdminProfile} />
                               <Route path={`${match.url}/product/list`} component={ProductList} />

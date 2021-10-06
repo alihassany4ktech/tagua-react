@@ -39,7 +39,7 @@ const LoginDrop = (props) => {
                 }
             >
                 <span type="button" onClick={() => setOpen(!open)} className='toolbar_nav_icon_span mx-3'>
-                    <i className='bi bi-person'></i>
+                    <i class="fa fa-user-o" aria-hidden="true"></i>
                 </span>
                 {open && <LoginDropMenu />}
             </OutsideClickHandler>

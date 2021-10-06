@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import CartCounter from '../../ProductDetailPage/CartCounter'
 import './CartTest.css'
 const CartTest = () => {
@@ -59,7 +60,7 @@ const CartTest = () => {
                                 </div>
                             </div>
                         </div>
-                        
+
                     </div>
                     <div className="col-md-4 summary-area p-3 p-md-4 p-lg-4">
                         <div className='cart-title'>
@@ -69,7 +70,7 @@ const CartTest = () => {
                             <div className="col text-white">ITEMS 3
                             </div>
                             <div className="col text-white text-end">&euro; 132.00</div>
-                        </div> 
+                        </div>
                         <div className="row mt-3">
                             <div className="col text-white">SHIPPING</div>
                             <div className="col text-white text-end">&euro; 132.00</div>
@@ -82,7 +83,9 @@ const CartTest = () => {
                             <div className="col text-white">TOTAL</div>
                             <div className="col text-white text-end">&euro; 137.00</div>
                         </div>
-                        <button className='btn bg-yellow mt-3 w-100 rounded-0'>Check Out</button>
+                        <Link to='/checkout'>
+                            <button className='btn bg-yellow mt-3 w-100 rounded-0'>Check Out</button>
+                        </Link>
 
                     </div>
                 </div>

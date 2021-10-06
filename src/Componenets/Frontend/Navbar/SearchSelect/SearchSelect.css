@@ -55,6 +55,11 @@
     height: 47px;
 
   }
+  @media screen and (max-width: 910px) {
+    .select-search__input {
+      width: 100% !important;
+    }
+  }
   
   .select-search__input::-webkit-search-decoration,
   .select-search__input::-webkit-search-cancel-button,

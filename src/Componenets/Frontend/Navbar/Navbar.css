@@ -54,16 +54,20 @@
 .toolbar_yellow_btn .btn:hover{
     opacity: 0.8;
 }
+.toolbar_nav_icon_span{
+    background-color: var(--black);
+}
 .toolbar_nav_icon_span i{  
     color: var(--yellow);  
-    font-size: 32px;
+    font-size: 25px; 
 }
 .toolbar_nav_icon_group{
+    background-color: var(--black);
     display: inline-flex;
     align-items: center;
 }
 .toolbar_nav_icon_group i{  
-    color: var(--yellow);  
+    color: var(--yellow);   
     font-size: 25px;
 }
 .toolbar_nav_icon_group p{
@@ -91,7 +95,10 @@
     }
     .contact-bar{
         display:none;
-    }   
+    }  
+    .menubar-wrapper-row .menu-item-wrapper{
+        display: none;
+    } 
 }
 @media screen and (min-width:911px){
     .toolbar_toggler{
@@ -99,15 +106,22 @@
     }
 } 
 .searchBar {
-    min-height: 50px;
-    padding-top: 3px;
-    padding-bottom: 3px;
+    min-height: 50px; 
 }
 @media screen and (max-width:500px){
     .searchBar .searchBar_btn_wrapper{
         text-align: center;
     }
 } 
+@media screen and (max-width:680px) {
+    .menubar-wrapper-row .search-item{
+        margin: 5px !important;
+    }
+    .searchBar .searchBar_btn_wrapper .btn{
+        width: 260px;
+        margin: 5px !important;
+    }
+}
 .searchBar .searchBar_btn_wrapper .btn{
     background-color: var(--black);
     border-radius: 0;
@@ -144,7 +158,7 @@
 }
 .search-item input{
     height: 28px;
-    width: 258px;
+    width: 260px;
     font-size: 14px; 
     text-overflow: ellipsis;
 }

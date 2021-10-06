@@ -3,7 +3,7 @@ import './FilterMenu.css';
 
 const FilterMenu = (props) => {
     const [name, setName] = useState(props.title);
-    const [open, setOpen] = useState(false);
+    const [open, setOpen] = useState(props.open);
     const [selection, setSelection] = useState([]);
     const toggle = () => setOpen(!open);
     function handleOnClick(item) {

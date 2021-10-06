@@ -5,6 +5,7 @@ import CartCounter from './CartCounter';
 import ReactStars from "react-rating-stars-component";
 import ProductGallery from './ProductGallery';
 import ProductTabs from './ProductTabs/ProductTabs';
+import { Link } from 'react-router-dom';
 
 const ProductDetailPage = (props) => {
 
@@ -93,7 +94,7 @@ const ProductDetailPage = (props) => {
                     <p>Lightweight, low profile, tough and comfortable. These, among others are some of the best words to describe the Foundation Series Gunbelt. </p>
                     <div className='row'>
                         <div className='col-sm-6 my-1'>
-                            <MenuDrop title='Guns' items={items} width='100%' background='#E8C21E'/>
+                            <MenuDrop title='Guns' items={items} width='100%' background='#E8C21E' />
                         </div>
                         <div className='col-sm-6 my-1'>
                             <MenuDrop title='Select Color' items={items} width='100%' background='#E8C21E' />

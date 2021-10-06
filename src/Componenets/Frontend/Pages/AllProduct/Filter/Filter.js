@@ -14,6 +14,7 @@ const Filter = (props) => {
                     { id: 5, value: 'owb' },
                     { id: 6, value: 'sholder holsters' },
                 ]}
+                open={true}
             />
             <FilterMenu
                 title='Filter 2'
