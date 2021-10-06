@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import cardsimg from "../orders/cards2.png";
+import "./addPaymeny.css"
 const AddPaymentMethod = () => {
       return (
             <>
@@ -83,12 +84,14 @@ const AddPaymentMethod = () => {
                                                 <form action="">
                                                       <input className="form-check-input rounded-pill" type="radio" name="pay" value="" id="settings-checkbox-1" checked />  &nbsp; <small>Credit Card (Stripe) </small> <img src={cardsimg} width="200px" height="30px" alt="pic" style={{ float: "right" }} />
 
-                                                      <p className="mb-3" style={{ fontSize: "12px" }}>Pay with your credit card via Stripe.</p>
+                                                      <p className="mb-2 mt-3" style={{ fontSize: "12px" }}>Pay with your credit card via Stripe.</p>
                                                       <div className="row">
 
-                                                            <div className="col-md-4">
+                                                            <div className="col-md-4 fontpassword">
                                                                   <label htmlFor="" style={{ fontSize: "12px" }} className="mb-1">Card Number <span className="text-danger"> *</span></label>
                                                                   <input type="text" className="form-control" style={{ fontSize: "12px" }} placeholder="1234 1234 1234" />
+
+                                                                  <i class="fa fa-credit-card"></i>
 
                                                             </div>
                                                       </div>

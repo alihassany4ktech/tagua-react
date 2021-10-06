@@ -1,0 +1,20 @@
+
+        input[type=password] {
+              width: 100%;
+              padding: 12px 40px;
+              margin: 8px 0;
+              display: inline-block;
+              border: 1px solid #ccc;
+              box-sizing: border-box;
+        }
+        .fontpassword {
+              position: relative;
+        }
+        .fontpassword i {
+              position: absolute;
+              right: 25px;
+              top: 34px;
+              font-size: 25px;
+              float: right;
+              color: gray;
+        }

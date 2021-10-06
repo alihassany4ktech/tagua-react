@@ -189,7 +189,7 @@ button.close:focus {
 
 
 .btn-light {
-      background: #f5f6fe;
+      background: #E8C21E;
       color: #15a362
 }
 
@@ -1295,7 +1295,8 @@ button.close:focus {
 }
 
 .app-table-hover>tbody>tr:hover {
-      background-color: #fafbff
+      /* background-color: #fafbff */
+    background-color:rgba(255, 206, 86, 0.1);
 }
 
 .app-card-notification .notification-type .badge {
