@@ -25,7 +25,7 @@ const Home = () => {
                 <div className='fab'><i className="bi bi-chat-dots" > </i></div>
                 <div className='container-fluid' >
                     <Switch >
-                        <Route exact path="/home" component={HomePage} />
+                        <Route exact path="/" component={HomePage} />
                         <Route exact path="/productdetail" component={ProductDetailPage} />
                         <Route exact path="/allproducts" component={AllProduct} />
                         <Route exact path="/cart" component={Cart} />
@@ -39,7 +39,6 @@ const Home = () => {
                         <Route exact path="/login" component={Login} />
                         <Route exact path="/register" component={Register} />
                         <Route exact path="/account" component={Account} /> 
-
                     </Switch>
                 </div>
                 <Footer />

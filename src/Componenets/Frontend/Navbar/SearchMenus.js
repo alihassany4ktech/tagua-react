@@ -1,3 +1,4 @@
+import { Button } from '@mui/material';
 import React from 'react'
 import MenuDrop from './MenuDrop/MenuDrop';
 const SearchMenus = () => {
@@ -39,8 +40,22 @@ const SearchMenus = () => {
             <div className='search-item'>
                 <MenuDrop title='Model' items={items} width='125px' />
             </div>
-            <div className='searchBar_btn_wrapper'>
-                <button className='btn'>Search</button>
+            <div className='search-item searchBar_btn_wrapper'>
+                <Button
+                    style={{
+                        borderRadius: 0,
+                        backgroundColor: "#000000",
+                        color: '#FFFFFF',
+                        fontSize: "14px",
+                        fontFamily: 'inherit',
+                        fontWeight: '600',
+                        textTransform: 'none',
+                        height: '28px',
+                        width: '125px',
+                    }}
+                >
+                    Search
+                </Button>
             </div>
         </>
     );

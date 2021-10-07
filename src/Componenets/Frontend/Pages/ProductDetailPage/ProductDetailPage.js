@@ -4,7 +4,8 @@ import MenuDrop from '../../Navbar/MenuDrop/MenuDrop';
 import CartCounter from './CartCounter';
 import ReactStars from "react-rating-stars-component";
 import ProductGallery from './ProductGallery';
-import ProductTabs from './ProductTabs/ProductTabs'; 
+import ProductTabs from './ProductTabs/ProductTabs';
+import { Button } from '@mui/material';
 
 const ProductDetailPage = (props) => {
 
@@ -102,7 +103,23 @@ const ProductDetailPage = (props) => {
 
                     <div className='d-flex flex-row justify-content-center align-items-center mt-3'>
                         <CartCounter />
-                        <button className='btn add-card-btn mx-3'>Add to Cart</button>
+                        <div className='mx-3'></div>
+                        <Button
+                            style={{
+                                width: '150px',
+                                height: '35px',
+                                borderRadius: 0,
+                                backgroundColor: "#E8C21E",
+                                color: '#FFFFFF',
+                                fontSize: "14px",
+                                fontFamily: 'inherit',
+                                fontWeight: '600',
+                                textTransform: 'none'
+                            }}
+                            variant="contained"
+                        >
+                           Add to Cart
+                        </Button>
                     </div>
 
                 </div>

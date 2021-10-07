@@ -17,13 +17,16 @@ const LoginDrop = (props) => {
                                 <span><i className="bi bi-person-fill"></i> Account</span>
                             </span>
                         </Link>
-
-                        <span className='login-item-span' onClick={() => closeHandler()}>
-                            <span><i className="bi bi-person-fill"></i> Register</span>
-                        </span>
-                        <span className='login-item-span' onClick={() => closeHandler()}>
-                            <span><i className="bi bi-box-arrow-right"></i> Login</span>
-                        </span>
+                        <Link exact to='/register'>
+                            <span className='login-item-span' onClick={() => closeHandler()}>
+                                <span><i className="bi bi-person-fill"></i> Register</span>
+                            </span>
+                        </Link>
+                        <Link exact to='/login'>
+                            <span className='login-item-span' onClick={() => closeHandler()}>
+                                <span><i className="bi bi-box-arrow-right"></i> Login</span>
+                            </span>
+                        </Link>
                     </li>
                 </ul>
 

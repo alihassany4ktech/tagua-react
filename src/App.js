@@ -15,14 +15,14 @@ const App = () => {
   return (
     <BrowserRouter>
       <Switch >
-        <Route exact path="/" component={Login} />
+        <Route exact path="/Login" component={Login} />
         <Route exact path="/invoice" component={Invoice} />
         <Route exact path="/verify-email" component={VerifyEmail} />
         <Route exact path="/verify-otp" component={VerifyOtp} />
         <Route exact path="/reset-password" component={ResetPassword} />
         <Route exact path="/signup" component={Signup} />
         <Route path="/dashboard" component={MainDahsboard} />
-        <Route exact path="/home" component={Home} />
+        <Route exact path="/" component={Home} />
         <Redirect to="/" />
       </Switch>
     </BrowserRouter>

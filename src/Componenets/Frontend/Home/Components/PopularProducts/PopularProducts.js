@@ -54,13 +54,13 @@ export default class PopularProducts extends Component {
             };
             const data = [
                   {
-                        imgSource: "images/gun.jpg",
+                        imgSource: "images/special-offer.jpg",
                         decription: "Lorem ipsum dolor sit consectetur",
                         prevPrice: "$200",
                         newPrice: "$150",
                   },
                   {
-                        imgSource: "images/gun2.jpg",
+                        imgSource: "https://www.taguagunleather.com/wp-content/uploads/2019/03/p_4_4_3_443-TWHS-H4-PINK-THE-PINK-4-IN-1-Open-Top-Holster.jpg",
                         decription: "Lorem ipsum dolor sit consectetur",
                         prevPrice: "$200",
                         newPrice: "$150",

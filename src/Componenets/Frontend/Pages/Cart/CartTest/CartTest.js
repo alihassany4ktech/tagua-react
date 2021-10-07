@@ -1,3 +1,4 @@
+import { Button } from '@mui/material'
 import React from 'react'
 import { Link } from 'react-router-dom'
 import CartCounter from '../../ProductDetailPage/CartCounter'
@@ -79,14 +80,26 @@ const CartTest = () => {
                             <div className="col text-white">COUPIN CODE</div>
                             <div className="col text-white text-end">&euro; 132.00</div>
                         </div>
-                        <div className="row mt-3" >
+                        <div className="row my-3" >
                             <div className="col text-white">TOTAL</div>
                             <div className="col text-white text-end">&euro; 137.00</div>
-                        </div>
-                        <Link to='/checkout'>
-                            <button className='btn bg-yellow mt-3 w-100 rounded-0'>Check Out</button>
-                        </Link>
-
+                        </div> 
+                        <Button
+                            component={Link}
+                            to='/checkout'
+                            style={{
+                                borderRadius: 0,
+                                backgroundColor: "#E8C21E",
+                                color: '#000000',
+                                fontSize: "15px",
+                                fontFamily: 'inherit',
+                                fontWeight: '600',
+                                textTransform: 'none',
+                                width: '100%',
+                            }}
+                        >
+                            Check Out
+                        </Button>
                     </div>
                 </div>
             </div>

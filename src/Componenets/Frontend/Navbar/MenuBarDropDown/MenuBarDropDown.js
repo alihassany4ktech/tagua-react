@@ -46,7 +46,7 @@ const MenuBarDropDown = (props) => {
                             <p className="dd-header__title--bold mx-2">{name}</p>
                         </div>
                         <div className="dd-m-header__title">
-                            <p className='dd-header__title--bold'>{open ? <i class="bi bi-caret-up-fill"></i> : <i class="bi bi-caret-down-fill"></i>}</p>
+                            <p className='dd-m-header__title--bold'>{open ? <i class="bi bi-caret-up-fill"></i> : <i class="bi bi-caret-down-fill"></i>}</p>
                         </div>
                     </div>
                     {open && props.items && (

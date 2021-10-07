@@ -20,36 +20,10 @@
     justify-content: center;  
     height: 100%;
 }
-.offer-content .btn{
-    background-color: #000000;
-    color: var(--yellow);
-    border: none;
-    width: 15rem;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    border-radius: 0;
-    font-size: 16px;
-}
-.offer-content .btn:hover{
-    background-color: #202020;
-} 
 .special-offer-right{
     background-color: rgb(224, 224, 224);
     /* overflow: auto;  */
     height: 70vh;
-}
-.special-offer-right-content .btn{
-    background-color: #000000;
-    color: var(--white);
-    border: none;
-    width: 15rem;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    border-radius: 0;
-    font-size: 16px;
-}
-.special-offer-right-content .btn:hover{
-    background-color: #202020;
 }
 @media screen and (max-width:1025px) { 
     .special-offer-section{
@@ -67,9 +41,5 @@
     }
     .special-offer-right{
         height: max-content;  
-    }
-    .special-offer-right-content button{
-        display: block;
-        margin: 0 auto;
-    }
+    } 
 }

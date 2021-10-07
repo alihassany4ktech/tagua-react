@@ -1,3 +1,4 @@
+import { Button } from '@mui/material';
 import React, { useState } from 'react';
 import OutsideClickHandler from 'react-outside-click-handler';
 import { Link } from 'react-router-dom';
@@ -21,10 +22,24 @@ const CartDrop = (props) => {
                                 />
                             )
                         })
-                    }
-                    <Link to='/cart'>
-                        <button onClick={() => setOpen(false)} className='btn bg-yellow rounded-0 w-100'>Go To Cart</button>
-                    </Link>
+                    } 
+                    <Button
+                        onClick={() => setOpen(false)}
+                        component={Link}
+                        to="/cart"
+                        style={{
+                            borderRadius: 0,
+                            backgroundColor: "#E8C21E",
+                            color: '#000000',
+                            fontSize: "15px",
+                            fontFamily: 'inherit',
+                            fontWeight: '600',
+                            textTransform: 'none',
+                            width: '100%',
+                        }}
+                    >
+                        Shop Now
+                    </Button>
                 </div>
             </div>
         )
@@ -52,7 +67,7 @@ const CartDrop = (props) => {
             >
                 <span type="button" onClick={() => setOpen(!open)} className='toolbar_nav_icon_group'>
                     <i className='bi bi-bag'></i>
-                </span> 
+                </span>
                 {open && <CartDropMenu />}
             </OutsideClickHandler>
         </>
