@@ -9,9 +9,9 @@
     color: var(--white);
     background-color: var(--yellow);
 }
-.product-detail-wrapper .add-card-btn:hover{ 
+/* .product-detail-wrapper .add-card-btn:hover{ 
     opacity: 0.8;
-}
+} */
 .image-gallery-slide .image-gallery-image {
     /* border-radius: 15px; */
     width: 100%;

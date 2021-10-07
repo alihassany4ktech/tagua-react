@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Login = () => {
 
@@ -113,7 +113,9 @@ const Login = () => {
 
 
                                                 <div className="text-center">
-                                                      <button type="submit" className="btn p-2 my-2 rounded-0" style={{ backgroundColor: "#E8C21E", color: "white", width: '100%', }}><b>Sign In</b></button>
+                                                      <Link exact to='/account'>
+                                                            <button type="submit" className="btn p-2 my-2 rounded-0" style={{ backgroundColor: "#E8C21E", color: "white", width: '100%', }}><b>Sign In</b></button>
+                                                      </Link>
                                                 </div>
                                           </form>
                                           <div className="d-flex flex-row justify-content-center">

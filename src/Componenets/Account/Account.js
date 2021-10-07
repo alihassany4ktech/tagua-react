@@ -11,6 +11,8 @@ import Download from "./download/Download";
 import OrderView from "./orders/OrderView";
 import Pay from "./orders/Pay";
 import AddPaymentMethod from "./paymentMethod/AddPaymenyMethod";
+import Home from "../Frontend/Home/Home";
+import Login from "../Frontend/Auth/Login";
 
 const Account = () => {
 
@@ -32,6 +34,8 @@ const Account = () => {
                               <Route exact path="/add-payment-method" component={AddPaymentMethod} />
                               <Route exact path="/account-details" component={AccountDetail} />
                               <Route exact path="/wish-list" component={WishList} />
+                              <Route exact path="/" component={Login} />
+
 
                         </Switch>
 

@@ -21,7 +21,7 @@
 .dd-header{  
     background-color: var(--white);
     cursor: pointer; 
-    height: 28px;  
+    height: 28px;   
 } 
 .dd-header__title{ 
     white-space: nowrap; 

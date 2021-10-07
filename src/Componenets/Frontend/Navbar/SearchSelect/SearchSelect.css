@@ -1,9 +1,4 @@
-/**
- * Main wrapper
- */
- .select-search {
-    /* width: 258px;
-    height: 28px; */ 
+ .select-search { 
     position: relative; 
     box-sizing: border-box; 
   }
@@ -11,13 +6,12 @@
   .select-search *,
   .select-search *::after,
   .select-search *::before {
-    box-sizing: inherit;
+    box-sizing: inherit; 
+  } 
+  .select-search__select {
+    border-radius: 10px !important;
   }
-  
-  /**
-  * Value wrapper
-  */
-  .select-search__value {
+  .select-search__value { 
     position: relative;
     z-index: 1;  
   }
@@ -36,13 +30,10 @@
   * Input
   */
   .select-search__input {
-    display: block; 
-    /* height: 28px;
-    width: 100%; */
+    display: block;  
     padding: 0 16px; 
     background: #fff; 
-    border: 1px solid transparent;
-    /* box-shadow: 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.15); */ 
+    border: 1px solid transparent; 
     outline: none; 
     font-size: 15px;
     text-align: left;
@@ -75,7 +66,7 @@
   /**
   * Options wrapper
   */
-  .select-search__select {
+  .select-search__select { 
     background: #fff;
     box-shadow: 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.15);
   }
@@ -83,7 +74,7 @@
   /**
   * Options
   */
-  .select-search__options {
+  .select-search__options { 
     list-style: none;
     margin: 0;
     padding-inline-start: 0;
@@ -92,7 +83,7 @@
   /**
   * Option row
   */
-  .select-search__row:not(:first-child) {
+  .select-search__row:not(:first-child) { 
     border-top: 1px solid #eee;
   }
   

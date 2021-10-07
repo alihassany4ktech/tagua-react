@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Register = () => {
 
@@ -106,7 +106,9 @@ const Register = () => {
                                                             Your personal data will be used to support your experience throughout this website, to manage access to your account,
                                                             and for other purposes described in our <NavLink exact to="/provacy-policy" style={{ color: "#E8C21E", textDecoration: 'none' }}><b>privacy policy</b></NavLink>  .
                                                       </p>
-                                                      <button type="submit" className="btn p-2 my-2 rounded-0" style={{ backgroundColor: "#E8C21E", color: "white", width: '100%', }}><b>Sign Up</b></button>
+                                                      <Link exact to='/account'>
+                                                            <button type="submit" className="btn p-2 my-2 rounded-0" style={{ backgroundColor: "#E8C21E", color: "white", width: '100%', }}><b>Sign Up</b></button>
+                                                      </Link>
                                                 </div>
                                           </form>
                                           <div className="d-flex flex-row justify-content-center">

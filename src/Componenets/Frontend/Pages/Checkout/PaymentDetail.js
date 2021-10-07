@@ -17,7 +17,8 @@ const PaymentDetail = () => {
                   <div className="container">
                         <div className="row justify-content-center">
                               <div className="bg-light">
-                                    <div class="table-responsive p-5">
+                                    <div className="table-responsive p-5">
+                                          <h4 className='text-center'>YOUR ORDER</h4>
                                           <table class="table app-table-hover mb-0 text-left">
                                                 <thead>
                                                       <tr style={{ lineHeight: "30px" }}>

@@ -1,7 +1,8 @@
+import { Button } from "@mui/material";
 import React from "react";
 import { Link } from "react-router-dom";
-import ContactItemGroup from "../ContactItemGroup";
-import MenuBarDropDown from "../MenuBarDropDown/MenuBarDropDown";
+import ContactItemGroup from "../ContactItemGroup"; 
+import ProductMenus from "../ProductMenus";
 import SearchSelect from "../SearchSelect/SearchSelect";
 import "./SideDrawer.css";
 const SideDrawer = (props) => {
@@ -23,50 +24,32 @@ const SideDrawer = (props) => {
       <div className={drawerClasses}>
         <div className='container-fluid'>
           <div className='drawer-logo text-center mt-5'>
-            <Link to="/home">
+            <Link to="/">
               <img src='assets/images/app-logo.png' alt='brand logo'></img>
             </Link>
           </div>
-          <div className='text-center mt-4'>
-            <span className='toolbar_yellow_btn'>
-              <button className='btn bg-yellow'>Access Dealer Area</button>
-            </span>
+          <div className='text-center mt-4'> 
+            <Button
+              style={{
+                width: '205px',
+                height: '47px',
+                borderRadius: 0,
+                backgroundColor: "#E8C21E",
+                color: '#000000',
+                fontSize: "16px",
+                fontFamily: 'inherit',
+                fontWeight: '600',
+                textTransform: 'none'
+              }}
+              variant="contained"
+            >
+              Access Dealer Area
+            </Button> 
           </div>
           <div className='toolbar_search_wrapper my-4'>
             <SearchSelect />
-          </div> 
-          <MenuBarDropDown
-            title='Holsters'
-            items={[
-              { id: 1, value: '4 in 1 holsters' },
-              { id: 2, value: 'cross draw holsters' },
-              { id: 3, value: 'iwb/owh' },
-              { id: 4, value: 'owb/iwh' },
-              { id: 5, value: 'owb' },
-              { id: 6, value: 'sholder holsters' },
-            ]}
-          />
-          <MenuBarDropDown
-            title='Tagua gun leather'
-            items={[
-              { id: 1, value: '4 in 1 holsters' },
-              { id: 2, value: 'cross draw holsters' },
-              { id: 3, value: 'iwb/owh' },
-              { id: 4, value: 'owb/iwh' },
-              { id: 5, value: 'owb' },
-              { id: 6, value: 'sholder holsters' },
-            ]}
-          />
-          <Link to="/allproducts">
-            <div className='menu-item-wrapper bg-yellow'>
-              <button className='btn text-black' to="/allproducts">ALL PRODUCTS</button>
-            </div>
-          </Link>
-          <Link to="/allproducts">
-            <div className='menu-item-wrapper bg-yellow'>
-              <button className='btn text-black' to="/allproducts">SALE</button>
-            </div>
-          </Link>
+          </div>
+          <ProductMenus />
 
           <div className='mt-4 pl-1'>
             {

@@ -44,16 +44,7 @@
     padding-left: 25px !important;
     width: 570px;
     height: 47px;
-}  
-.toolbar_yellow_btn .btn{
-    width: 205px;
-    height: 47px;
-    border-radius: 0;
-    font-size: 16px; 
-}
-.toolbar_yellow_btn .btn:hover{
-    opacity: 0.8;
-}
+}   
 .toolbar_nav_icon_span{
     background-color: var(--black);
 }
@@ -81,15 +72,14 @@
         justify-content: space-between;
         padding: 0 1rem;
     }
-    .toolbar_nav .toolbar_logo{
-        display: none;
+    .toolbar_nav .toolbar_logo img{
+        width: 120px;
+        text-align: center;
+        margin-left: 2rem;
     }
     .toolbar_nav .toolbar_search_wrapper{
         display: none;
-    }
-    /* .toolbar_nav .toolbar_nav_icon_span{
-        display: none;
-    }  */
+    } 
     .toolbar_nav .toolbar_yellow_btn{
         display: none;
     }
@@ -97,14 +87,18 @@
         display:none;
     }  
     .menubar-wrapper-row .menu-item-wrapper{
-        display: none;
+        display: none !important;
     } 
 }
 @media screen and (min-width:911px){
     .toolbar_toggler{
         display: none;
     }
+    
+
+    
 } 
+
 .searchBar {
     min-height: 50px; 
 }
@@ -113,28 +107,21 @@
         text-align: center;
     }
 } 
-@media screen and (max-width:680px) {
-    .menubar-wrapper-row .search-item{
-        margin: 5px !important;
-    }
-    .searchBar .searchBar_btn_wrapper .btn{
-        width: 260px;
-        margin: 5px !important;
+@media screen and (min-width:681px){
+    .search-toggler{
+        display: none !important;
     }
 }
-.searchBar .searchBar_btn_wrapper .btn{
-    background-color: var(--black);
-    border-radius: 0;
-    color: var(--white);
-    height: 28px;
-    padding: 0 2rem; 
-    font-size: 14px;
-    margin: 0px 5px;
+@media screen and (max-width:680px) { 
+    .searchBar .searchBar_btn_wrapper button{
+        width: 260px !important; 
+    }
+    
+    .search-menu-wrapper{
+        display: none !important;
+    }
+}
 
-}
-.searchBar .searchBar_btn_wrapper .btn:hover{
-    opacity: 0.8;
-}
 .menu-item-wrapper .btn{
     font-size: 16px;
 }
@@ -161,4 +148,8 @@
     width: 260px;
     font-size: 14px; 
     text-overflow: ellipsis;
+    padding-top: 12px;
+} 
+.menubar-wrapper-row .search-item{
+    margin: 5px;
 }

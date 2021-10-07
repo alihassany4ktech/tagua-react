@@ -11,12 +11,11 @@
     position: absolute;
     display: flex;
     flex-direction: column;  
-    width: 100%;
+    width: max-content;
     z-index: 10;
     margin-top: 45px;
     padding: 0; 
-    height: auto;
-    min-width: max-content;
+    height: auto; 
     max-height: 40vh;
     overflow-y: scroll; 
 }
@@ -26,7 +25,7 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;  
-    min-width: max-content;
+    width: 100%;
     color: var(--black);
     margin: 0 8px;
 } 

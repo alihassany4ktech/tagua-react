@@ -1,6 +1,5 @@
 .top-head-right{  
-    background-image: url("http://localhost:3000/images/web-image.jpg");
-    /* background-image: url("../../../../../../public/images/web-image.jpg"); */
+    background-image: url("http://localhost:3000/images/web-image.jpg"); 
     background-image: image-set();
     background-size: 100% 100%;
     background-repeat: no-repeat; 
@@ -31,15 +30,6 @@
 .header-content-wrapper p{
     font-size: 16px;
     font-family: 'Poppins'; 
-}
-.header-content-wrapper button{
-    border: none;
-    height: 2rem;
-    width: 10rem;
-    font-size: 16px;
-}
-.header-content-wrapper button:hover{
-    opacity: 0.8; 
 }
 @media screen and (max-width:800px){
     .header-content-wrapper,.top-head-right{
