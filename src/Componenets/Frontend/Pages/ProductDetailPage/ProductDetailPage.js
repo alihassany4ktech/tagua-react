@@ -1,12 +1,12 @@
-import React from 'react';
+import { React, useState } from 'react';
 import './ProductDetailPage.css';
 import MenuDrop from '../../Navbar/MenuDrop/MenuDrop';
 import CartCounter from './CartCounter';
 import ReactStars from "react-rating-stars-component";
 import ProductGallery from './ProductGallery';
 import ProductTabs from './ProductTabs/ProductTabs';
-import { Button } from '@mui/material';
-
+import { Button } from '@mui/material'; 
+ 
 const ProductDetailPage = (props) => {
 
     const images = [
@@ -74,6 +74,8 @@ const ProductDetailPage = (props) => {
             value: 'item 6',
         },
     ];
+ 
+
     return (
         <>
             <div className='row p-3 p-md-3 p-lg-4'>
@@ -111,14 +113,15 @@ const ProductDetailPage = (props) => {
                                 borderRadius: 0,
                                 backgroundColor: "#E8C21E",
                                 color: '#FFFFFF',
-                                fontSize: "14px",
+                                fontSize: "15px",
                                 fontFamily: 'inherit',
+                                boxShadow: 'none',
                                 fontWeight: '600',
                                 textTransform: 'none'
                             }}
                             variant="contained"
                         >
-                           Add to Cart
+                            Add to Cart
                         </Button>
                     </div>
 

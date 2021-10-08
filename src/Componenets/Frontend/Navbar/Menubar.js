@@ -23,7 +23,7 @@ const Menubar = () => {
                                     fontFamily: 'inherit',
                                     fontWeight: '600',
                                     textTransform: 'none',
-                                    width: '100%',
+                                    width: '200px',
                                 }}
                             >
                                 Search&nbsp;<i className={openSearchBar ? 'bi bi-x' : "bi bi-search"}></i>

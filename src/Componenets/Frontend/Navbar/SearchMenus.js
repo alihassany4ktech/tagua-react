@@ -6,7 +6,7 @@ const SearchMenus = () => {
     const items = [
         {
             id: 1,
-            value: 'item 1 has name',
+            value: 'item 1',
         },
         {
             id: 2,

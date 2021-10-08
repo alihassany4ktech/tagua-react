@@ -93,15 +93,8 @@
 @media screen and (min-width:911px){
     .toolbar_toggler{
         display: none;
-    }
-    
-
-    
+    }  
 } 
-
-.searchBar {
-    min-height: 50px; 
-}
 @media screen and (max-width:500px){
     .searchBar .searchBar_btn_wrapper{
         text-align: center;
@@ -115,8 +108,7 @@
 @media screen and (max-width:680px) { 
     .searchBar .searchBar_btn_wrapper button{
         width: 260px !important; 
-    }
-    
+    } 
     .search-menu-wrapper{
         display: none !important;
     }
