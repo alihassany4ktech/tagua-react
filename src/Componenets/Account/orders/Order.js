@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import '../account.css';
 import ReactPaginate from 'react-paginate';
 const Order = ({ match }) => { 
       return (
