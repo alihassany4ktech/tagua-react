@@ -2,7 +2,7 @@ import React from "react";
 import Dashboard from "./Dashbord";
 import "./maindashboard.css";
 import user from "../../user.png";
-import { BrowserRouter, NavLink, Switch, Route, } from "react-router-dom";
+import { BrowserRouter, NavLink, Route, } from "react-router-dom";
 import User from "./users/User";
 import Tage from "./tages/Tage";
 import ProductList from "./poducts/ProductList";
@@ -27,7 +27,7 @@ const MainDahsboard = ({ match }) => {
 
       return (
             <>
-                  <BrowserRouter>
+                  {/* <BrowserRouter> */}
                         <header className="app-header fixed-top">
 
                               <div className="app-header-inner">
@@ -365,7 +365,7 @@ const MainDahsboard = ({ match }) => {
                         </header>
 
 
-                        <Switch>
+                        {/* <Switch>
                               <Route exact path="/dashboard" component={Dashboard} />
                               <Route path={`${match.url}/admin/profile`} component={AdminProfile} />
                               <Route path={`${match.url}/product/list`} component={ProductList} />
@@ -379,16 +379,16 @@ const MainDahsboard = ({ match }) => {
                               <Route path={`${match.url}/users`} component={User} />
                               <Route path={`${match.url}/user/profile/edit`} component={UserProfileEdit} />
                               <Route path={`${match.url}/user/profile`} component={UserProfile} />
-                              <Route path={`${match.url}/create-user`} component={CreateUser} />
+                              <Route path={`${match.url}/create-user`} component={CreateUser} /> 
                               <Route path={`${match.url}/gallery`} component={Gallery} />
                               <Route path={`${match.url}/image-details`} component={ImageDetail} />
                               <Route path={`${match.url}/blogs`} component={Blog} />
                               <Route path={`${match.url}/create-blog`} component={CreateBlog} />
                               <Route path={`${match.url}/tags`} component={Tage} />
                               <Route path={`${match.url}/setting`} component={Setting} />
-                        </Switch>
+                        </Switch>*/}
 
-                  </BrowserRouter>
+                  {/* </BrowserRouter> */}
 
             </>
       );

@@ -1,8 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import ReactPaginate from 'react-paginate';
-const Order = ({ match }) => {
-      const url = match.url.split('/')[1];
+const Order = ({ match }) => { 
       return (
             <>
                   <div className="container-fluid p-0">

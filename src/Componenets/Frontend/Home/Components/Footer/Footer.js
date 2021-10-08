@@ -12,10 +12,10 @@ const Footer = (props) => {
                             <div className='row pb-5 px-3 p-sm-0'>
                                 <div className='col-6 col-sm-6 col-md-6 col-lg-3 about-footer py-5'>
                                     <h3 className='text-white mb-4'>About</h3>
-                                    <Link exact to="/track/order"> <p>Track Order</p></Link>
+                                    <Link exact to="/track-order"> <p>Track Order</p></Link>
                                     <Link exact to="/register"> <p>Return & Exchanges</p></Link>
                                     <Link exact to="/login"><p>Our Story</p></Link>
-                                    <Link exact to="/faq/help"> <p>FAQ/Help</p> </Link>
+                                    <Link exact to="/faq"> <p>FAQ/Help</p> </Link>
                                     <p>Terms of Service</p>
                                     <p>Refund Policy</p>
                                 </div>
@@ -23,7 +23,7 @@ const Footer = (props) => {
                                     <h3 className='text-white mb-4'>Company</h3>
 
                                     <Link exact to="/about-us"> <p className='font-weight-bold'>About Us</p></Link>
-                                    <Link exact to="/provacy-policy"> <p>Privacy Policy</p> </Link>
+                                    <Link exact to="/privacy-policy"> <p>Privacy Policy</p> </Link>
                                     <Link exact to="/terms-condition"> <p>Terms & Conditions</p> </Link>
                                     <Link exact to="/contact"><p> Contact Us</p></Link>
                                 </div>
