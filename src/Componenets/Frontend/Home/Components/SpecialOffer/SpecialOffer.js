@@ -1,5 +1,6 @@
 import { Button } from '@mui/material';
 import React from 'react'
+import { Link } from 'react-router-dom';
 import './SpecialOffer.css';
 const SpecialOffer = () => {
     return (
@@ -11,6 +12,8 @@ const SpecialOffer = () => {
                         <h3 className='text-white mt-3'>UPTO 40% OFF</h3>
                         <h1 className='text-white mb-3'>00 : 00: 35</h1>
                         <Button
+                            to='/allproducts'
+                            component={Link}
                             style={{
                                 borderRadius: 0,
                                 backgroundColor: "#000000",
@@ -31,6 +34,8 @@ const SpecialOffer = () => {
                         <h4 className='text-dark'>Introducing the All-New foundation Series Tactical Nylon Suit</h4>
                         <p align='justify' className='text-dark my-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mattis orci nec pretium tincidunt. Donec egestas semper tortor, ac viverra massa tempus eu. Fusce scelerisque ligula elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mattis orci nec pretium tincidunt. Donec egestas semper tortor, ac viverra massa tempus eu. Fusce scelerisque ligula elit, ut fringilla nisi suscipit quis. Sed consectetur felis at massa suscipit cursus.</p>
                         <Button
+                            to='/allproducts'
+                            component={Link}
                             style={{
                                 borderRadius: 0,
                                 backgroundColor: "#000000",

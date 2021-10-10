@@ -23,7 +23,27 @@ import PaymentMethod from './Componenets/Account/paymentMethod/PaymentMethod';
 import AddPaymentMethod from './Componenets/Account/paymentMethod/AddPaymenyMethod';
 import AccountDetail from './Componenets/Account/accountDetail/AccountDetail';
 import WishList from './Componenets/Account/wishList/WishList';
-
+import AdminProfile from './Componenets/admin/AdminProfile';
+import MainAdminDashboard from './Componenets/Dashboard/MainDashboard';
+import AdmindashboardContent from './Componenets/Dashboard/Dashbord';
+import User from './Componenets/Dashboard/users/User';
+import ProductList from './Componenets/Dashboard/poducts/ProductList';
+import CreateProduct from './Componenets/Dashboard/poducts/CreateProdct';
+import OrderList from './Componenets/Dashboard/orderlist/OrderList';
+import UserProfile from './Componenets/Dashboard/users/UserProfile';
+import CreateUser from './Componenets/Dashboard/users/CreateUser';
+import UserProfileEdit from './Componenets/Dashboard/users/UserPrfileEdit';
+import EditProduct from './Componenets/Dashboard/poducts/EditProduct';
+import CreateOrder from './Componenets/Dashboard/orderlist/CreateOrder';
+import OrderDetail from './Componenets/Dashboard/orderlist/OrderDetail';
+import EditOrder from './Componenets/Dashboard/orderlist/EditOrder';
+import Category from './Componenets/Dashboard/category/Category';
+import Gallery from './Componenets/Dashboard/gallery/Gallery';
+import ImageDetail from './Componenets/Dashboard/gallery/ImageDetail';
+import Blog from './Componenets/Dashboard/blog/Blog';
+import Tage from './Componenets/Dashboard/tages/Tage';
+import Setting from './Componenets/Dashboard/setting/Setting';
+import CreateBlog from './Componenets/Dashboard/blog/CreateBlog';
 export default function Router() {
   return useRoutes([
     {
@@ -56,8 +76,38 @@ export default function Router() {
         { path: 'payment-method', element: <PaymentMethod /> },
         { path: 'add-payment-method', element: <AddPaymentMethod /> },
         { path: 'account-details', element: <AccountDetail /> },
-        { path: 'wish-list', element: <WishList /> }, 
-      ]  
+        { path: 'wish-list', element: <WishList /> },
+      ]
     },
+    {
+      path: '/dashboard',
+      element: (
+        <MainAdminDashboard />
+      ),
+      children: [  
+        { path: '', element: <Navigate to="/dashboard/admindashboard" replace /> },
+        { path: 'admindashboard', element: <AdmindashboardContent /> },
+        { path: 'admin/profile', element: <AdminProfile /> }, 
+        { path: 'users', element: <User /> }, 
+        { path: 'create-user', element: <CreateUser /> }, 
+        { path: 'user/profile', element: <UserProfile /> },  
+        { path: 'user/profile/edit', element: <UserProfileEdit /> },   
+        { path: 'product/list', element: <ProductList /> }, 
+        { path: 'create-product', element: <CreateProduct /> }, 
+        { path: 'product/edit', element: <EditProduct /> }, 
+        { path: 'order/list', element: <OrderList /> }, 
+        { path: 'create-order', element: <CreateOrder /> }, 
+        { path: 'order/details', element: <OrderDetail /> }, 
+        { path: 'order/edit', element: <EditOrder /> }, 
+        { path: 'category', element: <Category /> }, 
+        { path: 'gallery', element: <Gallery /> }, 
+        { path: 'image-details', element: <ImageDetail /> }, 
+        { path: 'blogs', element: <Blog /> }, 
+        { path: 'create-blog', element: <CreateBlog /> }, 
+        { path: 'tags', element: <Tage /> }, 
+        { path: 'setting', element: <Setting /> },   
+      ]
+    }, 
+                           
   ]);
 }

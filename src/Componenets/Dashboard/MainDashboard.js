@@ -3,6 +3,7 @@ import Dashboard from "./Dashbord";
 import "./maindashboard.css";
 import user from "../../user.png";
 import { BrowserRouter, NavLink, Route, } from "react-router-dom";
+import { Outlet } from 'react-router-dom';
 import User from "./users/User";
 import Tage from "./tages/Tage";
 import ProductList from "./poducts/ProductList";
@@ -138,22 +139,13 @@ const MainDahsboard = ({ match }) => {
                                                                         </div>
 
                                                                   </div>
-                                                            </div>
-                                                            {/* <div className="app-utility-item">
-                                                                  <a href="settings.html" title="Settings">
-
-                                                                        <svg width="1em" height="1em" viewBox="0 0 16 16" className="bi bi-gear icon" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                                                              <path fill-rule="evenodd" d="M8.837 1.626c-.246-.835-1.428-.835-1.674 0l-.094.319A1.873 1.873 0 0 1 4.377 3.06l-.292-.16c-.764-.415-1.6.42-1.184 1.185l.159.292a1.873 1.873 0 0 1-1.115 2.692l-.319.094c-.835.246-.835 1.428 0 1.674l.319.094a1.873 1.873 0 0 1 1.115 2.693l-.16.291c-.415.764.42 1.6 1.185 1.184l.292-.159a1.873 1.873 0 0 1 2.692 1.116l.094.318c.246.835 1.428.835 1.674 0l.094-.319a1.873 1.873 0 0 1 2.693-1.115l.291.16c.764.415 1.6-.42 1.184-1.185l-.159-.291a1.873 1.873 0 0 1 1.116-2.693l.318-.094c.835-.246.835-1.428 0-1.674l-.319-.094a1.873 1.873 0 0 1-1.115-2.692l.16-.292c.415-.764-.42-1.6-1.185-1.184l-.291.159A1.873 1.873 0 0 1 8.93 1.945l-.094-.319zm-2.633-.283c.527-1.79 3.065-1.79 3.592 0l.094.319a.873.873 0 0 0 1.255.52l.292-.16c1.64-.892 3.434.901 2.54 2.541l-.159.292a.873.873 0 0 0 .52 1.255l.319.094c1.79.527 1.79 3.065 0 3.592l-.319.094a.873.873 0 0 0-.52 1.255l.16.292c.893 1.64-.902 3.434-2.541 2.54l-.292-.159a.873.873 0 0 0-1.255.52l-.094.319c-.527 1.79-3.065 1.79-3.592 0l-.094-.319a.873.873 0 0 0-1.255-.52l-.292.16c-1.64.893-3.433-.902-2.54-2.541l.159-.292a.873.873 0 0 0-.52-1.255l-.319-.094c-1.79-.527-1.79-3.065 0-3.592l.319-.094a.873.873 0 0 0 .52-1.255l-.16-.292c-.892-1.64.902-3.433 2.541-2.54l.292.159a.873.873 0 0 0 1.255-.52l.094-.319z" />
-                                                                              <path fill-rule="evenodd" d="M8 5.754a2.246 2.246 0 1 0 0 4.492 2.246 2.246 0 0 0 0-4.492zM4.754 8a3.246 3.246 0 1 1 6.492 0 3.246 3.246 0 0 1-6.492 0z" />
-                                                                        </svg>
-                                                                  </a>
-                                                            </div> */}
+                                                            </div> 
 
                                                             <div className="app-utility-item app-user-dropdown dropdown">
                                                                   <a className="dropdown-toggle" id="user-dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><img className="rounded-pill" src={user} alt="user profile" /></a>
                                                                   <ul className="dropdown-menu" aria-labelledby="user-dropdown-toggle">
-                                                                        <li><NavLink activeClassName="active" className="dropdown-item" exact={true} to={`${match.url}/admin/profile`}>My Profle</NavLink></li>
-                                                                        <li><NavLink activeClassName="active" className="dropdown-item" exact={true} to={`${match.url}/setting`}>Settings</NavLink></li>
+                                                                        <li><NavLink activeClassName="active" className="dropdown-item" exact={true} to={`/admin/profile`}>My Profle</NavLink></li>
+                                                                        <li><NavLink activeClassName="active" className="dropdown-item" exact={true} to={`/setting`}>Settings</NavLink></li>
                                                                         <li><hr className="dropdown-divider" /></li>
                                                                         <li><a className="dropdown-item" href="/#">Log Out</a></li>
                                                                   </ul>
@@ -169,12 +161,12 @@ const MainDahsboard = ({ match }) => {
                                     <div className="sidepanel-inner d-flex flex-column">
                                           <a href="#" id="sidepanel-close" className="sidepanel-close d-xl-none">&times;</a>
                                           <div className="app-branding text-center">
-                                                <NavLink to={`${match.url}`} exact={true} className="app-logo"><img className="logo-icon" src={logo} alt="logo" /></NavLink>
+                                                <NavLink to={`/dashboard`} exact={true} className="app-logo"><img className="logo-icon" src={logo} alt="logo" /></NavLink>
 
                                           </div>
 
                                           <nav id="app-nav-main" className="app-nav app-nav-main flex-grow-1">
-                                                <NavLink exact={true} to={`${match.url}/admin/profile`}>
+                                                <NavLink exact={true} to={`/admin/profile`}>
                                                       <div className="p-4 hoverable"  >
                                                             <div className="d-flex flex-row align-items-center">
                                                                   <img class="icon-img rounded-pill" src={user} height="50" width="50" alt="image" />
@@ -191,7 +183,7 @@ const MainDahsboard = ({ match }) => {
 
                                                 <ul className="app-menu list-unstyled accordion" id="menu-accordion">
                                                       <li className="nav-item">
-                                                            <NavLink exact={true} to={`${match.url}`} className="nav-link" activeClassName="active">
+                                                            <NavLink to='' className="nav-link" activeClassName="active">
                                                                   <span className="nav-icon">
                                                                         <svg width="1em" height="1em" viewBox="0 0 16 16" className="bi bi-house-door" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                                                               <path fill-rule="evenodd" d="M7.646 1.146a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 .146.354v7a.5.5 0 0 1-.5.5H9.5a.5.5 0 0 1-.5-.5v-4H7v4a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .146-.354l6-6zM2.5 7.707V14H6v-4a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5v4h3.5V7.707L8 2.207l-5.5 5.5z" />
@@ -203,7 +195,7 @@ const MainDahsboard = ({ match }) => {
                                                       </li>
 
                                                       <li className="nav-item">
-                                                            <NavLink to={`${match.url}/users`} exact={true} className="nav-link" activeClassName="active">
+                                                            <NavLink to='users' className="nav-link" activeClassName="active">
                                                                   <span className="nav-icon">
                                                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people" viewBox="0 0 16 16">
                                                                               <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z" />
@@ -230,8 +222,8 @@ const MainDahsboard = ({ match }) => {
                                                             </a>
                                                             <div id="submenu-1" class="collapse submenu submenu-1" data-bs-parent="#menu-accordion">
                                                                   <ul class="submenu-list list-unstyled">
-                                                                        <li class="submenu-item"><NavLink exact={true} to={`${match.url}/product/list`} className="submenu-link" activeClassName="submenu-link active"  >Product list</NavLink></li>
-                                                                        <li class="submenu-item"><NavLink exact={true} to={`${match.url}/create-product`} className="submenu-link" ctiveClassName="submenu-link active" >Add Product</NavLink></li>
+                                                                        <li class="submenu-item"><NavLink exact={true} to={`product/list`} className="submenu-link" activeClassName="submenu-link active"  >Product list</NavLink></li>
+                                                                        <li class="submenu-item"><NavLink exact={true} to={`create-product`} className="submenu-link" ctiveClassName="submenu-link active" >Add Product</NavLink></li>
                                                                         {/* <li class="submenu-item"><a class="submenu-link" href="settings.html">Settings</a></li> */}
                                                                   </ul>
                                                             </div>
@@ -255,7 +247,7 @@ const MainDahsboard = ({ match }) => {
                                                             </a>
                                                             <div id="submenu-2" className="collapse submenu submenu-2" data-bs-parent="#menu-accordion">
                                                                   <ul className="submenu-list list-unstyled">
-                                                                        <li className="submenu-item"><NavLink exact={true} to={`${match.url}/order/list`} activeClassName="submenu-link active" className="submenu-link" href="login.html">Oerder list</NavLink></li>
+                                                                        <li className="submenu-item"><NavLink exact={true} to={`order/list`} activeClassName="submenu-link active" className="submenu-link" href="login.html">Order list</NavLink></li>
                                                                         {/* <li className="submenu-item"><a className="submenu-link" href="signup.html">Signup</a></li>
                                                                         <li className="submenu-item"><a className="submenu-link" href="reset-password.html">Reset password</a></li>
                                                                         <li className="submenu-item"><a className="submenu-link" href="404.html">404 page</a></li> */}
@@ -268,7 +260,7 @@ const MainDahsboard = ({ match }) => {
                                                       <li className="nav-item">
 
 
-                                                            <NavLink exact={true} to={`${match.url}/category`} className="nav-link" activeClassName="active">
+                                                            <NavLink to={`/dashboard/category`} className="nav-link" activeClassName="active">
                                                                   <span className="nav-icon">
                                                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark-plus" viewBox="0 0 16 16">
                                                                               <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
@@ -281,7 +273,7 @@ const MainDahsboard = ({ match }) => {
                                                       </li>
 
                                                       <li className="nav-item">
-                                                            <NavLink exact={true} to={`${match.url}/gallery`} className="nav-link" activeClassName="active">
+                                                            <NavLink to={`/dashboard/gallery`} className="nav-link" activeClassName="active">
                                                                   <span className="nav-icon">
                                                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-card-image" viewBox="0 0 16 16">
                                                                               <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
@@ -293,7 +285,7 @@ const MainDahsboard = ({ match }) => {
                                                       </li>
 
                                                       <li className="nav-item">
-                                                            <NavLink exact={true} to={`${match.url}/blogs`} className="nav-link" activeClassName="active">
+                                                            <NavLink to={`/dashboard/blogs`} className="nav-link" activeClassName="active">
                                                                   <span className="nav-icon">
                                                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tablet" viewBox="0 0 16 16">
                                                                               <path d="M12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1 -1h8zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z" />
@@ -306,7 +298,7 @@ const MainDahsboard = ({ match }) => {
 
 
                                                       <li className="nav-item">
-                                                            <NavLink exact={true} to={`${match.url}/tags`} className="nav-link" activeClassName="active">
+                                                            <NavLink to={`/dashboard/tags`} className="nav-link" activeClassName="active">
                                                                   <span className="nav-icon">
                                                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tags" viewBox="0 0 16 16">
                                                                               <path d="M3 2v4.586l7 7L14.586 9l-7-7H3zM2 2a1 1 0 0 1 1-1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 2 6.586V2z" />
@@ -318,7 +310,7 @@ const MainDahsboard = ({ match }) => {
                                                       </li>
 
                                                       <li className="nav-item">
-                                                            <NavLink exact={true} to={`${match.url}/setting`} className="nav-link" activeClassName="active">
+                                                            <NavLink to={`/dashboard/setting`} className="nav-link" activeClassName="active">
                                                                   <span className="nav-icon">
                                                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
                                                                               <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246  0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z" />
@@ -364,7 +356,7 @@ const MainDahsboard = ({ match }) => {
 
                         </header>
 
-
+                        <Outlet />
                         {/* <Switch>
                               <Route exact path="/dashboard" component={Dashboard} />
                               <Route path={`${match.url}/admin/profile`} component={AdminProfile} />
@@ -386,7 +378,7 @@ const MainDahsboard = ({ match }) => {
                               <Route path={`${match.url}/create-blog`} component={CreateBlog} />
                               <Route path={`${match.url}/tags`} component={Tage} />
                               <Route path={`${match.url}/setting`} component={Setting} />
-                        </Switch>*/}
+                        </Switch> */}
 
                   {/* </BrowserRouter> */}
 

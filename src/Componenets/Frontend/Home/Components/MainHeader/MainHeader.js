@@ -1,5 +1,6 @@
 import { Button } from '@mui/material';
 import React from 'react' 
+import { Link } from 'react-router-dom';
 import './MainHeader.css';
 const MainHeader = () => {
     return (
@@ -10,6 +11,8 @@ const MainHeader = () => {
                         <h1 className='text-white'>Search the Perfect Holsters that suits you</h1>
                         <p className='text-white mb-4'>Lorem ipsum dolor sit amet, consectetur adipiscing, dolor sit amet</p> 
                         <Button 
+                        to='/allproducts'
+                        component={Link}
                         style={{
                             borderRadius: 0,
                             backgroundColor: "#FFFFFF",

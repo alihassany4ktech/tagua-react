@@ -6,9 +6,7 @@ import img2 from "./background-2.jpg";
 import img3 from "./background-3.jpg";
 import img4 from "./doc-thumb-1.jpg";
 
-const Gallery = ({ match }) => {
-      console.log(match.url.split('/')[1])
-      const url = match.url.split('/')[1];
+const Gallery = ({ match }) => { 
 
       const [toggle, settoggle] = useState(false);
 
@@ -98,7 +96,7 @@ const Gallery = ({ match }) => {
                                     <nav id="orders-table-tab" className="orders-table-tab app-nav-tabs shadow nav flex-column flex-sm-row p-3 mb-4  justify-content-between align-content-center">
                                           <div className="col-12 col-sm-6  col-md-6 mx-a d-flex flex-row mt-1">
 
-                                                <NavLink exact={true} to={`${match.url}`} style={{ color: "#E8C31E" }}>
+                                                <NavLink exact={true} to={``} style={{ color: "#E8C31E" }}>
                                                       <svg xmlns="http://www.w3.org/2000/svg" width="27" height="30" style={{ marginTop: "5px" }} fill="currentColor" className="bi bi-card-list" viewBox="0 0 16 16">
                                                             <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z" />
                                                             <path d="M5 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 5 8zm0-2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0 5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-1-5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zM4 8a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm0 2.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z" />
@@ -106,7 +104,7 @@ const Gallery = ({ match }) => {
                                                 </NavLink>
 
 
-                                                <NavLink exact to={`${match.url}`} style={{ color: "#E8C31E" }}>
+                                                <NavLink exact to={``} style={{ color: "#E8C31E" }}>
                                                       <svg xmlns="http://www.w3.org/2000/svg" width="35" height="20" fill="currentColor" className="bi bi-border-all" style={{ marginTop: "10px" }} viewBox="0 0 16 16">
                                                             <path d="M0 0h16v16H0V0zm1 1v6.5h6.5V1H1zm7.5 0v6.5H15V1H8.5zM15 8.5H8.5V15H15V8.5zM7.5 15V8.5H1V15h6.5z" />
                                                       </svg>
@@ -148,7 +146,7 @@ const Gallery = ({ match }) => {
                                                             <div className="app-card-thumb">
                                                                   <img className="thumb-image" src={img4} alt="" />
                                                             </div>
-                                                            <NavLink exact={true} className="app-card-link-mask" to={`/${url}/image-details`}></NavLink>
+                                                            <NavLink exact={true} className="app-card-link-mask" to={`/dashboard/image-details`}></NavLink>
                                                       </div>
                                                 </div>
                                           </div>
@@ -158,7 +156,7 @@ const Gallery = ({ match }) => {
                                                             <div className="app-card-thumb">
                                                                   <img className="thumb-image" src={img1} alt="" />
                                                             </div>
-                                                            <NavLink exact className="app-card-link-mask" to="/image-details"></NavLink>
+                                                            <NavLink exact className="app-card-link-mask" to="/dashboard/image-details"></NavLink>
                                                       </div>
                                                 </div>
                                           </div>
@@ -168,7 +166,7 @@ const Gallery = ({ match }) => {
                                                             <div className="app-card-thumb">
                                                                   <img className="thumb-image" src={img2} alt="" />
                                                             </div>
-                                                            <NavLink exact className="app-card-link-mask" to="/image-details"></NavLink>
+                                                            <NavLink exact className="app-card-link-mask" to="/dashboard/image-details"></NavLink>
                                                       </div>
                                                 </div>
                                           </div>
@@ -178,7 +176,7 @@ const Gallery = ({ match }) => {
                                                             <div className="app-card-thumb">
                                                                   <img className="thumb-image" src={img3} alt="" />
                                                             </div>
-                                                            <NavLink exact className="app-card-link-mask" to="/image-details"></NavLink>
+                                                            <NavLink exact className="app-card-link-mask" to="/dashboard/image-details"></NavLink>
                                                       </div>
                                                 </div>
                                           </div>
@@ -188,7 +186,7 @@ const Gallery = ({ match }) => {
                                                             <div className="app-card-thumb">
                                                                   <img className="thumb-image" src={img4} alt="" />
                                                             </div>
-                                                            <NavLink exact className="app-card-link-mask" to="/image-details"></NavLink>
+                                                            <NavLink exact className="app-card-link-mask" to="/dashboard/image-details"></NavLink>
                                                       </div>
                                                 </div>
                                           </div>
@@ -198,7 +196,7 @@ const Gallery = ({ match }) => {
                                                             <div className="app-card-thumb">
                                                                   <img className="thumb-image" src={img4} alt="" />
                                                             </div>
-                                                            <NavLink exact className="app-card-link-mask" to="/image-details"></NavLink>
+                                                            <NavLink exact className="app-card-link-mask" to="/dashboard/image-details"></NavLink>
                                                       </div>
                                                 </div>
                                           </div>
@@ -208,7 +206,7 @@ const Gallery = ({ match }) => {
                                                             <div className="app-card-thumb">
                                                                   <img className="thumb-image" src={img4} alt="" />
                                                             </div>
-                                                            <NavLink exact className="app-card-link-mask" to="/image-details"></NavLink>
+                                                            <NavLink exact className="app-card-link-mask" to="/dashboard/image-details"></NavLink>
                                                       </div>
                                                 </div>
                                           </div>
@@ -218,7 +216,7 @@ const Gallery = ({ match }) => {
                                                             <div className="app-card-thumb">
                                                                   <img className="thumb-image" src={img3} alt="" />
                                                             </div>
-                                                            <NavLink exact className="app-card-link-mask" to="/image-details"></NavLink>
+                                                            <NavLink exact className="app-card-link-mask" to="/dashboard/image-details"></NavLink>
                                                       </div>
                                                 </div>
                                           </div>
@@ -228,7 +226,7 @@ const Gallery = ({ match }) => {
                                                             <div className="app-card-thumb">
                                                                   <img className="thumb-image" src={img2} alt="" />
                                                             </div>
-                                                            <NavLink exact className="app-card-link-mask" to="/image-details"></NavLink>
+                                                            <NavLink exact className="app-card-link-mask" to="/dashboard/image-details"></NavLink>
                                                       </div>
                                                 </div>
                                           </div>
@@ -238,7 +236,7 @@ const Gallery = ({ match }) => {
                                                             <div className="app-card-thumb">
                                                                   <img className="thumb-image" src={img1} alt="" />
                                                             </div>
-                                                            <NavLink exact className="app-card-link-mask" to="/image-details"></NavLink>
+                                                            <NavLink exact className="app-card-link-mask" to="/dashboard/image-details"></NavLink>
                                                       </div>
                                                 </div>
                                           </div>
@@ -248,7 +246,7 @@ const Gallery = ({ match }) => {
                                                             <div className="app-card-thumb">
                                                                   <img className="thumb-image" src={img4} alt="" />
                                                             </div>
-                                                            <NavLink exact className="app-card-link-mask" to="/image-details"></NavLink>
+                                                            <NavLink exact className="app-card-link-mask" to="/dashboard/image-details"></NavLink>
                                                       </div>
                                                 </div>
                                           </div>
@@ -258,7 +256,7 @@ const Gallery = ({ match }) => {
                                                             <div className="app-card-thumb">
                                                                   <img className="thumb-image" src={img4} alt="" />
                                                             </div>
-                                                            <NavLink exact className="app-card-link-mask" to="/image-details"></NavLink>
+                                                            <NavLink exact className="app-card-link-mask" to="/dashboard/image-details"></NavLink>
                                                       </div>
                                                 </div>
                                           </div>
@@ -268,7 +266,7 @@ const Gallery = ({ match }) => {
                                                             <div className="app-card-thumb">
                                                                   <img className="thumb-image" src={img4} alt="" />
                                                             </div>
-                                                            <NavLink exact className="app-card-link-mask" to="/image-details"></NavLink>
+                                                            <NavLink exact className="app-card-link-mask" to="/dashboard/image-details"></NavLink>
                                                       </div>
                                                 </div>
                                           </div>
@@ -278,7 +276,7 @@ const Gallery = ({ match }) => {
                                                             <div className="app-card-thumb">
                                                                   <img className="thumb-image" src={img4} alt="" />
                                                             </div>
-                                                            <NavLink exact className="app-card-link-mask" to="/image-details"></NavLink>
+                                                            <NavLink exact className="app-card-link-mask" to="/dashboard/image-details"></NavLink>
                                                       </div>
                                                 </div>
                                           </div>
@@ -288,7 +286,7 @@ const Gallery = ({ match }) => {
                                                             <div className="app-card-thumb">
                                                                   <img className="thumb-image" src={img4} alt="" />
                                                             </div>
-                                                            <NavLink exact className="app-card-link-mask" to="/image-details"></NavLink>
+                                                            <NavLink exact className="app-card-link-mask" to="/dashboard/image-details"></NavLink>
                                                       </div>
                                                 </div>
                                           </div>
@@ -298,7 +296,7 @@ const Gallery = ({ match }) => {
                                                             <div className="app-card-thumb">
                                                                   <img className="thumb-image" src={img2} alt="" />
                                                             </div>
-                                                            <NavLink exact className="app-card-link-mask" to="/image-details"></NavLink>
+                                                            <NavLink exact className="app-card-link-mask" to="/dashboard/image-details"></NavLink>
                                                       </div>
                                                 </div>
                                           </div>
@@ -308,7 +306,7 @@ const Gallery = ({ match }) => {
                                                             <div className="app-card-thumb">
                                                                   <img className="thumb-image" src={img1} alt="" />
                                                             </div>
-                                                            <NavLink exact className="app-card-link-mask" to="/image-details"></NavLink>
+                                                            <NavLink exact className="app-card-link-mask" to="/dashboard/image-details"></NavLink>
                                                       </div>
                                                 </div>
                                           </div>
@@ -318,7 +316,7 @@ const Gallery = ({ match }) => {
                                                             <div className="app-card-thumb">
                                                                   <img className="thumb-image" src={img3} alt="" />
                                                             </div>
-                                                            <NavLink exact className="app-card-link-mask" to="/image-details"></NavLink>
+                                                            <NavLink exact className="app-card-link-mask" to="/dashboard/image-details"></NavLink>
                                                       </div>
                                                 </div>
                                           </div>
