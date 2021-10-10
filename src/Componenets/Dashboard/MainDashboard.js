@@ -144,10 +144,10 @@ const MainDahsboard = ({ match }) => {
                                                             <div className="app-utility-item app-user-dropdown dropdown">
                                                                   <a className="dropdown-toggle" id="user-dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><img className="rounded-pill" src={user} alt="user profile" /></a>
                                                                   <ul className="dropdown-menu" aria-labelledby="user-dropdown-toggle">
-                                                                        <li><NavLink activeClassName="active" className="dropdown-item" exact={true} to={`/admin/profile`}>My Profle</NavLink></li>
-                                                                        <li><NavLink activeClassName="active" className="dropdown-item" exact={true} to={`/setting`}>Settings</NavLink></li>
+                                                                        <li><NavLink activeClassName="active" className="dropdown-item" exact={true} to={`admin/profile`}>My Profle</NavLink></li>
+                                                                        <li><NavLink activeClassName="active" className="dropdown-item" exact={true} to={`setting`}>Settings</NavLink></li>
                                                                         <li><hr className="dropdown-divider" /></li>
-                                                                        <li><a className="dropdown-item" href="/#">Log Out</a></li>
+                                                                        <li><a className="dropdown-item" href="">Log Out</a></li>
                                                                   </ul>
                                                             </div>
                                                       </div>
@@ -166,7 +166,7 @@ const MainDahsboard = ({ match }) => {
                                           </div>
 
                                           <nav id="app-nav-main" className="app-nav app-nav-main flex-grow-1">
-                                                <NavLink exact={true} to={`/admin/profile`}>
+                                                <NavLink exact={true} to={`admin/profile`}>
                                                       <div className="p-4 hoverable"  >
                                                             <div className="d-flex flex-row align-items-center">
                                                                   <img class="icon-img rounded-pill" src={user} height="50" width="50" alt="image" />
@@ -183,7 +183,7 @@ const MainDahsboard = ({ match }) => {
 
                                                 <ul className="app-menu list-unstyled accordion" id="menu-accordion">
                                                       <li className="nav-item">
-                                                            <NavLink to='' className="nav-link" activeClassName="active">
+                                                            <NavLink to='admindashboard' className="nav-link" activeClassName="active">
                                                                   <span className="nav-icon">
                                                                         <svg width="1em" height="1em" viewBox="0 0 16 16" className="bi bi-house-door" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                                                               <path fill-rule="evenodd" d="M7.646 1.146a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 .146.354v7a.5.5 0 0 1-.5.5H9.5a.5.5 0 0 1-.5-.5v-4H7v4a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .146-.354l6-6zM2.5 7.707V14H6v-4a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5v4h3.5V7.707L8 2.207l-5.5 5.5z" />
@@ -247,7 +247,7 @@ const MainDahsboard = ({ match }) => {
                                                             </a>
                                                             <div id="submenu-2" className="collapse submenu submenu-2" data-bs-parent="#menu-accordion">
                                                                   <ul className="submenu-list list-unstyled">
-                                                                        <li className="submenu-item"><NavLink exact={true} to={`order/list`} activeClassName="submenu-link active" className="submenu-link" href="login.html">Order list</NavLink></li>
+                                                                        <li className="submenu-item"><NavLink  to={`order/list`} activeClassName="submenu-link active" className="submenu-link" href="login.html">Order list</NavLink></li>
                                                                         {/* <li className="submenu-item"><a className="submenu-link" href="signup.html">Signup</a></li>
                                                                         <li className="submenu-item"><a className="submenu-link" href="reset-password.html">Reset password</a></li>
                                                                         <li className="submenu-item"><a className="submenu-link" href="404.html">404 page</a></li> */}
