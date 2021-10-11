@@ -13,15 +13,14 @@ const Footer = (props) => {
                                 <div className='col-6 col-sm-6 col-md-6 col-lg-3 about-footer py-5'>
                                     <h3 className='text-white mb-4'>About</h3>
                                     <Link exact to="/track-order"> <p>Track Order</p></Link>
-                                    <Link exact to="/register"> <p>Return & Exchanges</p></Link>
-                                    <Link exact to="/login"><p>Our Story</p></Link>
+                                    <Link exact to="/return-exchange"> <p>Return & Exchanges</p></Link>
+                                    <Link exact to="/story"><p>Our Story</p></Link>
                                     <Link exact to="/faq"> <p>FAQ/Help</p> </Link>
-                                    <p>Terms of Service</p>
-                                    <p>Refund Policy</p>
+                                    <Link exact to="/terms-of-service"> <p>Terms of Service</p> </Link>
+                                    <Link exact to="/refund-policy"> <p>Refund Policy</p> </Link>     
                                 </div>
                                 <div className='col-6 col-sm-6 col-md-6 col-lg-3 about-footer py-5'>
                                     <h3 className='text-white mb-4'>Company</h3>
-
                                     <Link exact to="/about-us"> <p className='font-weight-bold'>About Us</p></Link>
                                     <Link exact to="/privacy-policy"> <p>Privacy Policy</p> </Link>
                                     <Link exact to="/terms-condition"> <p>Terms & Conditions</p> </Link>

@@ -11,40 +11,36 @@ const Categories = (props) => {
         { imgSource: 'images/gun.jpg', category: 'OPEN CARRY HOLSTRERS' },
     ]
     return (
-        <>
-            <div className='row'>
-                <div className="container-fluid bg-black category-wrapper">
-                    <div className='col-sm-7 col-md-7 col-lg-5 my-5 mx-auto text-center'>
-                        <h2 className='color-yellow'>Categories</h2>
-                        <p className='color-yellow mt-3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida porttitor lorem in blandit. Etiam id venenatis nisl.</p>
-                    </div>
-                    <div className='col-sm-10 mx-auto'>
-                        
-                        {/* <div className='row'>
-                            {
-                                data.map(item =>
-                                    <CategoryCard
-                                        imgSource={item.imgSource}
-                                        category={item.category}
-                                    />
-                                )
-                            }
-                        </div> */}
-                        <div className='category-responsive-grid'>
-                            {
-                                data.map(item =>
-                                    <CategoryCard
-                                        imgSource={item.imgSource}
-                                        category={item.category}
-                                    />
-                                )
-                            }
-                        </div>
-                    </div>
-                    <span className='m-5'>&nbsp;</span>
-                </div>
-            </div>
 
+        <>
+            <div className='row'></div>
+            <div className='row bg-black'>
+
+                <div className="category-wrapper">
+                    <div className='row'>
+                        <div className='col-sm-7 col-md-7 col-lg-5 my-5 mx-auto text-center'>
+                            <h2 className='color-yellow'>Categories</h2>
+                            <p className='color-yellow mt-3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida porttitor lorem in blandit. Etiam id venenatis nisl.</p>
+                        </div>
+                        <div className='col-sm-10 mx-auto'>
+
+                            <div className='container category-responsive-grid p-0'>
+                                {
+                                    data.map(item =>
+                                        <CategoryCard
+                                            imgSource={item.imgSource}
+                                            category={item.category}
+                                        />
+                                    )
+                                }
+                            </div>
+                        </div>
+
+                        <span className='my-5'>&nbsp;</span>
+                    </div>
+                </div>
+
+            </div>
         </>
     );
 }

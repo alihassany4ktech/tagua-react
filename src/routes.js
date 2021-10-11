@@ -44,6 +44,7 @@ import Blog from './Componenets/Dashboard/blog/Blog';
 import Tage from './Componenets/Dashboard/tages/Tage';
 import Setting from './Componenets/Dashboard/setting/Setting';
 import CreateBlog from './Componenets/Dashboard/blog/CreateBlog';
+import Invoice from './Componenets/Account/orders/Invoice';
 export default function Router() {
   return useRoutes([
     {
@@ -60,7 +61,11 @@ export default function Router() {
         { path: 'cart', element: <Cart /> },
         { path: 'checkout', element: <Checkout /> },
         { path: 'track-order', element: <TrackOrder /> },
+        { path: 'return-exchange', element: <PrivacyPolicy /> },
+        { path: 'story', element: <PrivacyPolicy /> },
         { path: 'faq', element: <Faq /> },
+        { path: 'terms-of-service', element: <PrivacyPolicy /> },
+        { path: 'refund-policy', element: <PrivacyPolicy /> },
         { path: 'about-us', element: <About /> },
         { path: 'contact', element: <ContactUs /> },
         { path: 'privacy-policy', element: <PrivacyPolicy /> },
@@ -69,6 +74,7 @@ export default function Router() {
         { path: 'register', element: <Register /> },
         { path: 'account', element: <Dashboard /> },
         { path: 'orders', element: <Order /> },
+        { path: 'invoice', element: <Invoice /> },
         { path: 'product-view', element: <OrderView /> },
         { path: 'pay', element: <Pay /> },
         { path: 'download', element: <Download /> },

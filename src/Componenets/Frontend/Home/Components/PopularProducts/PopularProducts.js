@@ -108,6 +108,7 @@ export default class PopularProducts extends Component {
                                           <i class="bi bi-arrow-right"></i>
                                     </button>
                               </div>
+                              <div className='d-flex justify-content-center'></div>
                               <div className='row'>
                                     {/* card-carousal arrows small screen */}
                                     <div className='col-1 p-0 dnsm-dbmd'>
