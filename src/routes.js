@@ -71,10 +71,10 @@ export default function Router() {
         { path: 'privacy-policy', element: <PrivacyPolicy /> },
         { path: 'terms-condition', element: <TermAndCondition /> },
         { path: 'login', element: <Login /> },
+        { path: 'logout', element: <Login /> },
         { path: 'register', element: <Register /> },
         { path: 'account', element: <Dashboard /> },
-        { path: 'orders', element: <Order /> },
-        { path: 'invoice', element: <Invoice /> },
+        { path: 'orders', element: <Order /> }, 
         { path: 'product-view', element: <OrderView /> },
         { path: 'pay', element: <Pay /> },
         { path: 'download', element: <Download /> },
@@ -85,6 +85,7 @@ export default function Router() {
         { path: 'wish-list', element: <WishList /> },
       ]
     },
+    { path: 'invoice', element: <Invoice /> },
     {
       path: '/dashboard',
       element: (

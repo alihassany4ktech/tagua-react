@@ -65,10 +65,17 @@ const Dashboard = () => {
                                                 <li className="nav-item">
 
 
-                                                      <Link to='/' className="nav-link" activeClassName="" >
+                                                      <NavLink exact to="/wish-list" className="nav-link" activeClassName="active1">
+                                                            <span className="nav-link-text">Wishlist</span>
+                                                      </NavLink>
+                                                </li>
+                                                <li className="nav-item">
 
+
+                                                      <NavLink exact to='/logout' className="nav-link" activeClassName="active1">
                                                             <span className="nav-link-text">Logout</span>
-                                                      </Link>
+
+                                                      </NavLink>
                                                 </li>
                                           </ul>
 
@@ -122,10 +129,12 @@ const Dashboard = () => {
                                                 </div>
 
                                           </Link>
-                                          <div className="text-center shadow border-0  account-div" style={{ border: "1px solid #dbdddc", height: "130px" }}>
-                                                <i class="bi bi-box-arrow-right mt-4" style={{ fontSize: '50px' }}></i>
-                                                <p className="mb-5">LOGOUT</p>
-                                          </div>
+                                          <Link exact to="/logout">
+                                                <div className="text-center shadow border-0  account-div" style={{ border: "1px solid #dbdddc", height: "130px" }}>
+                                                      <i class="bi bi-box-arrow-right mt-4" style={{ fontSize: '50px' }}></i>
+                                                      <p className="mb-5">LOGOUT</p>
+                                                </div>
+                                          </Link>
                                     </div>
                               </div>
                         </div>

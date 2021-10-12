@@ -27,7 +27,7 @@ export default class PopularProducts extends Component {
                   initialSlide: 0,
                   responsive: [
                         {
-                              breakpoint: 1200,
+                              breakpoint: 1400,
                               settings: {
                                     slidesToShow: 3,
                                     slidesToScroll: 3,
@@ -92,7 +92,7 @@ export default class PopularProducts extends Component {
             ]
             return (
                   <>
-                        <div className="mb-5">
+                        <div className="container px-0 mb-5">
                               <div className='col-sm-7 col-md-7 col-lg-5 mt-5 mx-auto text-center popular-product-wrapper'>
                                     <h2>Popular Products</h2>
                                     <p className='text-dark mt-3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida porttitor lorem in blandit. Etiam id venenatis nisl.</p>

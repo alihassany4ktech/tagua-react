@@ -30,6 +30,8 @@ const SideDrawer = (props) => {
           </div>
           <div className='text-center mt-4'> 
             <Button
+              to='/login'
+              component={Link}
               style={{
                 width: '205px',
                 height: '47px',

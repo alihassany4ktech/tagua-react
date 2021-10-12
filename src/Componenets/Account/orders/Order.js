@@ -65,7 +65,7 @@ const Order = ({ match }) => {
                                                 <li className="nav-item">
 
 
-                                                      <NavLink exact to="#" className="nav-link" activeClassName="" >
+                                                      <NavLink exact to="/logout" className="nav-link" activeClassName="" >
 
                                                             <span className="nav-link-text">Logout</span>
                                                       </NavLink>
