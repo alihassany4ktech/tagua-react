@@ -19,6 +19,11 @@
     max-height: 40vh;
     overflow-y: scroll; 
 }
+@media screen and (max-width: 600px) {
+    .dd-m-list{
+        width: 100%;
+    }
+}
 .dd-m-header{ 
     display: flex;   
     display: flex; 

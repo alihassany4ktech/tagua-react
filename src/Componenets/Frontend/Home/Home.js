@@ -1,48 +1,17 @@
 import React from 'react';
+import { Outlet } from 'react-router-dom';
 import './Home.css';
 import Footer from './Components/Footer/Footer';
-import Navbar from '../Navbar/Navbar'; 
-import { Switch, Route, Redirect, BrowserRouter } from "react-router-dom";
-import HomePage from '../Pages/HomePage/HomePage';
-import ProductDetailPage from '../Pages/ProductDetailPage/ProductDetailPage';
-import AllProduct from '../Pages/AllProduct/AllProduct';
-import Cart from '../Pages/Cart/Cart';
-import ContactUs from '../ContactUs/ContactUs';
-import PrivacyPolicy from '../PrivacyPolicy/PrivacyPolicy';
-import TermAndCondition from '../TermAndCondition/TermAndCondition';
-import About from '../AboutUs/About';
-import Faq from '../FAQ/Faq';
-import TrackOrder from '../TrackOrder/TrackOrder';
-import Login from '../Auth/Login';
-import Register from '../Auth/Register';
-import Account from '../../Account/Account';
-import Checkout from '../Pages/Checkout/Checkout';
+import Navbar from '../Navbar/Navbar';
 const Home = () => {
     return (
         <>
-            <BrowserRouter>
-                <Navbar />
-                <div className='fab'><i className="bi bi-chat-dots" > </i></div>
-                <div className='container-fluid' >
-                    <Switch >
-                        <Route exact path="/" component={HomePage} />
-                        <Route exact path="/productdetail" component={ProductDetailPage} />
-                        <Route exact path="/allproducts" component={AllProduct} />
-                        <Route exact path="/cart" component={Cart} />
-                        <Route exact path="/checkout" component={Checkout} />
-                        <Route exact path="/track/order" component={TrackOrder} />
-                        <Route exact path="/faq/help" component={Faq} />
-                        <Route exact path="/about-us" component={About} />
-                        <Route exact path="/contact" component={ContactUs} />
-                        <Route exact path="/provacy-policy" component={PrivacyPolicy} />
-                        <Route exact path="/terms-condition" component={TermAndCondition} />
-                        <Route exact path="/login" component={Login} />
-                        <Route exact path="/register" component={Register} />
-                        <Route exact path="/account" component={Account} /> 
-                    </Switch>
-                </div>
-                <Footer />
-            </BrowserRouter>
+            <Navbar />
+            <div className='fab'><i className="bi bi-chat-dots" > </i></div>
+            <div className='container-fluid' >
+                <Outlet />
+            </div>
+            <Footer />
         </>
     );
 }

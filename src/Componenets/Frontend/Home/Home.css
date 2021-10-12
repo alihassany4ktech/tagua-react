@@ -8,12 +8,13 @@
 }
 html{
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 body{
   overflow-x: hidden; 
   /* font-family: 'poppins' ; */
   font-family: 'Nunito', sans-serif;
- 
+  scroll-behavior: smooth;
 }  
 
 .text-yellow{

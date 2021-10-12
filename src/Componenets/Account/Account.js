@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, NavLink, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter, NavLink, Route, Link } from "react-router-dom";
 import Dashboard from "./dashboard/Dashboard";
 import "./account.css";
 import Order from "./orders/Order";
@@ -22,7 +22,7 @@ const Account = () => {
 
 
                         {/* componenet  */}
-
+{/* 
                         <Switch>
                               <Route exact path="/account" component={Dashboard} />
                               <Route exact path="/orders" component={Order} />
@@ -37,7 +37,7 @@ const Account = () => {
                               <Route exact path="/" component={Login} />
 
 
-                        </Switch>
+                        </Switch> */}
 
 
 

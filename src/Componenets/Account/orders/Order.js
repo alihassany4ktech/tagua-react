@@ -1,8 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import '../account.css';
 import ReactPaginate from 'react-paginate';
-const Order = ({ match }) => {
-      const url = match.url.split('/')[1];
+const Order = ({ match }) => { 
       return (
             <>
                   <div className="container-fluid p-0">
@@ -65,7 +65,7 @@ const Order = ({ match }) => {
                                                 <li className="nav-item">
 
 
-                                                      <NavLink exact to="#" className="nav-link" activeClassName="" >
+                                                      <NavLink exact to="/logout" className="nav-link" activeClassName="" >
 
                                                             <span className="nav-link-text">Logout</span>
                                                       </NavLink>

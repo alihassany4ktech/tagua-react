@@ -1,24 +1,25 @@
 import React, { useState } from 'react';
 import './MenuBarDropDown.css';
 import OutsideClickHandler from 'react-outside-click-handler';
+import { Link } from 'react-router-dom';
 const MenuBarDropDown = (props) => {
-    const [name, setName] = useState(props.title); 
+    const [name, setName] = useState(props.title);
     const [open, setOpen] = useState(false);
-    const [selection, setSelection] = useState([]); 
-    const toggle = () => setOpen(!open);  
+    const [selection, setSelection] = useState([]);
+    const toggle = () => setOpen(!open);
     function handleOnClick(item) {
         if (!selection.some(current => current.id === item.id)) {
             if (!props.multiSelect) {
                 setSelection([item]);
             } else if (props.multiSelect) {
                 setSelection([...selection, item]);
-            }  
+            }
         } else {
             let selectionAfterRemoval = selection;
             selectionAfterRemoval = selectionAfterRemoval.filter(
                 current => current.id !== item.id
             );
-            setSelection([...selectionAfterRemoval]); 
+            setSelection([...selectionAfterRemoval]);
         }
         setOpen(false);
     }
@@ -31,16 +32,16 @@ const MenuBarDropDown = (props) => {
     }
     return (
         <>
-            <OutsideClickHandler 
+            <OutsideClickHandler
                 onOutsideClick={() => {
                     setOpen(false);
                 }}
             >
-                <div className="dd-m-wrapper"  onKeyPress={() => toggle(!open)}
-                        onClick={() => toggle(!open)} >
-                    <div 
+                <div className="dd-m-wrapper" onKeyPress={() => toggle(!open)}
+                    onClick={() => toggle(!open)} >
+                    <div
                         className="dd-m-header text-uppercase"
-                       
+
                     >
                         <div className="dd-m-header__title">
                             <p className="dd-header__title--bold mx-2">{name}</p>
@@ -52,11 +53,13 @@ const MenuBarDropDown = (props) => {
                     {open && props.items && (
                         <ul className="dd-m-list">
                             {props.items.map(item => (
-                                <li className="dd-list-item text-uppercase" key={item.id}>
-                                    <span className={isItemInSelection(item) ? 'list-item-span active' : 'list-item-span'} onClick={() => handleOnClick(item)}>
-                                        <span>{item.value}</span> 
-                                    </span>
-                                </li>
+                                <Link to='/'>
+                                    <li className="dd-list-item text-uppercase" key={item.id}>
+                                        <span className={isItemInSelection(item) ? 'list-item-span active' : 'list-item-span'} onClick={() => handleOnClick(item)}>
+                                            <span>{item.value}</span>
+                                        </span>
+                                    </li>
+                                </Link>
                             ))}
                         </ul>
                     )}

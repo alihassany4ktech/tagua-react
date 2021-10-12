@@ -41,9 +41,9 @@ const AllProduct = () => {
             <div className='text-center mt-3'>
                 <h2>All Products</h2>
             </div>
-            <div class="container-fluid">
+            <div class="container">
                 <div class="row">
-                    <div class="col-md-3 col-lg-3 col-xl-3  px-3">
+                    <div class="col-md-3 col-lg-3 col-xl-3">
                         <h2>Filter</h2>
                         <Filter />
                     </div>
@@ -64,21 +64,21 @@ const AllProduct = () => {
                         </div>
                     </div>
                 </div>
+                <div className="overflow-auto">
+                    <ReactPaginate
+                        previousLabel={"Prev"}
+                        nextLabel={"Next"}
+                        containerClassName={"paginationBttnsLight"}
+                        previousLinkClassName={"previousBttnLight"}
+                        nextLinkClassName={"nextBttnLight"}
+                        disabledClassName={"paginationDisabledLight"}
+                        activeClassName={"paginationActiveLight"}
+                    />
+
+                </div>
             </div>
 
 
-            <div className="overflow-auto">
-                <ReactPaginate
-                    previousLabel={"Prev"}
-                    nextLabel={"Next"} 
-                    containerClassName={"paginationBttnsLight"}
-                    previousLinkClassName={"previousBttnLight"}
-                    nextLinkClassName={"nextBttnLight"}
-                    disabledClassName={"paginationDisabledLight"}
-                    activeClassName={"paginationActiveLight"}
-                />
-
-            </div>
         </>
     );
 }

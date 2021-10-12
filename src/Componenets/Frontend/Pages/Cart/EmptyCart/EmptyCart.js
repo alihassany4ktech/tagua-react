@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const EmptyCart = () => {
       return (
@@ -12,7 +13,9 @@ const EmptyCart = () => {
                                           Before proceed to checkout you must add some products to your shopping cart. <br /> You will find a
                                           lot of interesting products on our "Shop" page.
                                     </p>
-                                    <button className="btn bg-yellow rounded-0 text-white mt-3 px-5 py-3" >Start Shopping</button>
+                                    <Link to='/allproducts'>
+                                          <button className="btn bg-yellow rounded-0 text-white mt-3 px-5 py-3" >Start Shopping</button>
+                                    </Link>
                               </div>
                         </div>
                   </div>

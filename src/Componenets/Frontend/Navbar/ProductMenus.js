@@ -52,7 +52,7 @@ const ProductMenus = () => {
             <div className='menu-item-wrapper h-100'>
                 <Button
                     component={Link}
-                    to="/allproducts"
+                    to="/sale"
                     style={{
                         borderRadius: 0,
                         backgroundColor: "#E8C21E",

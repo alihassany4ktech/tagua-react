@@ -4,7 +4,6 @@ const TrackOrder = () => {
 
       return (
             <>
-
                   <div className="row background-pic mb-5">
                         <div className="col-md-12">
                               <div className="container h-100">
@@ -14,7 +13,6 @@ const TrackOrder = () => {
                                                       <div className="jumbotron  ">
                                                             <h1 className="text-white">ORDER TRACKING</h1>
                                                       </div>
-
                                                 </div>
                                                 <div className="col-10 mx-auto">
                                                       <div className="jumbotron ">
@@ -26,7 +24,7 @@ const TrackOrder = () => {
                                                             <div className="row d-flex flex-row mt-5 mx-2">
                                                                   <div className="col-md-6 col-lg-5">
                                                                         <label htmlFor="" className="text-white mb-1">Order ID</label>
-                                                                        <input type="text" className="form-control rounded-0" placeholder="Found in you order confirmation email" />
+                                                                        <input type="text" className="form-control rounded-0" placeholder="Your order id" />
                                                                   </div>
                                                                   <div className="col-md-6 col-lg-5">
                                                                         <label htmlFor="" className="text-white mb-1">Billing email</label>
@@ -47,7 +45,6 @@ const TrackOrder = () => {
                                           </div>
                                     </div>
                               </div>
-
                         </div>
                   </div>
                   <hr style={{ marginTop: "100px" }} />
@@ -71,9 +68,6 @@ const TrackOrder = () => {
                               </div>
                         </div>
                   </div>
-
-
-
             </>
       );
 }
