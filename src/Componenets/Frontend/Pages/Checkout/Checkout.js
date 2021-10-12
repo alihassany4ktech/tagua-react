@@ -4,6 +4,8 @@ import PaymentDetail from './PaymentDetail';
 const Checkout = (props) => {
     return (
         <>
+        <div className='container'>
+
             <div className='row py-5'>
                 <div className='col-md-6'>
                     <form className="px-4">
@@ -59,6 +61,7 @@ const Checkout = (props) => {
                     <PaymentDetail />
                 </div>
             </div>
+        </div>
         </>
     );
 }

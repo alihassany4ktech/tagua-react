@@ -5,7 +5,7 @@ const Footer = (props) => {
 
     return (
         <>
-            <div className='row'>
+            <div className='row '>
                 <div className="bg-black">
                     <div className='container'>
                         <div className='row pb-5 px-3 p-sm-0'>
@@ -27,8 +27,7 @@ const Footer = (props) => {
                             </div>
                             <div className='col-sm-12 col-md-6 col-lg-5 py-5 footer-wrapper'>
                                 <h3 className='text-white mb-4'>Keep in Touch</h3> 
-
-                                <p align='justify' className='text-white'>Signup for our newsletter and be the first to know about the coupons ans special promotions.</p> 
+                                <p align='justify' className='text-white'>Signup for our newsletter and be the first to know about the coupons ans special promotions.</p>
                                 <input type="email" className="form-control rounded-pill border-0 my-3" aria-describedby="emailHelp" placeholder="Sign up with email.." />
                                 <div>
                                     <button className='footer-icon-btn'>
