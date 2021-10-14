@@ -5,7 +5,17 @@ const ShippingAndDelivery = () => {
         <>
             <div className='row'>
                 <div className='col-md-6'>
-                    img
+                    <div className='row'>
+
+                        <div className='col-md-6'>
+                            <img className='img-fluid' src='images/shipment.jpeg'></img>
+
+                        </div>
+                        <div className='col-md-6'>
+
+                            <img className='img-fluid' src='images/shipmentLogo.png'></img>
+                        </div> 
+                    </div>
                 </div>
                 <div className='col-md-6 px-3'>
                     <h5>Your pack shipment</h5>

@@ -45,7 +45,7 @@
     color: var(--yellow); 
     transition: all 0.1s ease-in-out;
     padding: 0;
-    z-index: 1;
+    /* z-index: 1; */
 }  
 .icon-btn:hover{  
     background-color: var(--yellow);
